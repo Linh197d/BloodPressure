@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "987667498986",
+    "project_id": "blood-pressure-544e2",
+    "storage_bucket": "blood-pressure-544e2.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:987667498986:android:c7925cabe16f912bcbd493",
+        "android_client_info": {
+          "package_name": "blood.pressure.fingerprint.scanner.bpmonitor"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "987667498986-7ui2v4iicgjdrikub9lcjaqcaetftrnp.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBJ5YZudYKbC-p2OcqvFNaVg42ITCucBug"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "987667498986-7ui2v4iicgjdrikub9lcjaqcaetftrnp.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

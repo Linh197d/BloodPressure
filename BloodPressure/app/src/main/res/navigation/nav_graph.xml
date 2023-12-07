@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/fragmentTracker">
+
+    <fragment
+        android:id="@+id/fragmentInfo"
+        android:name="blood.pressure.fingerprint.scanner.bpmonitor.ui.FragmentInfo"
+        android:label="fragment_info"
+        tools:layout="@layout/fragment_info" />
+    <fragment
+        android:id="@+id/fragmentTracker"
+        android:name="blood.pressure.fingerprint.scanner.bpmonitor.ui.FragmentTracker"
+        android:label="fragment_tracker"
+        tools:layout="@layout/fragment_tracker" >
+        <action
+            android:id="@+id/action_fragmentTracker_to_fragmentInfo"
+            app:destination="@id/fragmentInfo" />
+    </fragment>
+</navigation>

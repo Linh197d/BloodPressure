@@ -1,0 +1,576 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/color_background"
+            app:title="@string/info_and_know"
+            app:titleTextColor="@color/white" />
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            tools:context="blood.pressure.fingerprint.scanner.bpmonitor.ui.FragmentInfo">
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="20dp"
+                android:orientation="vertical">
+
+                <TableRow
+                    android:id="@+id/info_1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:minHeight="110dp"
+                    android:background="@drawable/ripple_effect"
+                    android:backgroundTint="#28a5a5"
+                    android:clickable="true"
+                    android:focusable="true"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal"
+                    android:paddingHorizontal="15dp"
+                    android:paddingVertical="5dp"
+                    android:weightSum="3">
+
+                    <TextView
+                        android:id="@+id/info_title_1"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_marginStart="10dp"
+                        android:layout_marginEnd="20dp"
+                        android:layout_weight="2"
+                        android:gravity="center_vertical"
+                        android:text="@string/know_bp_numbers"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/textsizeinfo" />
+
+                    <ImageView
+                        android:id="@+id/info_image_1"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:src="@drawable/ic_know" />
+                </TableRow>
+
+                <TableRow
+                    android:id="@+id/info_2"
+                    android:layout_width="match_parent"
+                    android:layout_height="110dp"
+                    android:layout_marginTop="15dp"
+                    android:addStatesFromChildren="true"
+                    android:background="@drawable/ripple_effect"
+                    android:backgroundTint="@color/color_elevated"
+                    android:clickable="true"
+                    android:focusable="true"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal"
+                    android:paddingHorizontal="15dp"
+                    android:paddingVertical="5dp"
+                    android:weightSum="3">
+
+                    <TextView
+                        android:id="@+id/info_title_2"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_marginStart="10dp"
+                        android:layout_marginEnd="20dp"
+                        android:layout_weight="2"
+                        android:gravity="center_vertical"
+                        android:text="@string/learn_about"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/textsizeinfo" />
+
+                    <ImageView
+                        android:id="@+id/info_image_2"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:background="@android:color/transparent"
+                        android:backgroundTint="@android:color/transparent"
+                        android:clickable="true"
+                        android:focusable="true"
+                        android:src="@drawable/ic_learnabout" />
+                </TableRow>
+
+                <TableRow
+                    android:id="@+id/info_3"
+                    android:layout_width="match_parent"
+                    android:layout_height="110dp"
+                    android:layout_marginTop="15dp"
+                    android:background="@drawable/ripple_effect"
+                    android:backgroundTint="@color/color_hypertension"
+                    android:clickable="true"
+                    android:focusable="true"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal"
+                    android:paddingHorizontal="15dp"
+                    android:paddingVertical="5dp"
+                    android:weightSum="3">
+
+                    <TextView
+                        android:id="@+id/info_title_3"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_marginStart="10dp"
+                        android:layout_marginEnd="20dp"
+                        android:layout_weight="2"
+                        android:gravity="center_vertical"
+                        android:text="@string/find_your"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/textsizeinfo" />
+
+                    <ImageView
+                        android:id="@+id/info_image_3"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:background="@android:color/transparent"
+                        android:src="@drawable/ic_findyour" />
+                </TableRow>
+
+                <TableRow
+                    android:id="@+id/info_4"
+                    android:layout_width="match_parent"
+                    android:layout_height="110dp"
+                    android:layout_marginTop="15dp"
+                    android:background="@drawable/ripple_effect"
+                    android:backgroundTint="@color/color_normal"
+                    android:clickable="true"
+                    android:focusable="true"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal"
+                    android:paddingHorizontal="15dp"
+                    android:paddingVertical="5dp"
+                    android:weightSum="3">
+
+                    <TextView
+                        android:id="@+id/info_title_4"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_marginStart="10dp"
+                        android:layout_marginEnd="20dp"
+                        android:layout_weight="2"
+                        android:gravity="center_vertical"
+                        android:text="@string/break_blood"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/textsizeinfo" />
+
+                    <ImageView
+                        android:id="@+id/info_image_4"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:background="@android:color/transparent"
+                        android:src="@drawable/ic_doctor" />
+                </TableRow>
+
+                <TableRow
+                    android:id="@+id/info_5"
+                    android:layout_width="match_parent"
+                    android:layout_height="110dp"
+                    android:layout_marginTop="15dp"
+                    android:background="@drawable/ripple_effect"
+                    android:backgroundTint="@color/color_hypotension"
+                    android:clickable="true"
+                    android:focusable="true"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal"
+                    android:paddingHorizontal="15dp"
+                    android:paddingVertical="5dp"
+                    android:weightSum="3">
+
+                    <TextView
+                        android:id="@+id/info_title_5"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_marginStart="10dp"
+                        android:layout_marginEnd="20dp"
+                        android:layout_weight="2"
+                        android:gravity="center_vertical"
+                        android:text="@string/hypertension_types"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/textsizeinfo" />
+
+                    <ImageView
+                        android:id="@+id/info_image_5"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:background="@android:color/transparent"
+                        android:src="@drawable/ic_hypertension" />
+                </TableRow>
+
+                <TableRow
+                    android:id="@+id/info_6"
+                    android:layout_width="match_parent"
+                    android:layout_height="110dp"
+                    android:layout_marginTop="15dp"
+                    android:background="@drawable/ripple_effect"
+                    android:backgroundTint="@color/color_elevated"
+                    android:clickable="true"
+                    android:focusable="true"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal"
+                    android:paddingHorizontal="15dp"
+                    android:paddingVertical="5dp"
+                    android:weightSum="3">
+
+                    <TextView
+                        android:id="@+id/info_title_6"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_marginStart="10dp"
+                        android:layout_marginEnd="20dp"
+                        android:layout_weight="2"
+                        android:gravity="center_vertical"
+                        android:text="@string/notice_symptoms"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/textsizeinfo" />
+
+                    <ImageView
+                        android:id="@+id/info_image_6"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:background="@android:color/transparent"
+                        android:src="@drawable/ic_notice" />
+                </TableRow>
+
+                <TableRow
+                    android:id="@+id/info_7"
+                    android:layout_width="match_parent"
+                    android:layout_height="110dp"
+                    android:layout_marginTop="15dp"
+                    android:background="@drawable/ripple_effect"
+                    android:backgroundTint="#28a5a5"
+                    android:clickable="true"
+                    android:focusable="true"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal"
+                    android:paddingHorizontal="15dp"
+                    android:paddingVertical="5dp"
+                    android:weightSum="3">
+
+                    <TextView
+                        android:id="@+id/info_title_7"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_marginStart="10dp"
+                        android:layout_marginEnd="20dp"
+                        android:layout_weight="2"
+                        android:gravity="center_vertical"
+                        android:text="@string/know_problems"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/textsizeinfo" />
+
+                    <ImageView
+                        android:id="@+id/info_image_7"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:background="@android:color/transparent"
+                        android:src="@drawable/ic_know_problems" />
+                </TableRow>
+
+                <TableRow
+                    android:id="@+id/info_8"
+                    android:layout_width="match_parent"
+                    android:layout_height="110dp"
+                    android:layout_marginTop="15dp"
+                    android:background="@drawable/ripple_effect"
+                    android:backgroundTint="@color/color_hypertension"
+                    android:clickable="true"
+                    android:focusable="true"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal"
+                    android:paddingHorizontal="15dp"
+                    android:paddingVertical="5dp"
+                    android:weightSum="3">
+
+                    <TextView
+                        android:id="@+id/info_title_8"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_marginStart="10dp"
+                        android:layout_marginEnd="20dp"
+                        android:layout_weight="2"
+                        android:gravity="center_vertical"
+                        android:text="@string/understand_hypotension"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/textsizeinfo" />
+
+                    <ImageView
+                        android:id="@+id/info_image_8"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:background="@android:color/transparent"
+                        android:src="@drawable/ic_understand" />
+                </TableRow>
+
+                <TableRow
+                    android:id="@+id/info_9"
+                    android:layout_width="match_parent"
+                    android:layout_height="110dp"
+                    android:layout_marginTop="15dp"
+                    android:background="@drawable/ripple_effect"
+                    android:backgroundTint="@color/color_normal"
+                    android:clickable="true"
+                    android:focusable="true"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal"
+                    android:paddingHorizontal="15dp"
+                    android:paddingVertical="5dp"
+                    android:weightSum="3">
+
+                    <TextView
+                        android:id="@+id/info_title_9"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_marginStart="10dp"
+                        android:layout_marginEnd="20dp"
+                        android:layout_weight="2"
+                        android:gravity="center_vertical"
+                        android:text="@string/first_line"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/textsizeinfo" />
+
+                    <ImageView
+                        android:id="@+id/info_image_9"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:background="@android:color/transparent"
+                        android:src="@drawable/ic_first_line1" />
+                </TableRow>
+
+                <TableRow
+                    android:id="@+id/info_10"
+                    android:layout_width="match_parent"
+                    android:layout_height="110dp"
+                    android:layout_marginTop="15dp"
+                    android:background="@drawable/ripple_effect"
+                    android:backgroundTint="@color/color_hypotension"
+                    android:clickable="true"
+                    android:focusable="true"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal"
+                    android:paddingHorizontal="15dp"
+                    android:paddingVertical="5dp"
+                    android:weightSum="3">
+
+                    <TextView
+                        android:id="@+id/info_title_10"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_marginStart="10dp"
+                        android:layout_marginEnd="20dp"
+                        android:layout_weight="2"
+                        android:gravity="center_vertical"
+                        android:text="@string/control_bp"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/textsizeinfo" />
+
+                    <ImageView
+                        android:id="@+id/info_image_10"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:background="@android:color/transparent"
+                        android:src="@drawable/ic_control" />
+                </TableRow>
+
+                <TableRow
+                    android:id="@+id/info_11"
+                    android:layout_width="match_parent"
+                    android:layout_height="110dp"
+                    android:layout_marginTop="15dp"
+                    android:background="@drawable/ripple_effect"
+                    android:backgroundTint="@color/color_elevated"
+                    android:clickable="true"
+                    android:focusable="true"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal"
+                    android:paddingHorizontal="15dp"
+                    android:paddingVertical="5dp"
+                    android:weightSum="3">
+
+                    <TextView
+                        android:id="@+id/info_title_11"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_marginStart="10dp"
+                        android:layout_marginEnd="20dp"
+                        android:layout_weight="2"
+                        android:gravity="center_vertical"
+                        android:text="@string/lower_blood"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/textsizeinfo" />
+
+                    <ImageView
+                        android:id="@+id/info_image_11"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:background="@android:color/transparent"
+                        android:src="@drawable/ic_lower" />
+                </TableRow>
+
+                <TableRow
+                    android:id="@+id/info_12"
+                    android:layout_width="match_parent"
+                    android:layout_height="110dp"
+                    android:layout_marginTop="15dp"
+                    android:background="@drawable/ripple_effect"
+                    android:backgroundTint="#28a5a5"
+                    android:clickable="true"
+                    android:focusable="true"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal"
+                    android:paddingHorizontal="15dp"
+                    android:paddingVertical="5dp"
+                    android:weightSum="3">
+
+                    <TextView
+                        android:id="@+id/info_title_12"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_marginStart="10dp"
+                        android:layout_marginEnd="20dp"
+                        android:layout_weight="2"
+                        android:gravity="center_vertical"
+                        android:text="@string/how_to_diagnose"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/textsizeinfo" />
+
+                    <ImageView
+                        android:id="@+id/info_image_12"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:background="@android:color/transparent"
+                        android:src="@drawable/ic_howto" />
+                </TableRow>
+
+                <TableRow
+                    android:id="@+id/info_13"
+                    android:layout_width="match_parent"
+                    android:layout_height="110dp"
+                    android:layout_marginTop="15dp"
+                    android:background="@drawable/ripple_effect"
+                    android:backgroundTint="@color/color_hypertension"
+                    android:clickable="true"
+                    android:focusable="true"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal"
+                    android:paddingHorizontal="15dp"
+                    android:paddingVertical="5dp"
+                    android:weightSum="3">
+
+                    <TextView
+                        android:id="@+id/info_title_13"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_marginStart="10dp"
+                        android:layout_marginEnd="20dp"
+                        android:layout_weight="2"
+                        android:gravity="center_vertical"
+                        android:text="@string/first_line_drugs"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/textsizeinfo" />
+
+                    <ImageView
+                        android:id="@+id/info_image_13"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:background="@android:color/transparent"
+                        android:src="@drawable/ic_first_line2" />
+                </TableRow>
+
+                <TableRow
+                    android:id="@+id/info_14"
+                    android:layout_width="match_parent"
+                    android:layout_height="110dp"
+                    android:layout_marginTop="15dp"
+                    android:background="@drawable/ripple_effect"
+                    android:backgroundTint="@color/color_normal"
+                    android:clickable="true"
+                    android:focusable="true"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal"
+                    android:paddingHorizontal="15dp"
+                    android:paddingVertical="5dp"
+                    android:weightSum="3">
+
+                    <TextView
+                        android:id="@+id/info_title_14"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_marginStart="10dp"
+                        android:layout_marginEnd="20dp"
+                        android:layout_weight="2"
+                        android:gravity="center_vertical"
+                        android:text="@string/first_aid_tips"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/textsizeinfo" />
+
+                    <ImageView
+                        android:id="@+id/info_image_14"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:background="@android:color/transparent"
+                        android:src="@drawable/ic_first_aid1" />
+                </TableRow>
+
+                <TableRow
+                    android:id="@+id/info_15"
+                    android:layout_width="match_parent"
+                    android:layout_height="110dp"
+                    android:layout_marginTop="15dp"
+                    android:background="@drawable/ripple_effect"
+                    android:backgroundTint="@color/color_hypotension"
+                    android:clickable="true"
+                    android:focusable="true"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal"
+                    android:paddingHorizontal="15dp"
+                    android:paddingVertical="5dp"
+                    android:weightSum="3">
+
+                    <TextView
+                        android:id="@+id/info_title_15"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_marginStart="10dp"
+                        android:layout_marginEnd="20dp"
+                        android:layout_weight="2"
+                        android:gravity="center_vertical"
+                        android:text="@string/first_aid_tips_for_hypotensive"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/textsizeinfo" />
+
+                    <ImageView
+                        android:id="@+id/info_image_15"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:background="@android:color/transparent"
+                        android:src="@drawable/ic_first_aid2" />
+                </TableRow>
+            </LinearLayout>
+        </ScrollView>
+    </LinearLayout>
+</layout>
