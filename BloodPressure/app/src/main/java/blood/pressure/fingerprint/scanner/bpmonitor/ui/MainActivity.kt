@@ -138,11 +138,11 @@ class MainActivity : LocaleAwareCompatActivity() {
     override fun onActivityResult(requestCode: Int, resultCode: Int, data: Intent?) {
         super.onActivityResult(requestCode, resultCode, data)
         if (requestCode == 1 && resultCode == Activity.RESULT_OK) {
-            Log.i("bacdz", "reload tracker access")
+            Log.i("vinhm", "reload tracker access")
             loadFragment(FragmentTracker())
         }
         if (requestCode == 2 && resultCode == Activity.RESULT_OK) {
-            Log.i("bacdz", "reload bmi")
+            Log.i("vinhm", "reload bmi")
             loadFragment(BMIFragment())
         }
     }

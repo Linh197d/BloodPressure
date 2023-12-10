@@ -259,7 +259,7 @@ class FragmentMeasureProgress : Fragment() {
                 inc = ((System.currentTimeMillis() - st) / 10).toInt()
                 //progressP = inc++
                 progressP = inc
-                Log.d("bacdz", "$inc")
+                Log.d("vinhm", "$inc")
                 binding.progress.progress = progressP
             }
 

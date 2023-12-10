@@ -1,14 +1,14 @@
 plugins {
     id 'com.android.application'
-    id 'com.google.gms.google-services'
+//    id 'com.google.gms.google-services'
     id 'org.jetbrains.kotlin.android'
     id 'kotlin-kapt'
+    id 'kotlin-android'
     // Add the Crashlytics Gradle plugin
-    id 'com.google.firebase.crashlytics'
-    // Add the Performance Monitoring Gradle plugin
-    id 'com.google.firebase.firebase-perf'
-//    id 'applovin-quality-service'
-//    id 'com.onesignal.androidsdk.onesignal-gradle-plugin'
+//    id 'com.google.firebase.crashlytics'
+//    // Add the Performance Monitoring Gradle plugin
+//    id 'com.google.firebase.firebase-perf'
+
 }
 
 
@@ -58,7 +58,7 @@ dependencies {
     implementation fileTree(include: ['*.jar'], dir: 'libs')
     implementation 'org.jbundle.util.osgi.wrapped:org.jbundle.util.osgi.wrapped.org.apache.http.client:4.1.2'
     //noinspection DuplicatePlatformClasses
-    implementation 'commons-logging:commons-logging:1.2'
+//    implementation 'commons-logging:commons-logging:1.2'
     implementation 'androidx.core:core-ktx:1.9.0'
     implementation 'androidx.appcompat:appcompat:1.5.0'
     implementation 'com.google.android.material:material:1.6.1'
@@ -116,15 +116,9 @@ dependencies {
     //scalable unit size
     implementation 'com.intuit.sdp:sdp-android:1.0.6'
 
-    //room database
-    implementation 'androidx.room:room-runtime:2.2.5'
-    kapt 'androidx.room:room-compiler:2.2.5'
-    implementation 'androidx.room:room-ktx:2.2.1'
     implementation 'com.makeramen:roundedimageview:2.3.0'
-    implementation "androidx.recyclerview:recyclerview:1.1.0"
     //crop image library
 
-//    implementation 'com.theartofdev.edmodo:android-image-cropper:2.8.0'
 
     //easy permission
 
@@ -136,8 +130,4 @@ dependencies {
     //retrofit
     implementation 'com.squareup.retrofit2:retrofit:2.9.0'
     implementation 'com.squareup.retrofit2:converter-gson:2.9.0'
-
-
-    implementation 'com.github.bumptech.glide:glide:4.11.0'
-    annotationProcessor 'com.github.bumptech.glide:compiler:4.11.0'
 }

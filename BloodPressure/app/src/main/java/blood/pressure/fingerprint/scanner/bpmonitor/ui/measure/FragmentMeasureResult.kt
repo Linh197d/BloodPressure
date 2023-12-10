@@ -67,7 +67,7 @@ class FragmentMeasureResult : Fragment(), ITypeAdapter {
         binding.sys.text = "${parent.sp}"
         binding.dia.text = "${parent.dp}"
 
-        Log.d("bacdz", "${parent.sp}/${parent.dp}")
+        Log.d("vinhm", "${parent.sp}/${parent.dp}")
         checkIndexBlood(parent.sp-20, parent.dp-10)
 
         animationView()
@@ -320,7 +320,7 @@ class FragmentMeasureResult : Fragment(), ITypeAdapter {
     }
 
     private fun openConfirmDialog() {
-        Log.d("bacdz","show save dialog")
+        Log.d("vinhm","show save dialog")
         val dialog = Dialog(parent.requireActivity())
         dialog.requestWindowFeature(Window.FEATURE_NO_TITLE)
         dialog.setContentView(R.layout.confirm_dialog)

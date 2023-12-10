@@ -148,6 +148,7 @@ class SplashActivity : BaseActivity(), EasyPermissions.RationaleCallbacks,
             clearDataBase()
             getCategories()
         } else {
+            Log.d("linhd","on read")
             EasyPermissions.requestPermissions(
                 this,
                 "This app needs access to your storage,",

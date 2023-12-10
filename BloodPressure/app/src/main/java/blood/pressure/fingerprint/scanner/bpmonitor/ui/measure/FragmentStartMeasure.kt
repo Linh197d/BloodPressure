@@ -172,7 +172,7 @@ class FragmentStartMeasure : Fragment() {
                 requireActivity(), Manifest.permission.CAMERA
             ) != PackageManager.PERMISSION_GRANTED
         ) {
-            Log.d("bacdz", "request permission")
+            Log.d("vinhm", "request permission")
             ActivityCompat.requestPermissions(
                 requireActivity(), arrayOf(Manifest.permission.CAMERA), 1
             )
