@@ -71,7 +71,7 @@ class HomeActivity : BaseActivity() {
     }
 
     private fun getMealDataFromDb(categoryName:String){
-        tvCategory!!.text = "$categoryName blood.pressure.fingerprint.scanner.bpmonitor.entities.Category"
+        tvCategory!!.text = "$categoryName Category"
         launch {
             this.let {
                 var cat = RecipeDatabase.getDatabase(this@HomeActivity).recipeDao().getSpecificMealList(categoryName)

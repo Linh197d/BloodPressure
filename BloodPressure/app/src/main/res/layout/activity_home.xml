@@ -27,27 +27,27 @@
                 android:textColor="@color/black"
                 android:textSize="@dimen/_20ssp" />
 
-            <androidx.cardview.widget.CardView
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginStart="@dimen/_10sdp"
-                android:layout_marginTop="@dimen/_10sdp"
-                android:layout_marginEnd="@dimen/_10sdp"
-                app:cardCornerRadius="@dimen/_10sdp"
-                app:cardElevation="@dimen/_10sdp">
+<!--            <androidx.cardview.widget.CardView-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_marginStart="@dimen/_10sdp"-->
+<!--                android:layout_marginTop="@dimen/_10sdp"-->
+<!--                android:layout_marginEnd="@dimen/_10sdp"-->
+<!--                app:cardCornerRadius="@dimen/_10sdp"-->
+<!--                app:cardElevation="@dimen/_10sdp">-->
 
 
-                <androidx.appcompat.widget.SearchView
-                    android:id="@+id/search_view"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:background="@drawable/search_bg"
-                    android:iconifiedByDefault="false"
-                    android:queryBackground="@color/transparent"
-                    android:queryHint="Search for recipes"
-                    android:theme="@style/ThemeOverlay.Search" />
+<!--                <androidx.appcompat.widget.SearchView-->
+<!--                    android:id="@+id/search_view"-->
+<!--                    android:layout_width="match_parent"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:background="@drawable/search_bg"-->
+<!--                    android:iconifiedByDefault="false"-->
+<!--                    android:queryBackground="@color/transparent"-->
+<!--                    android:queryHint="Search for recipes"-->
+<!--                    android:theme="@style/ThemeOverlay.Search" />-->
 
-            </androidx.cardview.widget.CardView>
+<!--            </androidx.cardview.widget.CardView>-->
 
             <androidx.recyclerview.widget.RecyclerView
                 android:id="@+id/rv_main_category"

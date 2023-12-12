@@ -28,505 +28,467 @@ class InfoText {
             listKnow.add(Info("header", ""))
             listKnow.add(
                 Info(
-                    "1. Hypotension",
-                    "If your readings are less than 90/60 mmHg, you are probably hypotensive. You do not need any treatment as low blood pressure causes no harm and no symptoms usually. However, when your blood pressure often drops suddenly over 20 mmHg, falls suddenly due to some medications, or you feel dizzy, fainting, fatigue, etc.,you ought to seek treatment."
+                    "1. Huyết áp thấp",
+                    "Nếu chỉ số của bạn dưới 90/60 mmHg, bạn có thể bị hạ huyết áp. Bạn không cần bất kỳ điều trị nào vì huyết áp thấp không gây hại và thường không có triệu chứng. Tuy nhiên, khi huyết áp thường xuyên tụt đột ngột trên 20 mmHg, tụt đột ngột do dùng một số loại thuốc, hoặc cảm thấy chóng mặt, ngất xỉu, mệt mỏi... thì nên tìm cách điều trị."
                 )
             )
             listKnow.add(
                 Info(
-                    "2. Normal Range",
-                    "If your readings are higher than 90/60 mmHg and less than 120/80 mmHg, your blood pressure is normal. You need to maintain or adopt a healthy lifestyle to prevent hypertension from developing.${
-                        System.getProperty(
-                            "line.separator"
-                        )
-                    } ${System.getProperty("line.separator")}Besides, if you have any family members who have hypertension, it is recommended to be even more mindful of your lifestyle as your risk of developing hypertension can be high."
+                    "2. Phạm vi bình thường",
+                    "Nếu chỉ số của bạn cao hơn 90/60 mmHg và dưới 120/80 mmHg thì huyết áp của bạn ở mức bình thường. Bạn cần duy trì hoặc áp dụng lối sống lành mạnh để ngăn ngừa bệnh tăng huyết áp phát triển.${                        System.getProperty(
+                        "line.separator"
+                    )
+                    } ${System.getProperty("line.separator")}Ngoài ra, nếu bạn có bất kỳ thành viên nào trong gia đình bị tăng huyết áp, bạn nên chú ý hơn đến lối sống của mình vì nguy cơ mắc bệnh tăng huyết áp có thể cao."
                 )
             )
             listKnow.add(
                 Info(
-                    "3. Elevated",
-                    "When your blood pressure is higher than the normal one but doesn\\'t reach 130/80 mmHg, your BP is considered elevated. If your lifestyle and eating habits are not improved, you are very likely to develop high blood pressure."
+                    "3. Cao",
+                    "Khi huyết áp của bạn cao hơn bình thường nhưng không đạt 130/80 mmHg, huyết áp của bạn được coi là tăng cao. Nếu lối sống và thói quen ăn uống không được cải thiện, bạn rất có khả năng bị cao huyết áp."                )
+            )
+            listKnow.add(
+                Info(
+                    "4. Giai đoạn huyết áp cao 1",
+                    "Chỉ số huyết áp tâm thu ổn định trong khoảng từ 130 đến 139 mmHg hoặc chỉ số huyết áp tâm trương trong khoảng từ 80 đến 89 mmHg có nghĩa là bạn đang ở giai đoạn tăng huyết áp 1.${                        System.getProperty(
+                        "line.separator"
+                    )
+                    } ${System.getProperty("line.separator")}Nói chung, bạn chỉ cần cải thiện lối sống để kiểm soát huyết áp. Tuy nhiên, nếu bạn có nguy cơ cao mắc bệnh tim mạch (bệnh tim, đột quỵ, v.v.) thì bạn cần bắt đầu dùng thuốc phù hợp."
                 )
             )
             listKnow.add(
                 Info(
-                    "4. Hypertension Stage 1",
-                    "Consistent systolic pressure readings between 130 to 139 mmHg or diastolic pressure readings between 80 to 89 mmHg means you are at hypertension stage 1.${
-                        System.getProperty(
-                            "line.separator"
-                        )
-                    } ${System.getProperty("line.separator")}Generally speaking, you only need to improve your lifestyle to control blood pressure. However, if you have a high risk of cardiovascular disease (heart disease, stroke, etc.), you need to start taking medicine accordingly."
+                    "5. Giai đoạn huyết áp cao 2",
+                    "Tăng huyết áp giai đoạn 2 là khi bạn có chỉ số huyết áp tâm thu ổn định trong khoảng từ 140 đến 180 mmHg hoặc huyết áp tâm trương trong khoảng từ 90 đến 120 mmHg.${                        System.getProperty(
+                        "line.separator"
+                    )
+                    } ${System.getProperty("line.separator")}Ở giai đoạn này, bạn nên kết hợp thay đổi lối sống và một hoặc nhiều loại thuốc. Sau tháng điều trị đầu tiên và cải thiện lối sống, nếu huyết áp của bạn được kiểm soát, bạn có thể đến bệnh viện để đo lại sau 3 đến 6 tháng. Nếu huyết áp tăng cao hoặc không thay đổi thì cần tham khảo ý kiến bác sĩ để chuyển sang phương pháp điều trị khác."
                 )
             )
             listKnow.add(
                 Info(
-                    "5. Hypertension Stage 2",
-                    "Hypertension stage 2 is when you have consistent systolic pressure readings between 140 to 180 mmHg or diastolic pressure readings between 90 to 120 mmHg.${
-                        System.getProperty(
-                            "line.separator"
-                        )
-                    } ${System.getProperty("line.separator")}At this stage, you should combine lifestyle changes and one or more medications. After the first month of treatment and lifestyle improvement, if your blood pressure is under control, you can go to the hospital for another measurement in 3 to 6 months. If the blood pressure is higher or does not change, you need to consult a doctor to change to other treatments."
-                )
-            )
-            listKnow.add(
-                Info(
-                    "6. Hypertensive Crisis",
-                    "If you are measuring your blood pressure at home and see your systolic reading over 180 mmHg or diastolic number above 120 mmHg, you need to calm down at first then wait a few minutes to retest it. If you are still in the range of the hypertension crisis, don\\'t hesitate to call the emergency service or go to the hospital right now."
-                )
+                    "6. Huyết áp cao trầm trọng",
+                    "Nếu bạn đang đo huyết áp tại nhà và thấy chỉ số tâm thu trên 180 mmHg hoặc chỉ số tâm trương trên 120 mmHg, trước tiên bạn cần bình tĩnh sau đó đợi vài phút để kiểm tra lại. Nếu bạn vẫn ở trong phạm vi cho phép. cơn tăng huyết áp, đừng ngần ngại gọi cấp cứu hoặc đến bệnh viện ngay bây giờ."                )
             )
             //
             listLearn.add(
                 Info(
                     "",
-                    "Whether you measure your blood pressure at home or in the hospital, you must be puzzled what does blood pressure mean or by the two columns of numbers on the device screen. Don't worry, after reading this article, all will be answered."
-                )
+                    "Dù đo huyết áp tại nhà hay ở bệnh viện, chắc hẳn bạn cũng đang băn khoăn không biết huyết áp có ý nghĩa gì hay bởi hai cột số trên màn hình máy. Đừng lo lắng, sau khi đọc bài viết này, tất cả sẽ được giải đáp. "                )
             )
             listLearn.add(
                 Info(
-                    "What is blood pressure?",
-                    "The heart is like a water pump, continuously pumping blood to the blood vessels throughout the body. When blood runs, it pushes against the walls of blood vessels. The strength of pushing is namely blood pressure."
-                )
+                    "Huyết áp là gì ?",
+                    "Trái tim giống như một cái máy bơm nước, không ngừng bơm máu đến các mạch máu khắp cơ thể. Khi máu chạy, nó sẽ đẩy vào thành mạch máu. Lực đẩy chính là huyết áp."                )
             )
             listLearn.add(
                 Info(
-                    "What are two numbers on the BP device?",
-                    "Two readings on your blood pressure monitor represent systolic blood pressure and diastolic blood pressure. The top or the first number is systolic BP, meaning the amount of pressure in the arteries when your heart pushes blood through arteries. The bottom or the second number is the diastolic one, referring to the pressure in arteries when your heart is between beats."
-                )
+                    "Hai số trên thiết bị BP là gì?",
+                    "Hai chỉ số trên máy đo huyết áp của bạn biểu thị huyết áp tâm thu và huyết áp tâm trương. Số trên cùng hoặc số đầu tiên là huyết áp tâm thu, nghĩa là lượng áp lực trong động mạch khi tim bạn đẩy máu qua động mạch. Số dưới cùng hoặc số thứ hai là tâm trương, đề cập đến áp lực trong động mạch khi tim bạn ở giữa các nhịp đập."                )
             )
             //
             listFind.add(
                 Info(
-                    "Hypertension",
-                    "The human cardiovascular system seems like a water circulatory system, in which blood circulates constantly like water and transports oxygen and nutrition to organs and blood vessels.${
-                        System.getProperty("line.separator")
+                    "Tăng huyết áp",
+                    "Hệ thống tim mạch của con người giống như một hệ thống tuần hoàn nước, trong đó máu lưu thông liên tục như nước và vận chuyển oxy cũng như dinh dưỡng đến các cơ quan và mạch máu.${                        System.getProperty("line.separator")
                     } ${
                         System.getProperty("line.separator")
-                    }Blood flow becomes difficult when blood vessels lose their elasticity . At that time, your body tries to increase the strength of pushing to make blood flows, which causes hypertension."
-                )
-            )
+                    }Việc lưu thông máu trở nên khó khăn khi các mạch máu mất đi tính đàn hồi. Khi đó, cơ thể cố gắng tăng cường sức rặn khiến máu lưu thông dễ gây tăng huyết áp."
+                ))
             listFind.add(
                 Info(
-                    "│Hypotension",
-                    "If your blood pressure consistently lowers 90/60 mmHg or falls suddenly over 20 mmHg, you should keep an eye on your blood pressure. Hypotension with no symptoms usually doesn't need treatment. Nevertheless, accurate diagnosis and categorized therapies are needed if symptoms or sudden fail emerges."
-                )
+                    "│Huyết áp thấp",
+                    "Nếu huyết áp của bạn liên tục giảm 90/60 mmHg hoặc giảm đột ngột trên 20 mmHg, bạn nên theo dõi huyết áp của mình. Hạ huyết áp không có triệu chứng thường không cần điều trị. Tuy nhiên, cần chẩn đoán chính xác và phân loại liệu pháp điều trị nếu có triệu chứng hoặc thất bại đột ngột xuất hiện."                )
             )
             //
             listBreak.add(
                 Info(
                     "",
-                    "You may hear all kinds of myths about blood pressure. Believing in these myths can really make your blood pressure control vain or even make your situation worse. Below are 7 common misunderstands concerning blood pressure. Check out the following and stop believing them."
-                )
+                    "Bạn có thể nghe thấy đủ loại lầm tưởng về huyết áp. Việc tin vào những lầm tưởng này thực sự có thể khiến việc kiểm soát huyết áp của bạn trở nên vô ích hoặc thậm chí khiến tình trạng của bạn trở nên tồi tệ hơn. Dưới đây là 7 hiểu lầm phổ biến liên quan đến huyết áp. Hãy xem những điều sau đây và ngừng tin vào chúng."                )
             )
             listBreak.add(
                 Info(
-                    "1. No worries if I have the low blood pressure",
-                    "Generally speaking, if you have hypotension, some small lifestyle changes can solve the problem. However, if you experience a sudden fall of over 20 mmHg or feel fainting, fatigue, blurred vision, etc., you are in need of professional treatment. If not treated immediately, the hypotension can be life-threatening."
-                )
+                    "1.Đừng lo lắng nếu tôi bị huyết áp thấp",
+                    "Nói chung, nếu bạn bị hạ huyết áp, một số thay đổi nhỏ trong lối sống có thể giải quyết được vấn đề. Tuy nhiên, nếu bạn bị giảm đột ngột trên 20 mmHg hoặc cảm thấy ngất xỉu, mệt mỏi, mờ mắt, v.v., bạn cần được điều trị chuyên nghiệp. Nếu không được điều trị ngay lập tức, tình trạng hạ huyết áp có thể nguy hiểm đến tính mạng."                )
             )
             listBreak.add(
                 Info(
-                    "2. I don't have hypertension if no symptoms emerge",
-                    "Do you know that hypertension is called the silent killer? It often runs silent and may have no symptoms, or the symptoms may be mild, which will not be taken seriously while it is causing great damage to your health.${
+                    "2. Tôi không bị tăng huyết áp nếu không có triệu chứng gì",                    "Do you know that hypertension is called the silent killer? It often runs silent and may have no symptoms, or the symptoms may be mild, which will not be taken seriously while it is causing great damage to your health.${
                         System.getProperty("line.separator")
                     } ${
                         System.getProperty("line.separator")
-                    }When the symptoms appear, it indicates that the heart, brain, kidney, blood vessel or other organs have been severely damaged and cannot maintain normal functions. At that time, the optimal treatment opportunity has been missed. Meanwhile, complications are developed and life is under threat."
-                )
+                    }Khi các triệu chứng xuất hiện, điều đó cho thấy tim, não, thận, mạch máu hoặc các cơ quan khác đã bị tổn thương nghiêm trọng và không thể duy trì các chức năng bình thường. Khi đó, cơ hội điều trị tối ưu đã bị bỏ lỡ. Trong khi đó, các biến chứng ngày càng gia tăng và tính mạng đang bị đe dọa."                )
             )
             listBreak.add(
                 Info(
-                    "3. High blood pressure can be cured",
-                    "Only secondary hypertension can be cured as it has a clear cause. When the secondary condition is cured, secondary hypertension will not last anymore.${
-                        System.getProperty("line.separator")
+                    "3. Cao huyết áp có thể chữa khỏi",
+                    "Chỉ có tăng huyết áp thứ phát mới có thể chữa khỏi vì có nguyên nhân rõ ràng. Khi khỏi bệnh thứ phát, tăng huyết áp thứ phát sẽ không kéo dài nữa.${                        System.getProperty("line.separator")
                     } ${
                         System.getProperty("line.separator")
-                    }Primary hypertension cannot be healed yet, but it is possible to prevent or decrease its harm to the body by controlling blood pressure to normal through medications or improving lifestyle. The claim that high blood pressure can be cured by simple methods and never relapse is deceptive."
-                )
+                    }Bệnh tăng huyết áp nguyên phát vẫn chưa thể chữa khỏi nhưng có thể ngăn ngừa hoặc giảm bớt tác hại của nó đối với cơ thể bằng cách kiểm soát huyết áp về mức bình thường thông qua thuốc hoặc cải thiện lối sống. Tuyên bố rằng huyết áp cao có thể được chữa khỏi bằng các phương pháp đơn giản và không bao giờ tái phát là sai lầm."                )
             )
             listBreak.add(
                 Info(
-                    "4. Drinking red wine benefits blood pressure control",
-                    "Myth has it that resveratrol inside the red wine can maintain cardiac health. However, no study can prove that statement. If the resveratrol really could protect your cardiac health, you need to drink an excessive amount of red wine to achieve the effect, which could harm your body badly. Besides, alcohol has been proven to be of no benefit to the cardiovascular system."
-                )
+                    "4. Uống rượu vang đỏ giúp kiểm soát huyết áp",
+                    "Có truyền thuyết cho rằng resveratrol trong rượu vang đỏ có thể duy trì sức khỏe tim mạch. Tuy nhiên, không có nghiên cứu nào có thể chứng minh tuyên bố đó. Nếu resveratrol thực sự có thể bảo vệ sức khỏe tim mạch của bạn, bạn cần uống quá nhiều rượu vang đỏ để đạt được hiệu quả. có thể gây hại nặng nề cho cơ thể. Ngoài ra, rượu đã được chứng minh là không có lợi cho hệ tim mạch."                )
             )
             listBreak.add(
                 Info(
-                    "5. I can stop taking medicines if my blood pressure is under control",
-                    "This is totally wrong and can be misleading. Primary hypertension can never be cured and most patients need to take medication all their lives. Your blood pressure under control is the result of drug control, not that high blood pressure has been cured. Once the drug is stopped, blood pressure is likely to rebound. Moreover, quit taking certain drugs will cause serious withdrawal reactions.${
+                    "5. Tôi có thể ngừng dùng thuốc nếu huyết áp của tôi được kiểm soát",                    "This is totally wrong and can be misleading. Primary hypertension can never be cured and most patients need to take medication all their lives. Your blood pressure under control is the result of drug control, not that high blood pressure has been cured. Once the drug is stopped, blood pressure is likely to rebound. Moreover, quit taking certain drugs will cause serious withdrawal reactions.${
                         System.getProperty(
                             "line.separator"
                         )
-                    } ${System.getProperty("line.separator")}So even if your blood pressure has been stable for a long time, your medication should not be changed or stopped without proper guidance. Consult the doctor before making any changes to the medication Vou should reduce the amount of medication under your doctor's guidance, monitor blood pressure regularly, and maintain a healthy lifestyle."
+                    } ${System.getProperty("line.separator")}Vì vậy, ngay cả khi huyết áp của bạn đã ổn định trong thời gian dài, bạn cũng không nên thay đổi hoặc dừng thuốc mà không có hướng dẫn thích hợp. Hãy tham khảo ý kiến bác sĩ trước khi thực hiện bất kỳ thay đổi nào đối với thuốc, bạn nên giảm lượng thuốc theo hướng dẫn của bác sĩ, theo dõi huyết áp thường xuyên và duy trì lối sống lành mạnh."
                 )
             )
             listBreak.add(
                 Info(
-                    "6. Young people will not get hypertension",
-                    "Although patients with hypertension are common among middle-aged and elderly people, young people can also suffer from it. The level of blood pressure is affected by age, body size, level of sexual development, lifestyle, etc."
-                )
+                    "6. Người trẻ sẽ không bị cao huyết áp",
+                    "Mặc dù bệnh nhân tăng huyết áp thường gặp ở người trung niên và người cao tuổi, nhưng những người trẻ tuổi cũng có thể mắc bệnh này. Mức độ huyết áp bị ảnh hưởng bởi tuổi tác, kích thước cơ thể, mức độ phát triển giới tính, lối sống, v.v."                )
             )
             listBreak.add(
                 Info(
-                    "7. Only men can develop hypertension",
-                    "The risk difference between men and women actually depends on age. Before the age of 45, men are at greater risk of hypertension than women. Between the ages of 45 and 64, they have almost the same risk. It is worth noting that after 64 years old, women's risk of getting high blood pressure is higher than men's."
-                )
+                    "7. Chỉ có nam giới mới bị tăng huyết áp",
+                    "Sự khác biệt về nguy cơ giữa nam và nữ thực ra phụ thuộc vào độ tuổi. Trước 45 tuổi, nam giới có nguy cơ mắc bệnh tăng huyết áp cao hơn nữ giới. Trong độ tuổi từ 45 đến 64, họ có nguy cơ gần như ngang nhau. Điều đáng chú ý là sau đó 64 tuổi, nguy cơ cao huyết áp của phụ nữ cao hơn nam giới."                )
             )
             //
             listType.add(
                 Info(
                     "",
-                    "Do you know there are two main types of high blood pressure? One is primary and another one is secondary high blood pressure. They have different causes and let's read on to know more about them."
-                )
+                    "Bạn có biết có hai loại bệnh cao huyết áp chính không? Một loại là nguyên phát và một loại là cao huyết áp thứ phát. Chúng có những nguyên nhân khác nhau và hãy đọc tiếp để biết thêm về chúng."                )
             )
             listType.add(
                 Info(
                     "Primary Hypertension",
-                    "The most common hypertension is the primary type. It means a consistently high blood pressure not related to another medical condition. Despite years of research on hypertension, a specific cause isn't known. Unhealthy diets, physical inactivity, consumption of tobacco and alcohol, being overweight or obese, etc. could elevate your blood pressure.${
-                        System.getProperty("line.separator")
-                    } ${System.getProperty("line.separator")}Patients' blood pressure will rise as age increases. The curing method has not been found until now. Therefore, most patients need to take medication to control blood pressure all life long."
+                    "Bệnh tăng huyết áp phổ biến nhất là loại nguyên phát. Nó có nghĩa là huyết áp cao liên tục không liên quan đến tình trạng bệnh lý khác. Mặc dù đã có nhiều năm nghiên cứu về bệnh tăng huyết áp nhưng nguyên nhân cụ thể vẫn chưa được xác định. Chế độ ăn uống không lành mạnh, không hoạt động thể chất, tiêu thụ thuốc lá và rượu , thừa cân hoặc béo phì, v.v. có thể làm tăng huyết áp của bạn.${                        System.getProperty("line.separator")
+                    } ${System.getProperty("line.separator")}Huyết áp của bệnh nhân sẽ tăng theo độ tuổi. Phương pháp chữa bệnh cho đến nay vẫn chưa được tìm ra. Vì vậy, hầu hết bệnh nhân cần dùng thuốc để kiểm soát huyết áp suốt đời."
                 )
             )
             listType.add(
                 Info(
                     "Secondary Hypertension",
-                    "Only about 5 to 10 percent of hypertension is the secondary type. Besides, it is proved that younger people are likely to have secondary hypertension.${
-                        System.getProperty(
-                            "line.separator"
-                        )
-                    } ${System.getProperty("line.separator")}Secondary hypertension is caused by certain medications such as birth control pills, etc., or various conditions like obstructive sleep apnea, kidney disease, adrenal gland tumors, thyroid problems, blood vessel defects, etc. When patients stop taking the medicine or cure the secondary condition, secondary hypertension will get better."
+                    "Chỉ có khoảng 5 đến 10% bệnh nhân tăng huyết áp là loại thứ phát. Ngoài ra, người ta đã chứng minh rằng những người trẻ tuổi có nguy cơ mắc bệnh tăng huyết áp thứ phát.${                        System.getProperty(
+                        "line.separator"
+                    )
+                    } ${System.getProperty("line.separator")}Tăng huyết áp thứ phát là do một số loại thuốc như thuốc tránh thai, v.v. hoặc do các tình trạng khác nhau như ngưng thở khi ngủ do tắc nghẽn, bệnh thận, u tuyến thượng thận, các vấn đề về tuyến giáp, dị tật mạch máu, v.v. Khi bệnh nhân ngừng dùng thuốc hoặc chữa khỏi bệnh thứ phát tình trạng tăng huyết áp thứ phát sẽ thuyên giảm."
                 )
             )
             //
             listNotice.add(
                 Info(
-                    "1. Headache",
-                    "Headache led by high blood pressure usually indicates an emergency. When the blood pressure is too high, it can damage the blood vessels of your brain, leading to an increase in intracranial pressure. You will have pulsating headaches on both sides of your head and any activity will make the headache worse."
-                )
+                    "1. Đau đầu",
+                    "Đau đầu do huyết áp cao thường là dấu hiệu cấp cứu. Khi huyết áp quá cao, nó có thể làm tổn thương các mạch máu trong não, dẫn đến tăng áp lực nội sọ. Bạn sẽ bị đau đầu từng cơn ở hai bên đầu và bất kỳ hoạt động nào cũng sẽ khiến cơn đau đầu trở nên tồi tệ hơn."                )
             )
             listNotice.add(
                 Info(
-                    "2. Dizziness",
-                    "Although dizziness may be a side effect of taking anti hypertensive medication, you should not take it for granted. Severe high blood pressure is a major cause of stroke. Sudden dizziness, loss of balance or unsteady walking can all be a sign of stroke."
-                )
+                    "2. Chóng mặt",
+                    "Mặc dù chóng mặt có thể là tác dụng phụ của việc dùng thuốc hạ huyết áp, nhưng bạn không nên coi thường nó. Huyết áp cao nghiêm trọng là nguyên nhân chính gây đột quỵ. Chóng mặt đột ngột, mất thăng bằng hoặc đi lại không vững đều có thể là dấu hiệu của đột quỵ. "                )
             )
             listNotice.add(
                 Info(
-                    "3. Nausea",
-                    "If you are a person with hypertension and experience sudden nausea and loss of appetite, you may come across a hypertensive crisis. Nausea caused by extremely high blood pressure usually happens together with dizziness."
-                )
+                    "3. Buồn nôn",
+                    "Nếu bạn là một người bị tăng huyết áp và đột nhiên cảm thấy buồn nôn và chán ăn, bạn có thể gặp phải cơn tăng huyết áp. Buồn nôn do huyết áp quá cao thường xảy ra cùng với chóng mặt."                )
             )
             listNotice.add(
                 Info(
-                    "4. Shortness of breath",
-                    "High blood pressure will affect heart and lung function, leading to shortness of breath. When patients exercise, that could be more noticeable."
-                )
+                    "4. Hụt hơi",
+                    "Huyết áp cao sẽ ảnh hưởng đến chức năng tim và phổi, dẫn đến khó thở. Khi bệnh nhân tập thể dục, điều đó có thể dễ nhận thấy hơn."                )
             )
             listNotice.add(
                 Info(
-                    "5. Chest pain",
-                    "Hypertension is a leading risk factor for heart attack and heart failure. High blood pressure hardens arteries, bringing difficult blood flow and oxygen delivery. It means less blood reaching the heart and eventually invoking chest pain, also called angina."
-                )
+                    "5. Đau ngực",
+                    "Tăng huyết áp là yếu tố nguy cơ hàng đầu gây ra đau tim và suy tim. Huyết áp cao làm cứng động mạch, khiến lưu lượng máu và cung cấp oxy khó khăn. Điều đó có nghĩa là ít máu đến tim hơn và cuối cùng gây ra đau ngực, còn gọi là đau thắt ngực."                )
             )
             listNotice.add(
                 Info(
-                    "6. Blurred vision",
-                    "There are many small vessels on your eyeballs. When your blood pressure rises to a dangerous level, these vessels can be damaged to bleed, which causes blurred vision or even loss of vision."
-                )
+                    "6.Mờ mắt",
+                    "Trên nhãn cầu của bạn có rất nhiều mạch máu nhỏ. Khi huyết áp tăng đến mức nguy hiểm, những mạch máu này có thể bị tổn thương dẫn đến chảy máu, gây mờ mắt, thậm chí mất thị lực."                )
             )
             listNotice.add(
                 Info(
-                    "7. Nosebleed",
-                    "Hypertension usually doesn't cause nosebleed unless your blood pressure is extremely high. The bleeding means vessels inside your nose are damaged. At this point, you need to call an ambulance or go to the hospital immediately."
-                )
+                    "7. Chảy máu cam",
+                    "Tăng huyết áp thường không gây chảy máu cam trừ khi huyết áp của bạn quá cao. Chảy máu có nghĩa là các mạch bên trong mũi của bạn bị tổn thương. Lúc này, bạn cần gọi xe cấp cứu hoặc đến bệnh viện ngay lập tức."                )
             )
             //
             listProblem.add(
                 Info(
                     "",
-                    "High blood pressure is a big threat to your health. It can steadily damage your heart, brain, kidney and eyes with no symptoms. If you want to know hypertension's effects on your body, read below to get a clear view."
+                    "Huyết áp cao là mối đe dọa lớn đối với sức khỏe của bạn. Nó có thể gây tổn thương dần dần cho tim, não, thận và mắt của bạn mà không có triệu chứng. Nếu bạn muốn biết tác động của bệnh tăng huyết áp lên cơ thể mình, hãy đọc phần bên dưới để có cái nhìn rõ ràng."                )
+            )
+            listProblem.add(
+                Info(
+                    "1. Tăng huyết áp dẫn đến bệnh tim",
+                    "Huyết áp cao có thể gây ra bệnh tim mạch vành, suy tim, v.v. Một số nghiên cứu minh họa rằng khoảng 1/4 số trường hợp suy tim là do huyết áp cao.${                        System.getProperty("line.separator")
+                    } ${System.getProperty("line.separator")}Tăng huyết áp sẽ làm cho động mạch kém linh hoạt và khiến các chất béo làm tắc nghẽn mạch máu, điều này cho thấy việc lưu thông máu đến tim trở nên bất khả thi. Khi đó, tim cần làm cho tâm thất trái hoạt động mạnh hơn và bơm máu đến các cơ quan khác nhau.${  System.getProperty(
+                        "line.separator"
+                    )
+                    } ${System.getProperty("line.separator")}Cuối cùng, khối lượng công việc tăng thêm sẽ khiến tâm thất trái giãn nở, làm tăng đáng kể nguy cơ phát triển bệnh tim. Mặt khác, tim trở nên yếu và không thể bơm máu dẫn đến suy tim."
                 )
             )
             listProblem.add(
                 Info(
-                    "1. Hypertension leads to heart diseases",
-                    "High blood pressure can cause coronary heart disease, heart failure, etc. Some studies illustrate that about a quarter of heart failure cases are caused by high blood pressure.${
-                        System.getProperty("line.separator")
-                    } ${System.getProperty("line.separator")}Hypertension will make arteries less flexible and cause fatty substances to block blood vessels, which indicates smooth blood flow to the heart becomes impossible. At that time, the heart needs to make the left ventricle work harder and pump blood to various organs.${
+                    "2. Tăng huyết áp có thể làm hỏng não của bạn",
+                    "Huyết áp cao có thể gây ra cơn thiếu máu cục bộ thoáng qua, đột quỵ, mất trí nhớ, suy giảm nhận thức nhẹ và các bệnh về não khác.${                        System.getProperty("line.separator")
+                    } ${System.getProperty("line.separator")}Huyết áp tăng sẽ làm tắc nghẽn động mạch và hạn chế máu lên não. Não không thể hoạt động khi thiếu máu cung cấp, dẫn đến cơn thiếu máu cục bộ thoáng qua (TIA).${      System.getProperty(
+                        "line.separator"
+                    )
+                    } ${System.getProperty("line.separator")}Huyết áp quá cao khiến mạch máu não mất đi tính linh hoạt. Hiện tượng này khiến chất dinh dưỡng và oxy không thể vận chuyển lên não khiến tế bào não chết và xảy ra đột quỵ. Huyết áp càng cao thì nguy cơ bị đột quỵ càng cao. Các nghiên cứu đã chỉ ra rằng huyết áp cao có thể làm tăng nguy cơ đột quỵ ở nam giới lên 220%.${
                         System.getProperty(
                             "line.separator"
                         )
-                    } ${System.getProperty("line.separator")}Eventually, the extra workload will cause the left ventricle to expand, which greatly increases the risk of developing heart diseases. On the other hand, the heart becomes weak and is not able to pump blood, leading to heart failure."
+                    } ${System.getProperty("line.separator")}Ngoại trừ TIA và đột quỵ, huyết áp cao cũng có thể dẫn đến xơ cứng mạch máu ở vùng nhận thức của bạn. Điều đó có nghĩa là bệnh nhân có thể bị suy giảm nhận thức và dần dần có thể phát triển thành chứng mất trí nhớ."
                 )
             )
             listProblem.add(
                 Info(
-                    "2. Hypertension can damage your brain",
-                    "High blood pressure can cause transient ischemic attack, stroke, dementia, mild cognitive impairment, and other brain diseases.${
-                        System.getProperty("line.separator")
-                    } ${System.getProperty("line.separator")}Raised blood pressure will block arteries and limit blood reaching the brain. The brain could not function when it is short of blood supply, leading to transient ischemic attack (TIA).${
-                        System.getProperty(
-                            "line.separator"
-                        )
-                    } ${System.getProperty("line.separator")}Excessive blood pressure leads to brain blood vessels losing their flexibility. This phenomenon makes it impossible for nutrients and oxygen to be transported to the brain, which causes brain cells to die and stroke occurs. The higher your blood pressure is, the greater your chance of developing a stroke. Studies have shown that high blood pressure can boost the risk of stroke in men by 220%.${
-                        System.getProperty(
-                            "line.separator"
-                        )
-                    } ${System.getProperty("line.separator")}Except for TIA and stroke, high blood pressure can also result in vascular sclerosis of your cognitive area. That means patients can be affected with cognitive impairment and gradually may develop into dementia."
+                    "3. Tăng huyết áp sẽ gây ra vấn đề về thận",
+                    "Thận và huyết áp có mối liên hệ chặt chẽ với nhau. Máu mang chất thải trao đổi chất qua thận. Một quả thận khỏe mạnh lọc khoảng nửa cốc máu mỗi phút, thải lượng nước dư thừa và chất thải trao đổi chất dưới dạng nước tiểu.${                        System.getProperty("line.separator")
+                    } ${System.getProperty("line.separator")}Vì vậy, khi huyết áp cao, thành mạch máu sẽ dày lên để chống lại áp lực quá mức. Cái giá của sự thay đổi này là mạch máu trở nên hẹp hơn, không có lợi cho quá trình lọc chất thải. Hơn nữa, ngay cả việc cung cấp máu cơ bản cho thận cũng không thể được đảm bảo. Nó dẫn đến teo thận do thiếu máu cục bộ, bệnh thận mãn tính và phát triển bệnh suy thận theo thời gian."
                 )
             )
             listProblem.add(
                 Info(
-                    "3. Hypertension will cause kidney problems",
-                    "Kidney and blood pressure are closely linked. The blood carries metabolic waste through the kidneys. A healthy kidney filters about half a cup of blood every minute, discharging excess water and metabolic waste as urine.${
-                        System.getProperty("line.separator")
-                    } ${System.getProperty("line.separator")}Therefore, when the blood pressure is high, the walls of blood vessels will thicken to resist the excessive pressure. The price of this change is that the blood vessel becomes narrower, which is not conducive to the filtration of wastes. Furthermore, even the basic blood supply to the kidneys cannot be guaranteed. It leads to ischemic atrophy of the kidneys, chronic kidney disease, and the development of renal failure over time."
-                )
-            )
-            listProblem.add(
-                Info(
-                    "4. Hypertension affects eyesight",
-                    "Extreme high blood pressure will cause swelling of the retina. Patients will experience blurred vision or even loss of eyesight.${
-                        System.getProperty("line.separator")
-                    } ${System.getProperty("line.separator")}The retina is at the back of the eye and functions image focusing. When the blood pressure is too high, the blood vessel walls of the retina will thicken and make the blood vessels narrow. Over time, high blood pressure can damage retinal blood vessels, limit retinal function, and put pressure on the optic nerve, causing vision problems."
+                    "4. Tăng huyết áp ảnh hưởng đến thị lực",
+                    "Huyết áp cao sẽ gây sưng võng mạc. Bệnh nhân sẽ bị mờ mắt hoặc thậm chí mất thị lực.${                        System.getProperty("line.separator")
+                    } ${System.getProperty("line.separator")}Võng mạc nằm ở phía sau mắt và có chức năng lấy nét hình ảnh. Khi huyết áp quá cao, thành mạch máu của võng mạc sẽ dày lên và khiến mạch máu bị thu hẹp. Theo thời gian, huyết áp cao có thể làm tổn thương mạch máu võng mạc, hạn chế chức năng của võng mạc và gây áp lực lên dây thần kinh thị giác, gây ra các vấn đề về thị lực."
                 )
             )
             //
             listUnderstand.add(
                 Info(
-                    "Understanding Hypotension Symptoms",
-                    "<p>Hypotension symptoms include:</p>\n" +
-                            "<p>&bull; Blurred vision</p>\n" +
-                            "<p>&bull; Dizziness or fainting</p>\n" +
-                            "<p>&bull; Inability to concentrate</p>\n" +
-                            "<p>&bull; Nausea</p>\n" +
-                            "<p>&bull; Rapid breathing</p>\n" +
-                            "<p>&bull; Fatigue</p>\n"
+                    "Tìm hiểu các triệu chứng hạ huyết áp",
+                    "<p>Các triệu chứng hạ huyết áp bao gồm:</p>\n" +
+                            "<p>&bull; Mờ mắt</p>\n" +
+                            "<p>&bull; Chóng mặt hoặc ngất xỉu</p>\n" +
+                            "<p>&bull; Không có khả năng tập trung</p>\n" +
+                            "<p>&bull; Buồn nôn</p>\n" +
+                            "<p>&bull; Thở nhanh</p>\n" +
+                            "<p>&bull; Mệt mỏi</p>\n"
                 )
             )
             listUnderstand.add(
                 Info(
-                    "Understanding Hypotension Types",
-                    "<<p>If you keep getting these symptoms and wonder the reason, you can get your blood pressure measured and check below to see whether you belong to these types of hypotension.</p>\n" +
-                            "<h2>1. Orthostatic hypotension</h2>\n" +
-                            "<p>Hypotension caused by rising from a lying down or sitting position to standing is called orthostatic hypotension. It is common as nearly one-fifth of elderly over 65 years old will have it. Besides, beta-blockers, ACE inhibitors, antidepressants and drugs used to treat Parkinson&apos;s disease can also lead to orthostatic hypotension.</p>\n" +
-                            "<h2>2. Postprandial hypotension</h2>\n" +
-                            "<p>Postprandial hypotension is often considered a geriatric condition, as it usually appears when older adults finish their eating, and almost no young people will have it.</p>\n" +
-                            "<p>When blood flows to the intestines after a meal, the heart beats faster, while the blood vessels in other parts of the body would constrict to maintain blood pressure. However, some elderly people&apos;s bodies cannot function normally. When blood flows to the intestines, the heart rate cannot be increased sufficiently, and the vasoconstriction is not enough to maintain blood pressure, which causes a drop in blood pressure.</p>\n" +
-                            "<h2>3. Neurally mediated hypotension</h2>\n" +
-                            "<p>This type of low blood pressure occurs when the heart and the brain lack communication. People standing for a long time or being very emotional can have neurally mediated hypotension. At that time, the heart needs to pump blood faster to transport blood to the brain. However, the brain delivers the message that the heart rate should be lowered, which brings blood vessels dilatation of lower body and arms, thereby contributing to not enough blood getting to the brain.</p>\n"
+                    "Tìm hiểu các loại hạ huyết áp",
+                    "<<p>Nếu bạn tiếp tục gặp những triệu chứng này và thắc mắc nguyên nhân, bạn có thể đo huyết áp và kiểm tra bên dưới để xem bạn có thuộc loại hạ huyết áp này hay không.</p>\n" +
+                            "<h2>1. Hạ huyết áp thế đứng</h2>\n" +
+                            "<p>Hạ huyết áp do chuyển từ tư thế nằm hoặc ngồi sang tư thế đứng gọi là hạ huyết áp thế đứng. Bệnh này thường gặp vì gần 1/5 người già trên 65 tuổi mắc phải. Ngoài ra, còn dùng thuốc chẹn beta, thuốc ức chế ACE, thuốc chống trầm cảm. và các loại thuốc dùng để điều trị bệnh Parkinson cũng có thể dẫn đến hạ huyết áp thế đứng.</p>\n" +
+                            "<h2>2. Hạ huyết áp sau bữa ăn</h2>\n" +
+                            "<p>Hạ huyết áp sau bữa ăn thường được coi là một tình trạng lão khoa, vì nó thường xuất hiện khi người lớn tuổi ăn xong và hầu như không có người trẻ nào mắc bệnh này.</p>\n" +
+                            "<p>Khi máu chảy đến ruột sau bữa ăn, tim đập nhanh hơn, trong khi các mạch máu ở các bộ phận khác trong cơ thể sẽ co lại để duy trì huyết áp. Tuy nhiên, cơ thể của một số người cao tuổi không thể hoạt động bình thường. Khi máu chảy xuống ruột, nhịp tim không thể tăng đủ, lực co mạch không đủ để duy trì huyết áp nên gây tụt huyết áp.</p>\n" +
+                            "<h2>3. Hạ huyết áp qua trung gian thần kinh</h2>\n" +
+                            "<p>Loại huyết áp thấp này xảy ra khi tim và não thiếu sự giao tiếp. Những người đứng lâu hoặc xúc động nhiều có thể bị hạ huyết áp qua trung gian thần kinh. Khi đó, tim cần bơm máu nhanh hơn để vận chuyển máu Tuy nhiên, não đưa ra thông điệp rằng nhịp tim nên giảm xuống, khiến các mạch máu ở phần dưới cơ thể và cánh tay bị giãn ra, từ đó góp phần khiến máu lên não không đủ.</p>\n"
                 )
             )
             listUnderstand.add(
                 Info(
-                    "Understand Hypotension: Symptoms & Types",
-                    "<p>Understanding Other Hypotension Causes</p>\n" +
-                            "<h2>Other causes of consistent hypotension</h2>\n" +
-                            "<p>&bull; Pregnancy, hormonal changes affect the blood vessels and circulatory system so that blood pressure may be lower during the first 24 weeks of pregnancy</p>\n" +
-                            "<p>&bull; Arrhythmia (abnormal heartbeat)</p>\n" +
-                            "<p>&bull; Heart disease</p>\n" +
-                            "<p>&bull; Certain over-the-counter drugs used in combination with hypertension drugs</p>\n" +
-                            "<p>&bull; Endocrine disorders such as diabetes, adrenal insufficiency and thyroid disease</p>\n" +
-                            "<h2>Reasons for sudden fall of blood pressure</h2>\n" +
-                            "<p>&bull; Loss of blood from bleeding</p>\n" +
-                            "<p>&bull; Low body temperature</p>\n" +
-                            "<p>&bull; High body temperature</p>\n" +
-                            "<p>&bull; Heart muscle disease causing heart failure</p>\n" +
-                            "<p>&bull; Sepsis, a severe blood infection</p>\n" +
-                            "<p>&bull; Severe dehydration from vomiting, diarrhea, or fever</p>\n" +
-                            "<p>&bull; A reaction to medication or alcohol</p>\n" +
-                            "<p>&bull; A severe allergic reaction</p>\n"
+                    "Hiểu về hạ huyết áp: Triệu chứng & phân loại",
+                    "<p>Tìm hiểu các nguyên nhân gây hạ huyết áp khác</p>\n" +
+                            "<h2>Các nguyên nhân khác gây hạ huyết áp liên tục</h2>\n" +
+                            "<p>&bull; Mang thai, nội tiết tố thay đổi ảnh hưởng đến mạch máu và hệ tuần hoàn nên huyết áp có thể thấp hơn trong 24 tuần đầu của thai kỳ</p>\n" +
+                            "<p>&bull; Chứng loạn nhịp tim (nhịp tim bất thường)</p>\n" +
+                            "<p>&bull; Bệnh tim</p>\n" +
+                            "<p>&bull; Một số loại thuốc không kê đơn được sử dụng kết hợp với thuốc tăng huyết áp</p>\n" +
+                            "<p>&bull; Rối loạn nội tiết như tiểu đường, suy tuyến thượng thận và bệnh tuyến giáp</p>\n" +
+                            "<h2>Nguyên nhân tụt huyết áp đột ngột</h2>\n" +
+                            "<p>&bull; Mất máu do chảy máu</p>\n" +
+                            "<p>&bull; Nhiệt độ cơ thể thấp</p>\n" +
+                            "<p>&bull; Nhiệt độ cơ thể cao</p>\n" +
+                            "<p>&bull;Bệnh cơ tim gây suy tim</p>\n" +
+                            "<p>&bull; Nhiễm trùng huyết, nhiễm trùng máu nghiêm trọng</p>\n" +
+                            "<p>&bull; Mất nước nghiêm trọng do nôn mửa, tiêu chảy hoặc sốt</p>\n" +
+                            "<p>&bull; Phản ứng với thuốc hoặc rượu</p>\n" +
+                            "<p>&bull; Phản ứng dị ứng nghiêm trọng</p>\n"
                 )
             )
             //
             listDrugsHyper.add(
                 Info(
                     "",
-                    "If you are diagnosed with high blood pressure and need medical treatment, you might wonder what treatment option is useful and suitable to take care of your body. Here we present four medications that your doctor considers first for you. You can check what you are taking to understand the therapy better and to control annoying hypertension better."
+                    "Nếu bạn được chẩn đoán mắc bệnh cao huyết áp và cần điều trị y tế, bạn có thể băn khoăn không biết lựa chọn điều trị nào hữu ích và phù hợp để chăm sóc cơ thể mình. Sau đây, chúng tôi trình bày bốn loại thuốc mà bác sĩ cân nhắc đầu tiên cho bạn. Bạn có thể kiểm tra xem mình đang mắc bệnh gì. để hiểu rõ hơn về liệu pháp điều trị và kiểm soát tình trạng tăng huyết áp khó chịu tốt hơn."
                 )
             )
             listDrugsHyper.add(
                 Info(
-                    "1. Angiotensin-converting enzyme (ACE)",
-                    "<p>This kind of medication plays an important role in relaxing blood vessels and blocking some hormone&apos;s actions in order to control blood pressure. Meanwhile, what needs to be mentioned is that it would make blood supply to kidneys less efficient.</p>\n" +
+                    "1. Enzym chuyển đổi angiotensin (ACE)",
+                    "<p>Loại thuốc này có vai trò quan trọng trong việc làm giãn mạch máu và ngăn chặn hoạt động của một số hormone nhằm kiểm soát huyết áp. Trong khi đó, điều cần phải đề cập là sẽ khiến việc cung cấp máu cho thận kém hiệu quả hơn.< /p>\n" +
                             "<p><br></p>\n" +
-                            "<h2>WHO should not take ACE?</h2>\n" +
-                            "<p><strong>&bull; Pregnant women</strong></p>\n" +
-                            "<p>ACE can be harmful to babies during the last six months of pregnancy. Thus, to better protect yourself and your baby, you&apos;d better choose another type of treatment to control blood pressure under the guidance of your doctor.</p>\n" +
-                            "<p><strong>&bull; People with kidney diseases</strong></p>\n" +
-                            "<p>As ACE could reduce the kidney blood supply, it is not safe for this type of person to use it.</p>\n" +
-                            "<p><strong>&bull; People with a severe allergic reaction</strong></p>\n" +
-                            "<p>If taking the ACE causes any severe allergic reaction to your body, stop taking it and seek medical care immediately.</p>\n"
+                            "<h2>Ai không nên dùng ACE?</h2>\n" +
+                            "<p><strong>&bull; Phụ nữ mang thai</strong></p>\n" +
+                            "<p>ACE có thể gây hại cho trẻ sơ sinh trong 6 tháng cuối của thai kỳ. Vì vậy, để bảo vệ bản thân và con bạn tốt hơn, tốt nhất bạn nên chọn phương pháp điều trị khác để kiểm soát huyết áp theo hướng dẫn của bác sĩ.</p> p>\n" +
+                            "<p><strong>&bull; Người mắc bệnh thận</strong></p>\n" +
+                            "<p>Vì ACE có thể làm giảm lượng máu cung cấp cho thận nên loại người này sử dụng nó sẽ không an toàn.</p>\n" +
+                            "<p><strong>&bull; Người bị dị ứng nặng</strong></p>\n" +
+                            "<p>Nếu dùng ACE gây ra bất kỳ phản ứng dị ứng nghiêm trọng nào cho cơ thể bạn, hãy ngừng dùng thuốc và tìm kiếm sự chăm sóc y tế ngay lập tức.</p>\n"
                 )
             )
             listDrugsHyper.add(
                 Info(
-                    "2. Diuretics",
-                    "<p>Another common type of hypertension medication is diuretic, which facilitates urination to discharge excess sodium (salt) and water to control blood pressure. It is often applied with other medications in treating high blood pressure.</p>\n" +
+                    "2. Thuốc lợi tiểu",
+                    "<p>Một loại thuốc điều trị tăng huyết áp phổ biến khác là thuốc lợi tiểu, giúp bài tiết natri (muối) và nước dư thừa để kiểm soát huyết áp. Thuốc này thường được áp dụng cùng với các loại thuốc khác trong điều trị huyết áp cao.</p>\n" +
                             "<p><br></p>\n" +
-                            "<h2>WHO should not take diuretics?</h2>\n" +
-                            "<p><strong>&bull; Older people</strong></p>\n" +
-                            "<p>They tend to have a more severe reaction to dehydration, which indicates diuretics should be avoided.</p>\n" +
-                            "<p><strong>&bull; Pregnant and breastfeeding women</strong></p>\n" +
-                            "<p>Diuretics may be passed from the mother&apos;s body to the baby, thereby contributing to the dehydration of the baby.</p>\n" +
-                            "<p><strong>&bull; Kids</strong></p>\n" +
-                            "<p>Diuretics can cause calcium deficiency, leading to impaired bone development.</p>\n"
+                            "<h2>Ai không nên dùng thuốc lợi tiểu?</h2>\n" +
+                            "<p><strong>&bull; Người lớn tuổi</strong></p>\n" +
+                            "<p>Họ có xu hướng phản ứng nghiêm trọng hơn với tình trạng mất nước, điều này cho thấy nên tránh dùng thuốc lợi tiểu.</p>\n" +
+                            "<p><strong>&bull; Phụ nữ mang thai và cho con bú</strong></p>\n" +
+                            "<p>Thuốc lợi tiểu có thể được truyền từ cơ thể mẹ sang con, do đó góp phần làm trẻ mất nước.</p>\n" +
+                            "<p><strong>&bull; Trẻ con</strong></p>\n" +
+                            "<p>Thuốc lợi tiểu có thể gây thiếu hụt canxi, dẫn đến suy giảm sự phát triển của xương.</p>\n"
                 )
             )
             listDrugsHyper.add(
                 Info(
-                    "3. Angiotensin II receptor blockers (ARBS)",
-                    "<p>To illustrate how ARB works to lower your blood pressure, we have to mention angiotensin. It can narrow blood vessels when binding in a receptor place. The ARBS prevent its binding on blood vessels, hence, making vessels staying open and reducing blood pressure.</p>\n" +
+                    "3. Thuốc ức chế thụ thể Angiotensin II (ARBS)",
+                    "<p>Để minh họa cách ARB hoạt động nhằm hạ huyết áp, chúng ta phải đề cập đến angiotensin. Nó có thể thu hẹp các mạch máu khi liên kết ở vị trí thụ thể. ARBS ngăn cản sự liên kết của nó với các mạch máu, do đó, làm cho các mạch máu luôn mở và giảm huyết áp.</p>\n" +
                             "<p><br></p>\n" +
-                            "<h2>WHO should not take ARBs?</h2>\n" +
-                            "<p><strong>&bull; People with certain kidney problems</strong></p>\n" +
-                            "<p>Individuals with narrowed arteries to the kidney (renal artery stenosis) or very poor kidney function can have severe reactions to ARBs.</p>\n" +
-                            "<p><strong>&bull; People with low levels of sodium in the blood</strong></p>\n" +
-                            "<p>ARBS can inhibit the mechanism of angiotensin II, thereby reducing sodium in the renal tubules and worsening your sodium deficiency.</p>\n" +
-                            "<p><strong>&bull; Pregnant and breastfeeding women &amp;#38; people with severe allergy</strong></p>\n" +
-                            "<p>Those people also need to ask for doctor&apos;s advice concerning taking ARBs.</p>\n"
+                            "<h2>AI không nên dùng ARB?</h2>\n" +
+                            "<p><strong>&bull; Những người có vấn đề về thận</strong></p>\n" +
+                            "<p>Những người bị thu hẹp động mạch đến thận (hẹp động mạch thận) hoặc chức năng thận rất kém có thể có phản ứng nghiêm trọng với ARB.</p>\n" +
+                            "<p><strong>&bull; Những người có nồng độ natri trong máu thấp</strong></p>\n" +
+                            "<p>ARBS có thể ức chế cơ chế của angiotensin II, do đó làm giảm natri trong ống thận và làm trầm trọng thêm tình trạng thiếu natri của bạn.</p>\n" +
+                            "<p><strong>&bull; Phụ nữ mang thai và cho con bú &amp;#38; người bị dị ứng nặng</strong></p>\n" +
+                            "<p>Những người đó cũng cần xin lời khuyên của bác sĩ về việc dùng ARB.</p>\n"
                 )
             )
             listDrugsHyper.add(
                 Info(
-                    "4. Calcium channel blockers",
-                    "<p>You may wonder how blood pressure control can be related to calcium. However, calcium can flow into muscle cells of the heart and arteries, making muscles contracting stronger and harder. Calcium channel blockers work by blocking calcium into your blood vessels, which relaxes muscle contractions to lower your blood pressure.</p>\n" +
+                    "4. Thuốc chẹn kênh canxi",
+                    "<p>Bạn có thể thắc mắc làm thế nào việc kiểm soát huyết áp có thể liên quan đến canxi. Tuy nhiên, canxi có thể chảy vào các tế bào cơ của tim và động mạch, làm cho cơ co bóp mạnh hơn và cứng hơn. Thuốc chẹn kênh canxi hoạt động bằng cách chặn canxi vào mạch máu của bạn, giúp thư giãn các cơn co thắt cơ để hạ huyết áp.</p>\n" +
                             "<p><br></p>\n" +
-                            "<h2>WHO should not take calcium channel blockers?</h2>\n" +
-                            "<p><strong>&bull; People with heart problems</strong></p>\n" +
-                            "<p>If you have congestive heart failure or structural heart problems, calcium channel blockers may decrease your heart rate and harm your body</p>\n" +
-                            "<p><strong>&bull; Pregnant and breastfeeding women &amp;#38; people with severe allergy</strong></p>\n" +
-                            "<p>Those people also need to ask for doctor&apos;s advice concerning taking calcium channel blockers.</p>\n"
+                            "<h2>Ai không nên dùng thuốc chẹn kênh canxi?</h2>\n" +
+                            "<p><strong>&bull; Người có vấn đề về tim</strong></p>\n" +
+                            "<p>Nếu bạn bị suy tim sung huyết hoặc có vấn đề về cấu trúc tim, thuốc chẹn kênh canxi có thể làm giảm nhịp tim và gây hại cho cơ thể bạn</p>\n" +
+                            "<p><strong>&bull; Phụ nữ mang thai và cho con bú &amp;#38; người bị dị ứng nặng</strong></p>\n" +
+                            "<p>Những người đó cũng cần xin lời khuyên của bác sĩ về việc dùng thuốc chẹn kênh canxi.</p>\n"
                 )
             )
             //
             listControl.add(
                 Info(
                     "",
-                    "Fighting against the 'silent killer' is a lifelong commitment. Don't just rely on the medications and do make some changes to save your heart. By following the heart-healthy lifestyle in this article, you may see your numbers back to where they should be. Let's take a step now to reduce your blood pressure and improve daily life."
+                    "Chiến đấu chống lại 'kẻ giết người thầm lặng' là một cam kết suốt đời. Đừng chỉ dựa vào thuốc và thực hiện một số thay đổi để cứu trái tim của bạn. Bằng cách làm theo lối sống lành mạnh cho tim trong bài viết này, bạn có thể thấy các con số của mình trở lại như cũ họ nên như vậy. Hãy thực hiện ngay bây giờ để giảm huyết áp và cải thiện cuộc sống hàng ngày."
                 )
             )
             listControl.add(
                 Info(
-                    "1. Keep a healthy weight",
-                    "Weight and blood pressure are closely connected with each other. As the weight gains, the blood pressure rises accordingly. Losing excessive weight can expand blood vessels to make the heart pump blood better. Research has proved that losing weight can reduce systolic number by 4.5 to 8.5 mmHg and diastolic number by 3.2 to 6.5 mmHg.${
+                    "1. Giữ cân nặng khỏe mạnh",
+                    "Cân nặng và huyết áp có mối liên hệ chặt chẽ với nhau. Khi tăng cân, huyết áp cũng tăng theo. Giảm cân quá mức có thể làm giãn mạch máu khiến tim bơm máu tốt hơn. Nghiên cứu đã chứng minh rằng giảm cân có thể làm giảm huyết áp tâm thu xuống 4,5 đến 8,5 mmHg và số tâm trương từ 3,2 đến 6,5 mmHg.${
                         System.getProperty("line.separator")
-                    } ${System.getProperty("line.separator")}It does not mean that you are required to make great efforts in losing lots of weight since only losing 5% of your body weight shall make a difference in blood pressure-lowering.${
+                    }${System.getProperty("line.separator")}Điều đó không có nghĩa là bạn phải nỗ lực rất nhiều để giảm nhiều cân vì chỉ cần giảm 5% trọng lượng cơ thể cũng có thể tạo ra sự khác biệt trong việc hạ huyết áp. ${
                         System.getProperty(
-                            "line.separator"
+                            "dòng.dấu phân cách"
                         )
-                    } ${System.getProperty("line.separator")}Meanwhile, you need to attach great importance to watching your waistline. Too much bulk around your midsection can affect your blood pressure. It is suggested that men keep waist measurement to less than 40 inches and women be no more than 35 inches.${
+                    } ${System.getProperty("line.separator")}Trong khi đó, bạn cần hết sức chú trọng đến việc theo dõi vòng eo của mình. Quá nhiều khối lượng xung quanh phần giữa của bạn có thể ảnh hưởng đến huyết áp của bạn. Người ta đề nghị nam giới nên giữ số đo vòng eo dưới 40 inch và nữ giới không quá 35 inch.${
                         System.getProperty(
-                            "line.separator"
+                            "dòng.dấu phân cách"
                         )
                     } ${System.getProperty("line.separator")}"
                 )
             )
             listControl.add(
                 Info(
-                    "2. Eat a DASH diet",
-                    "<p>The Dietary Approaches to Stop Hypertension (DASH) diet is created to prevent and treat high blood pressure and improve cholesterol. Besides, it also aids weight loss, cancer risk reduction, etc. The regular DASH diet program encourages no more than 1 teaspoon (2,300 mg) of sodium per day. By reducing sodium taken in as well as increasing intake in potassium, magnesium and calcium, the DASH diet can lower your systolic blood pressure by as much as 11mmHg.</p>\n" +
+                    "2. Ăn chế độ DASH",
+                    "<p>Chế độ ăn kiến cận cận để ức chế tăng áp áp (DASH) được tạo ra để khuếch đại, điều trị huyết áp cao và cải thiện cholesterol. Ngoài ra, nó còn hỗ trợ giảm cân, giảm nguy cơ ung thư thư, v.v. Chương trình ăn kiến DASH thông thường không khuyến khích nhiều hơn thế 1 dinh dưỡng phê phê (2.300 mg) natri mỗi ngày Bằng cách giảm lượng natri đưa vào cũng như tăng lượng kali, magie và canxi, chế độ ăn DASH có có thể làm giảm áp lực tâm trí của bạn tới 11mmHg.</p>\n" +
                             "<p><br></p>\n" +
-                            "<p>When you buy any food, learn to read labels to check the proportion of sodium. If it contains more than 20% of sodium, stop buying it.</p>\n" +
+                            "<p>Khi bạn mua bất kỳ sản phẩm nào, hãy học cách đọc nhãn để kiểm tra tỷ lệ natri. Nếu nồng độ natri vượt quá 20%, hãy dừng mua.</p>\n" +
                             "<p><br></p>\n" +
-                            "<p>Generally speaking, following a DASH diet includes:</p>\n" +
-                            "<p>&bull; Eating fruits, vegetables, whole grains, and lean meats</p>\n" +
-                            "<p>&bull;Taking low-fat dairy products</p>\n" +
-                            "<p>&bull; Limiting foods with saturated and trans fats, such as processed foods</p>\n" +
-                            "<p>&bull; Cut back sugary foods and drinks</p>\n"
+                            "<p> Nói chung, đóng góp theo chế độ ăn DASH bao gồm:</p>\n" +
+                            "<p>&bull; Ăn trái cây, rau củ, ngũ cốc nguyên hạt và thịt nạc</p>\n" +
+                            "<p>&bull;Dùng các sản phẩm từ sữa ít béo</p>\n" +
+                            "<p>&bull;Hạn chế thực phẩm có chất béo bão hòa và chất béo chuyển hóa, có giới hạn như thực phẩm chế biến sẵn</p>\n" +
+                            "<p>&bull; Cắt giảm đồ ăn và bán đồ đồ có đường</p>\n"
                 )
             )
             listControl.add(
                 Info(
-                    "3. Limit alcohol",
-                    "<p>Surprisingly, 16% of hypertension cases all over the world are highly related to alcohol. Drinking more than the moderation level can raise blood pressure by as much as 7 mmHg.</p>\n" +
+                    "3. Hạn chế uống rượu",
+                    "<p>Đáng ngạc nhiên là 16% trường hợp tăng huyết áp trên toàn thế giới có liên quan nhiều đến rượu. Uống nhiều hơn mức độ vừa phải có thể làm tăng huyết áp lên tới 7 mmHg.</p>\n" +
                             "<p><br></p>\n" +
-                            "<p>To protect your heart and better treat hypertension, men should not drink more than two and women need to limit alcohol intake to one drink a day. In order to measure your alcohol intake more intuitively, one drink equals 12 ounces of beer, five ounces of wine or 1.5 ounces of 80-proof liquor.</p>\n" +
+                            "<p>Để bảo vệ tim và điều trị bệnh cao huyết áp tốt hơn, nam giới không nên uống nhiều hơn hai ly và phụ nữ cần hạn chế uống rượu ở mức một ly mỗi ngày. Để đo lượng rượu của bạn một cách trực quan hơn, một ly tương đương với 12 ounce bia , 5 ounce rượu vang hoặc 1,5 ounce rượu 80 độ.</p>\n" +
                             "<p><br></p>\n" +
-                            "<p>Attention! If you are taking hypertensive medications, you&apos;d better stop drinking alcohol as it will decrease the effectiveness.</p>\n"
+                            "<p>Chú ý! Nếu bạn đang dùng thuốc điều trị tăng huyết áp, tốt nhất bạn nên ngừng uống rượu vì nó sẽ làm giảm hiệu quả.</p>\n"
                 )
             )
             listControl.add(
                 Info(
-                    "4. Exercise regularly",
-                    "When you exercise regularly, your heart rates and breathing will increase to make your heart pump stronger, thereby reducing your blood pressure. If you have hypertension, try aerobic workouts, strength training and flexibility exercises with moderate intensity. 150 minutes per week can significantly improve your blood pressure as useful as some medications. You can choose jogging, walking, swimming, dumbbell workouts, yoga, or any exercises you like to make your routine full of fun and healthy." +
+                    "4. Tập thể dục thường xuyên",
+                    "Khi bạn tập thể dục thường xuyên, nhịp tim và nhịp thở sẽ tăng lên khiến tim bơm mạnh hơn, từ đó làm giảm huyết áp. Nếu bạn bị tăng huyết áp, hãy thử các bài tập aerobic, rèn luyện sức mạnh và các bài tập linh hoạt với cường độ vừa phải. 150 phút mỗi tuần có thể đáng kể cải thiện huyết áp của bạn hữu ích như một số loại thuốc. Bạn có thể chọn chạy bộ, đi bộ, bơi lội, tập tạ, yoga hoặc bất kỳ bài tập nào bạn muốn để khiến thói quen của bạn trở nên vui vẻ và khỏe mạnh." +
                             "" +
-                            "It's important to be consistent because if you stop exercising, your blood pressure can rise again."
+                            "Điều quan trọng là phải kiên trì vì nếu bạn ngừng tập thể dục, huyết áp của bạn có thể tăng trở lại."
                 )
             )
             listControl.add(
                 Info(
-                    "5. Manage stress",
-                    "<p>Your heart rate increases and blood vessels constrict when you are in a stressful state over time. Meanwhile, when you are under stress, you are more likely to engage in habits like drinking alcohol or taking processed food which can increase your BP number.</p>\n" +
+                    "5. Quản lý căng thẳng",
+                    "<p>Nhịp tim của bạn tăng lên và các mạch máu co lại khi bạn ở trong trạng thái căng thẳng theo thời gian. Trong khi đó, khi bị căng thẳng, bạn có nhiều khả năng thực hiện các thói quen như uống rượu hoặc dùng thực phẩm chế biến sẵn có thể làm tăng huyết áp số.</p>\n" +
                             "<p><br></p>\n" +
-                            "<p>Here are some tips to manage your stress:</p>\n" +
-                            "<p>&bull; Look into what you can solve. If a task annoys you, it is essential to make a plan and deal with it as soon as possible.</p>\n" +
-                            "<p>Ease yourself. It&apos;s time to show yourself some love and do things you enjoy, whether it&apos;s listening to music, doing yoga or reading a book.</p>\n" +
-                            "<p>&bull; Pay attention to staying away from negative habits like drinking alcohol or smoking.</p>\n"
+                            "<p>Dưới đây là một số mẹo giúp bạn kiểm soát căng thẳng:</p>\n" +
+                            "<p>&bull; Hãy xem xét những gì bạn có thể giải quyết. Nếu một nhiệm vụ làm bạn khó chịu, điều cần thiết là phải lập kế hoạch và giải quyết nó càng sớm càng tốt.</p>\n" +
+                            "<p>Hãy thư giãn. Đã đến lúc thể hiện tình yêu thương và làm những điều bạn thích, cho dù đó là nghe nhạc, tập yoga hay đọc sách.</p>\n" +
+                            "<p>&bull; Hãy chú ý tránh xa những thói quen tiêu cực như uống rượu hoặc hút thuốc.</p>\n"
                 )
             )
             listControl.add(
                 Info(
-                    "6. Quit smoking",
-                    "<p>Every puff of cigarette smoke leads to an immediate blood pressure increase and a strong response of your heart. If you keep smoking, the nicotine will damage your vessel walls and accelerate fatty materials blocking arteries to cause hypertension. The nicotine can also affect medications effects negatively. Moreover, exposure to secondhand smoke will also cause the same effect.</p>\n" +
+                    "6. Bỏ hút thuốc",
+                    "<p>Mỗi làn khói thuốc lá sẽ khiến huyết áp tăng ngay lập tức và phản ứng mạnh mẽ của tim. Nếu bạn tiếp tục hút thuốc, nicotin sẽ làm hỏng thành mạch và đẩy nhanh các chất béo làm tắc nghẽn động mạch, gây tăng huyết áp. Chất nicotin cũng có thể ảnh hưởng tiêu cực đến thuốc. Hơn nữa, việc tiếp xúc với khói thuốc thụ động cũng sẽ gây ra tác dụng tương tự.</p>\n" +
                             "<p><br></p>\n" +
-                            "<p>For your family members and your heart health, it is high time to quit smoking.</p>\n"
+                            "<p>Vì các thành viên trong gia đình và sức khỏe tim mạch của bạn, đã đến lúc bạn nên bỏ thuốc lá.</p>\n"
                 )
             )
             //
             listLower.add(
                 Info(
                     "",
-                    "Are you seeking drug-free ways to primary prevention, treatment, and control of hypertension? Then you've come to the right place. This article will introduce physical exercises to help reduce blood pressure. Add them into your daily routine, you can view what a big difference you are going to make."
+                    "Bạn đang tìm kiếm những phương pháp phòng ngừa, điều trị và kiểm soát bệnh cao huyết áp ban đầu không dùng thuốc? Vậy thì bạn đã đến đúng nơi. Bài viết này sẽ giới thiệu các bài tập thể chất giúp giảm huyết áp. Hãy thêm chúng vào thói quen hàng ngày của bạn, bạn có thể hãy xem bạn sẽ tạo ra sự khác biệt lớn như thế nào."
                 )
             )
             listLower.add(
                 Info(
-                    "1. Aerobic exercise",
-                    "<p>Aerobic activity can be an effective way to control high blood pressure. It has been proved that regular aerobic activity can contribute to a noticeable increase in heart rate and breathing, thereby reducing blood vessel stiffness so that blood can flow more easily. On average, regular aerobic exercise lowers resting systolic Blood Pressure 5 to 8 mmHg.</p>\n" +
+                    "1. Tập thể dục nhịp điệu",
+                    "<p>Tập thể dục nhịp điệu có thể là một cách hiệu quả để kiểm soát huyết áp cao. Người ta đã chứng minh rằng hoạt động thể dục nhịp điệu thường xuyên có thể góp phần làm tăng rõ rệt nhịp tim và nhịp thở, từ đó làm giảm độ cứng của mạch máu để máu có thể lưu thông dễ dàng hơn. Trung bình, tập thể dục nhịp điệu thường xuyên làm giảm huyết áp tâm thu khi nghỉ ngơi từ 5 đến 8 mmHg.</p>\n" +
                             "<p><br></p>\n" +
-                            "<p>Please do keep in mind that you can lose gains if stopping the exercise. Moderate-intensity exercise for 5 to 7 days per week is needed. Meanwhile, patients with hypertension are required to conduct a minimum of 30 min or up to 60 min aerobic workout each day. If you take a 30-minute workout as challenging for you, you can split it into 10-minute bouts.</p>\n" +
+                            "<p>Xin lưu ý rằng bạn có thể mất hiệu quả nếu ngừng tập thể dục. Cần tập thể dục với cường độ vừa phải từ 5 đến 7 ngày mỗi tuần. Trong khi đó, bệnh nhân tăng huyết áp phải thực hiện tối thiểu 30 phút hoặc tối đa 60 phút tập thể dục nhịp điệu mỗi ngày. Nếu coi bài tập 30 phút là thử thách đối với mình, bạn có thể chia nó thành các đợt 10 phút.</p>\n" +
                             "<p><br></p>\n" +
-                            "<h2>EXAMPLES of aerobic activities using large muscle groups</h2>\n" +
-                            "<p>&bull; Climbing stairs</p>\n" +
-                            "<p>&bull; Walking</p>\n" +
-                            "<p>&bull; Jogging</p>\n" +
-                            "<p>&bull; Bicycling</p>\n" +
-                            "<p>&bull; Swimming&nbsp;</p>\n" +
-                            "<p>&bull; Dancing</p>\n"
+                            "<h2>VÍ DỤ về hoạt động aerobic sử dụng nhóm cơ lớn</h2>\n" +
+                            "<p>&bull;Leo cầu thang</p>\n" +
+                            "<p>&bull; Đi bộ</p>\n" +
+                            "<p>&bull; Chạy bộ</p>\n" +
+                            "<p>&bull; Đi xe đạp</p>\n" +
+                            "<p>&bull; Bơi&nbsp;</p>\n" +
+                            "<p>&bull; Khiêu vũ</p>\n"
                 )
             )
             listLower.add(
                 Info(
-                    "2. Resistance training",
-                    "<p>Except for aerobic exercises, you can also add resistance training as a supplement to widen blood vessels, in order words, improve blood pressure directly and with no harm. Doing it usually needs weights or equipment such as resistance-training machines. It is recommended to do it twice or three times a week with moderate intensity. Besides, do not practice the same muscle part or do resistance exercises continuously. Altering the body part helps lower your blood pressure.</p>\n" +
+                    "2. Rèn luyện sức đề kháng",
+                    "<p>Ngoại trừ các bài tập aerobic, bạn cũng có thể bổ sung thêm bài tập rèn luyện sức đề kháng để mở rộng mạch máu, nói cách khác là cải thiện huyết áp một cách trực tiếp và không gây hại gì. Việc thực hiện thường cần có tạ hoặc thiết bị như máy tập sức đề kháng. Nên tập hai hoặc ba lần một tuần với cường độ vừa phải. Ngoài ra, không nên tập cùng một phần cơ hoặc tập các bài tập sức đề kháng liên tục. Việc thay đổi phần cơ thể sẽ giúp hạ huyết áp.</p>\n" +
                             "<p><br></p>\n" +
-                            "<h2>PRECAUTIONS</h2>\n" +
-                            "<p>&bull; Seek professional guidance;</p>\n" +
-                            "<p>&bull; Less repetitions are the best;</p>\n" +
-                            "<p>&bull; Rest for 90 or more seconds between each set;</p>\n" +
-                            "<p>&bull; Resistance exercise should occur at a controlled speed but not too slow;</p>\n" +
-                            "<p>&bull; Do not hold your breath as it will elevate your blood pressure.</p>\n" +
+                            "<h2>BIỆN PHÁP THẬN TRỌNG</h2>\n" +
+                            "<p>&bull; Tìm kiếm hướng dẫn chuyên nghiệp;</p>\n" +
+                            "<p>&bull; Ít lặp lại là tốt nhất;</p>\n" +
+                            "<p>&bull; Nghỉ 90 giây trở lên giữa mỗi hiệp;</p>\n" +
+                            "<p>&bull;Bài tập kháng lực nên diễn ra ở tốc độ được kiểm soát nhưng không quá chậm;</p>\n" +
+                            "<p>&bull; Đừng nín thở vì nó sẽ làm tăng huyết áp của bạn.</p>\n" +
                             "<p><br></p>\n" +
-                            "<h2>EXAMPLES of resistance training with equipment</h2>\n" +
-                            "<p>&bull; Chest press</p>\n" +
-                            "<p>&bull; Shoulder press</p>\n" +
-                            "<p>&bull; Triceps extension</p>\n" +
-                            "<p>&bull; Biceps curl</p>\n" +
-                            "<p>&bull; Pull-down</p>\n" +
-                            "<p>&bull; Lower-back extension</p>\n" +
-                            "<p>&bull; Quadriceps extension</p>\n" +
-                            "<p>&bull; Calf raise</p>\n"
+                            "<h2>VÍ DỤ về rèn luyện sức đề kháng với thiết bị</h2>\n" +
+                            "<p>&bull; Ép ngực</p>\n" +
+                            "<p>&bull; Nhấn vai</p>\n" +
+                            "<p>&bull; Cơ tam đầu mở rộng</p>\n" +
+                            "<p>&bull; Bắp tay cong</p>\n" +
+                            "<p>&bull;Kéo xuống</p>\n" +
+                            "<p>&bull; Phần mở rộng lưng dưới</p>\n" +
+                            "<p>&bull; Cơ tứ đầu duỗi ra</p>\n" +
+                            "<p>&bull; Nuôi bê</p>\n"
                 )
             )
             listLower.add(
                 Info(
-                    "3. Flexibility workout",
-                    "<p>Simple flexibility workouts or stretches offer benefits for hypertensives. When you stretch your muscles and joints, you are actually stretching blood vessels and arteries and reduce the stiffness of blood flow. It is time to add stretching into your workout routine.</p>\n" +
+                    "3. Tập luyện linh hoạt",
+                    "<p>Các bài tập thể dục hoặc giãn cơ linh hoạt đơn giản mang lại lợi ích cho người bị tăng huyết áp. Khi bạn căng cơ và khớp, thực tế là bạn đang kéo giãn mạch máu và động mạch, đồng thời giảm độ cứng của lưu lượng máu. Đã đến lúc thêm hoạt động giãn cơ vào thói quen tập luyện của bạn.< /p>\n" +
                             "<p><br></p>\n" +
-                            "<p>According to studies, doing it for 2 to 5 days per week can lower blood pressure. Meanwhile, it is essential to hold every exercise for 10 to 30s to ensure the gains.</p>\n" +
+                            "<p>Theo các nghiên cứu, tập từ 2 đến 5 ngày mỗi tuần có thể làm giảm huyết áp. Trong khi đó, mỗi bài tập phải duy trì từ 10 đến 30 giây để đảm bảo hiệu quả.</p>\n" +
                             "<p><br></p>\n" +
-                            "<p>EXAMPLES of flexibility</p>\n" +
-                            "<p>&bull; Yoga</p>\n" +
+                            "<p>VÍ DỤ về tính linh hoạt</p>\n" +
+                            "<p>&bull;Yoga</p>\n" +
                             "<p>&bull; Pilates</p>\n"
                 )
             )
@@ -534,173 +496,173 @@ class InfoText {
             listDiagnose.add(
                 Info(
                     "",
-                    "<p>When you have chronic hypotension symptoms, you might be curious about how you will be diagnosed and treated in the hospital. Let&apos;s look at what to know about hypotension diagnosis.</p>\n" +
+                    "<p>Khi có các triệu chứng hạ huyết áp mãn tính, bạn có thể tò mò về cách mình sẽ được chẩn đoán và điều trị tại bệnh viện. Hãy xem những điều cần biết về chẩn đoán hạ huyết áp.</p>\n" +
                             "<p><br></p>\n" +
-                            "<p>Your doctor may need to perform tests below if he suspects you have hypotension:</p>\n"
+                            "<p>Bác sĩ của bạn có thể cần thực hiện các xét nghiệm dưới đây nếu nghi ngờ bạn bị hạ huyết áp:</p>\n"
                 )
             )
             listDiagnose.add(
                 Info(
-                    "1. Blood test",
-                    "The most effective way to grasp your overall blood information is taking blood tests. Your blood sugar level and red blood cell count will be collected to examine whether you have hypotension or not."
+                    "1. Xét nghiệm máu",
+                    "Cách hiệu quả nhất để nắm bắt thông tin tổng thể về máu của bạn là làm xét nghiệm máu. Lượng đường trong máu và số lượng hồng cầu của bạn sẽ được thu thập để kiểm tra xem bạn có bị hạ huyết áp hay không."
                 )
             )
             listDiagnose.add(
                 Info(
-                    "2. Tilt table test",
-                    "<p>Another common method to test suspected orthostatic hypotension is the tilt table test. You will rest while supine for few minutes before the test. During testing, the table would be slowly elevated to an upright angle for a while. In the meantime, your heart rate, blood pressure, and symptoms will be measured at regular intervals.</p>\n" +
+                    "2. Kiểm tra bàn nghiêng",
+                    "<p>Một phương pháp phổ biến khác để kiểm tra nghi ngờ hạ huyết áp thế đứng là kiểm tra bàn nghiêng. Bạn sẽ nằm ngửa nghỉ vài phút trước khi kiểm tra. Trong quá trình kiểm tra, bàn sẽ được nâng từ từ lên một góc thẳng đứng trong một thời gian. Trong thời gian chờ đợi , nhịp tim, huyết áp và các triệu chứng của bạn sẽ được đo định kỳ.</p>\n" +
                             "<p><br></p>\n" +
-                            "<p>You will be considered as having orthostatic hypotension if your systolic number drops 20mmHg or the diastolic one falls 10mmHg below the baseline.</p>\n" +
+                            "<p>Bạn sẽ được coi là bị hạ huyết áp thế đứng nếu số tâm thu của bạn giảm 20mmHg hoặc chỉ số tâm trương giảm 10mmHg dưới mức cơ bản.</p>\n" +
                             "<p><br></p>\n" +
-                            "<p>If symptoms occur during testing, the patient should be returned to the supine position immediately.</p>\n"
+                            "<p>Nếu các triệu chứng xảy ra trong quá trình xét nghiệm, bệnh nhân phải được đưa về tư thế nằm ngửa ngay lập tức.</p>\n"
                 )
             )
             listDiagnose.add(
                 Info(
-                    "3. Electrocardiogram",
-                    "<p>To check potential heart problems that can lead to blood pressure drops, an electrocardiogram cannot be missed. It is a painless and noninvasive test, during which soft and sticky patches (electrodes) are attached to the skin of your chest, arms, and legs to attain the heart's electrical signals.</p>\n\n" +
+                    "3. Điện tâm đồ",
+                    "<p>Để kiểm tra các vấn đề tiềm ẩn về tim có thể dẫn đến tụt huyết áp, không thể bỏ qua điện tâm đồ. Đây là một xét nghiệm không gây đau và không xâm lấn, trong đó các miếng vá (điện cực) mềm và dính được gắn vào da ngực, cánh tay của bạn , và chân để nhận tín hiệu điện của tim.</p>\n\n" +
                             "<p>&nbsp;</p>\n" +
-                            "<p>Any irregularities in your heart rhythm, structural problems in your heart, problems with the supply of blood and oxygen to your heart muscle or other heart issues would be detected accurately via the test.</p>\n"
+                            "<p>Mọi bất thường về nhịp tim, các vấn đề về cấu trúc trong tim, các vấn đề về cung cấp máu và oxy cho cơ tim hoặc các vấn đề về tim khác sẽ được phát hiện một cách chính xác thông qua xét nghiệm.</p>\n"
                 )
             )
             //
             listDrugsHypo.add(
                 Info(
                     "",
-                    "If your tests taken show a positive outcome and you have symptoms, you may need medical therapies to cure hypotension. So what are the treatments for low blood pressure?"
+                    "Nếu các xét nghiệm của bạn cho kết quả dương tính và bạn có các triệu chứng, bạn có thể cần các liệu pháp y tế để chữa chứng hạ huyết áp. Vậy phương pháp điều trị huyết áp thấp là gì?"
                 )
             )
             listDrugsHypo.add(
                 Info(
-                    "1. Fludrocortisone",
-                    "<p>Fludrocortisone is a medication that seems to help most types of low blood pressure. It increases the blood pressure by raising the salt level in the body which in turn increases the volume of the blood.</p>\n" +
+                    "1. Fludrocortison",
+                    "<p>Fludrocortisone là một loại thuốc có vẻ giúp ích cho hầu hết các loại bệnh huyết áp thấp. Nó làm tăng huyết áp bằng cách tăng lượng muối trong cơ thể, từ đó làm tăng thể tích máu.</p>\n" +
                             "<p><br></p>\n" +
-                            "<h2>Side effects include:</h2>\n" +
-                            "<p>&bull; Headache</p>\n" +
-                            "<p>&bull; Nausea</p>\n" +
-                            "<p>&bull; Dizziness</p>\n" +
-                            "<p>&bull; Insomnia</p>\n" +
-                            "<p>&bull; Supine hypertension</p>\n" +
-                            "<p>&bull; Congestive heart failure</p>\n" +
-                            "<p>&bull; Increased risk of infection</p>\n" +
+                            "<h2>Tác dụng phụ bao gồm:</h2>\n" +
+                            "<p>&bull; Đau đầu</p>\n" +
+                            "<p>&bull; Buồn nôn</p>\n" +
+                            "<p>&bull; Chóng mặt</p>\n" +
+                            "<p>&bull; Mất ngủ</p>\n" +
+                            "<p>&bull; Tăng huyết áp nằm ngửa</p>\n" +
+                            "<p>&bull; Suy tim sung huyết</p>\n" +
+                            "<p>&bull; Tăng nguy cơ lây nhiễm</p>\n" +
                             "<p><br></p>\n" +
-                            "<h2>WHO should not take it?</h2>\n" +
-                            "<p>&bull; People with lung, liver, kidney, and heart problems should consult their doctors before taking it.</p>\n" +
-                            "<p>&bull; People with cancer, hypertension, diabetes or any infection risk should take caution.</p>\n" +
-                            "<p>&bull; Besides, pregnant and breastfeeding women as well as people with a severe allergy need to ask for a doctor&apos;s advice concerning taking it.</p>\n"
+                            "<h2>Ai không nên dùng?</h2>\n" +
+                            "<p>&bull; Những người có vấn đề về phổi, gan, thận và tim nên tham khảo ý kiến bác sĩ trước khi dùng.</p>\n" +
+                            "<p>&bull; Những người mắc bệnh ung thư, tăng huyết áp, tiểu đường hoặc có bất kỳ nguy cơ nhiễm trùng nào nên thận trọng.</p>\n" +
+                            "<p>&bull; Ngoài ra, phụ nữ có thai và đang cho con bú cũng như những người bị dị ứng nặng cần xin lời khuyên của bác sĩ về việc dùng thuốc.</p>\n"
                 )
             )
             listDrugsHypo.add(
                 Info(
                     "2. Pyridostigmine",
-                    "<p>Pyridostigmine would improve nerve cell transmission for orthostatic hypotension patients and trigger the reflex that controls blood pressure, especially helpful for patients with high supine blood pressure. Meanwhile, its side effects are minor and mild.</p>\n" +
+                    "<p>Pyridostigmine sẽ cải thiện việc truyền tế bào thần kinh cho bệnh nhân hạ huyết áp thế đứng và kích hoạt phản xạ kiểm soát huyết áp, đặc biệt hữu ích cho bệnh nhân cao huyết áp khi nằm ngửa. Trong khi đó, tác dụng phụ của nó rất nhẹ và nhẹ.</p>\n" +
                             "<p>&nbsp;</p>\n" +
-                            "<h2>Side effects are:</h2>\n" +
-                            "<p>&bull; Abs cramps</p>\n" +
-                            "<p>&bull; Increased urination</p>\n" +
+                            "<h2>Tác dụng phụ là:</h2>\n" +
+                            "<p>&bull; Chuột rút cơ bụng</p>\n" +
+                            "<p>&bull; Đi tiểu nhiều</p>\n" +
                             "<p>&nbsp;</p>\n" +
-                            "<h2>WHO should not take it?</h2>\n" +
-                            "<p>&bull; People with a blockage in the intestine or urinary tract.</p>\n" +
-                            "<p>&bull; Besides, pregnant and breastfeeding women as well as people with a severe allergy need to ask for a doctor's advice concerning taking it.</p>\n"
+                            "<h2>Ai không nên dùng?</h2>\n" +
+                            "<p>&bull;Người bị tắc nghẽn đường ruột hoặc đường tiết niệu.</p>\n" +
+                            "<p>&bull; Ngoài ra, phụ nữ có thai và đang cho con bú cũng như những người bị dị ứng nặng cần phải xin lời khuyên của bác sĩ về việc dùng thuốc.</p>\n"
                 )
             )
             listDrugsHypo.add(
                 Info(
                     "3. Midodrine",
-                    "<p>It increases your blood pressure by activating receptors of the blood vessels to narrow them. Midodrine can boost blood pressure even when you are at rest. Thus, this medicine should be used only if you have severely low blood pressure that affects your daily life or other therapies do not work.</p>\n" +
+                    "<p>Nó làm tăng huyết áp của bạn bằng cách kích hoạt các thụ thể của mạch máu để thu hẹp chúng. Midodrine có thể làm tăng huyết áp ngay cả khi bạn nghỉ ngơi. Vì vậy, chỉ nên sử dụng thuốc này nếu bạn bị huyết áp thấp nghiêm trọng ảnh hưởng đến huyết áp của bạn. cuộc sống hàng ngày hoặc các liệu pháp khác đều không có tác dụng.</p>\n" +
                             "<p>&nbsp;</p>\n" +
-                            "<h2>Side effects cover:</h2>\n" +
-                            "<p>&bull; Chills</p>\n" +
-                            "<p>&bull; Numbness</p>\n" +
-                            "<p>&bull; Headache</p>\n" +
-                            "<p>&bull; Dizziness</p>\n" +
-                            "<p>&bull; Nausea</p>\n" +
-                            "<p>&bull; Fatigue</p>\n" +
-                            "<p>&bull; Difficulty in urination</p>\n" +
-                            "<p>&bull; Increased urination</p>\n" +
+                            "<h2>Tác dụng phụ bao gồm:</h2>\n" +
+                            "<p>&bull; ớn lạnh</p>\n" +
+                            "<p>&bull;Tê bì</p>\n" +
+                            "<p>&bull; Đau đầu</p>\n" +
+                            "<p>&bull; Chóng mặt</p>\n" +
+                            "<p>&bull; Buồn nôn</p>\n" +
+                            "<p>&bull; Mệt mỏi</p>\n" +
+                            "<p>&bull; Khó tiểu</p>\n" +
+                            "<p>&bull; Đi tiểu nhiều</p>\n" +
                             "<p>&nbsp;</p>\n" +
-                            "<h2>WHO should not take it?</h2>\n" +
-                            "<p>&bull; Midodrine can cause severe reactions when combining with certain medications. Hence, do tell your doctor what medications, vitamins, nutritional supplements, and herbal products you are taking or what you used to take before having it.</p>\n" +
-                            "<p>&bull; People with diabetes, vision problems, or liver disease cannot use midodrine to treat hypotension.</p>\n" +
-                            "<p>People who are going to take any kind of surgery should consult their doctor.</p>\n" +
-                            "<p>&bull; Besides, pregnant and breastfeeding women as well as people with a severe allergy need to ask for a doctor's advice concerning taking it.</p>\n"
+                            "<h2>Ai không nên dùng?</h2>\n" +
+                            "<p>&bull; Midodrine có thể gây ra phản ứng nghiêm trọng khi kết hợp với một số loại thuốc. Do đó, hãy cho bác sĩ biết những loại thuốc, vitamin, chất bổ sung dinh dưỡng và sản phẩm thảo dược mà bạn đang dùng hoặc những gì bạn đã từng dùng trước khi dùng.</p >\n" +
+                            "<p>&bull;Người mắc bệnh tiểu đường, có vấn đề về thị lực hoặc bệnh gan không được dùng thuốc midodrine để điều trị chứng hạ huyết áp.</p>\n" +
+                            "<p>Những người sắp thực hiện bất kỳ loại phẫu thuật nào đều nên tham khảo ý kiến bác sĩ.</p>\n" +
+                            "<p>&bull; Ngoài ra, phụ nữ có thai và đang cho con bú cũng như những người bị dị ứng nặng cần phải xin lời khuyên của bác sĩ về việc dùng thuốc.</p>\n"
                 )
             )
             //
             listTipsHyper.add(
                 Info(
                     "",
-                    "There may be cases where blood pressure shoots up unexpectedly (systolic blood pressure reaching 180 and/or diastolic one reaching 120 mmHg) and emergency care is required. After calling for immediate medical service or during your waiting for the ambulance, what can be the first aid? No worries, we have prepared all the know-how for you."
+                    "Có thể có trường hợp huyết áp tăng đột ngột (huyết áp tâm thu đạt 180 và/hoặc huyết áp tâm trương đạt 120 mmHg) và cần được chăm sóc khẩn cấp. Sau khi gọi dịch vụ y tế ngay lập tức hoặc trong khi chờ xe cứu thương, điều gì có thể xảy ra? sơ cứu? Đừng lo lắng, chúng tôi đã chuẩn bị tất cả bí quyết cho bạn."
                 )
             )
             listTipsHyper.add(
                 Info(
-                    "1. Calm yourself down benefits blood pressure lowering",
-                    "<p>One thing all hypertension patients need to keep in mind is that lower stress means lower blood pressure. Researchers have found that relaxing fully for a few minutes can decrease systolic blood pressure by 10 mmHg or more. Thus, it is the most natural way to lower your blood pressure during hypertensive urgency. Below are some relaxation tips you can try:</p>\n" +
-                            "<p>&bull; Stop your current task</p>\n" +
-                            "<p>&bull; Take deep breaths</p>\n" +
-                            "<p>&bull; Sit down or lie flat</p>\n" +
-                            "<p>&bull; Listen to relaxing sounds</p>\n" +
-                            "<p>&bull; Meditate</p>\n"
+                    "1. Bình tĩnh giúp giảm huyết áp",
+                    "<p>Một điều mà tất cả bệnh nhân tăng huyết áp cần lưu ý là giảm căng thẳng có nghĩa là huyết áp sẽ giảm. Các nhà nghiên cứu đã phát hiện ra rằng thư giãn hoàn toàn trong vài phút có thể làm giảm huyết áp tâm thu từ 10 mmHg trở lên. Vì vậy, đó là tác dụng tốt nhất cách tự nhiên để giảm huyết áp khi bị tăng huyết áp khẩn cấp. Dưới đây là một số mẹo thư giãn bạn có thể thử:</p>\n" +
+                            "<p>&bull; Dừng nhiệm vụ hiện tại của bạn</p>\n" +
+                            "<p>&bull; Hít thở sâu</p>\n" +
+                            "<p>&bull; Ngồi xuống hoặc nằm thẳng</p>\n" +
+                            "<p>&bull; Nghe những âm thanh thư giãn</p>\n" +
+                            "<p>&bull; Thiền</p>\n"
                 )
             )
             listTipsHyper.add(
                 Info(
-                    "2. Take your blood pressure medication",
-                    "If you are a hypertension patient, you must have blood pressure medicines that the doctor has prescribed for you. Medication is the main option for treating high blood pressure. Therefore, if you or your family members experience a hypertensive emergency, never forget to take medical treatment as soon as possible."
+                    "2. Uống thuốc huyết áp",
+                    "Nếu bạn là bệnh nhân tăng huyết áp, bạn phải dùng thuốc huyết áp mà bác sĩ đã kê đơn. Thuốc là lựa chọn chính để điều trị huyết áp cao. Vì vậy, nếu bạn hoặc người nhà gặp phải tình trạng tăng huyết áp cấp cứu, đừng bao giờ quên uống điều trị y tế càng sớm càng tốt."
                 )
             )
             listTipsHyper.add(
                 Info(
-                    "3. Sip a cup of hibiscus tea",
-                    "<p>Don't be surprised. It has been improved by many studies that hibiscus tea can have both direct and indirect positive influences on your blood pressure. As useful as certain medical treatments, anthocyanins and some antioxidants in the hibiscus can lower your blood pressure. Drinking hibiscus tea can lower your systolic blood pressure number by 7 points at best.</p>\n" +
+                    "3. Nhâm nhi một tách trà dâm bụt",
+                    "<p>Đừng ngạc nhiên. Nhiều nghiên cứu đã chứng minh rằng trà dâm bụt có thể có ảnh hưởng tích cực trực tiếp và gián tiếp đến huyết áp của bạn. Cũng hữu ích như một số phương pháp điều trị y tế, anthocyanin và một số chất chống oxy hóa trong hoa dâm bụt có thể làm giảm huyết áp của bạn. huyết áp. Uống trà dâm bụt có thể làm giảm chỉ số huyết áp tâm thu của bạn tối đa là 7 điểm.</p>\n" +
                             "<p>&nbsp;</p>\n" +
-                            "<p>Meanwhile, sipping tea can also reduce your blood pressure indirectly by lower stress. The soothing tea helps you feel calmer, control anger, and lower your BP numbers.</p>\n"
+                            "<p>Trong khi đó, nhấm nháp trà cũng có thể làm giảm huyết áp một cách gián tiếp bằng cách giảm căng thẳng. Trà êm dịu giúp bạn cảm thấy bình tĩnh hơn, kiểm soát cơn tức giận và hạ huyết áp.</p>\n"
                 )
             )
             listTipsHyper.add(
                 Info(
-                    "4. Have dark chocolate",
-                    "<p>Eating a small amount of dark chocolate can help lower your blood pressure. It contains catechins and procyanidins, which can lead to dilation of the blood vessels. According to research, both systolic and diastolic numbers were lowered by 2 to 3 mmHg after taking dark chocolate. Although changes are modest, the positive effect is true.</p>\n" +
+                    "4. Ăn sôcôla đen",
+                    "<p>Ăn một lượng nhỏ sô cô la đen có thể giúp giảm huyết áp. Nó chứa catechin và Procyanidin, có thể làm giãn mạch máu. Theo nghiên cứu, cả chỉ số tâm thu và tâm trương đều giảm từ 2 đến 3 mmHg sau khi uống sô cô la đen. Mặc dù những thay đổi còn khiêm tốn nhưng hiệu quả tích cực là đúng.</p>\n" +
                             "<p>&nbsp;</p>\n" +
-                            "<p>Moreover, dark chocolate can indirectly affect your hypertension positively by helping the release of endorphins that will calm you down. It's time to stock some just in case.</p>\n"
+                            "<p>Hơn nữa, sô cô la đen có thể gián tiếp ảnh hưởng tích cực đến tình trạng tăng huyết áp của bạn bằng cách giúp giải phóng endorphin giúp bạn bình tĩnh lại. Đã đến lúc dự trữ một ít để đề phòng.</p>\n"
                 )
             )
             //
             listTipsHypo.add(
                 Info(
                     "",
-                    "When your blood pressure is very low or drops rapidly, it can be a medical emergency. The first step should be contacting your doctor for immediate medical treatment and taking a careful review of your medications. But what else can you do? Learn tips below and you will no longer be clueless."
+                    "Khi huyết áp của bạn rất thấp hoặc giảm nhanh, đó có thể là trường hợp cấp cứu y tế. Bước đầu tiên là liên hệ với bác sĩ để được điều trị y tế ngay lập tức và xem xét cẩn thận các loại thuốc của bạn. Nhưng bạn có thể làm gì khác? Hãy tìm hiểu các mẹo dưới đây và bạn sẽ không còn mù mờ nữa."
                 )
             )
             listTipsHypo.add(
                 Info(
-                    "1. Lie down",
-                    "When you are experiencing any hypotensive symptoms, try to sit or lie down on a flat surface safely and immediately. Keep standing can make your postural hypotension worse. Lying down or sitting benefits your blood pressure normalization."
+                    "1. Nằm xuống",
+                    "Khi bạn gặp bất kỳ triệu chứng hạ huyết áp nào, hãy cố gắng ngồi hoặc nằm trên một bề mặt phẳng một cách an toàn và ngay lập tức. Tiếp tục đứng có thể làm tình trạng hạ huyết áp tư thế của bạn trở nên tồi tệ hơn. Nằm hoặc ngồi có lợi cho việc bình thường hóa huyết áp của bạn."
                 )
             )
             listTipsHypo.add(
                 Info(
-                    "2. Stay hydrated",
-                    "One of the common causes of hypotension is dehydration. Thus, drink more fluids, covering water, coconut water, and sports drink, can not only ease your dehydration but also helps maintain the fluids in your body. Besides, you can add a small amount of salt or sugar to improve your blood pressure or restore your glucose level."
+                    "2. Giữ đủ nước",
+                    "Một trong những nguyên nhân phổ biến gây hạ huyết áp là mất nước. Vì vậy, uống nhiều nước hơn, bao gồm nước lọc, nước dừa và đồ uống thể thao, không chỉ có thể làm giảm tình trạng mất nước mà còn giúp duy trì lượng chất lỏng trong cơ thể. Ngoài ra, bạn có thể bổ sung thêm một ít chất lỏng. lượng muối hoặc đường để cải thiện huyết áp hoặc khôi phục mức đường huyết của bạn."
                 )
             )
             listTipsHypo.add(
                 Info(
-                    "3. Take adequate salt",
-                    "<p>Try eating more salty foods or lick a pinch of salt to let the sodium raise your blood pressure. You can also drink sports drinks or take oral rehydration salts (ORS) which can rehydrate you and provide salt as well as other electrolytes to improve your blood pressure.</p>\n" +
+                    "3. Uống đủ muối",
+                    "<p>Hãy thử ăn nhiều thức ăn mặn hơn hoặc liếm một chút muối để natri làm tăng huyết áp. Bạn cũng có thể uống đồ uống thể thao hoặc uống muối bù nước (ORS) để bù nước và cung cấp muối cũng như các chất điện giải khác để cải thiện huyết áp của bạn.</p>\n" +
                             "<p>&nbsp;</p>\n" +
-                            "<p>However, don't take ORS if you are a diabetes patient and do make sure you do not take too much salt. It may lead to problems like water retention along with high blood pressure.</p>\n"
+                            "<p>Tuy nhiên, đừng dùng ORS nếu bạn là bệnh nhân tiểu đường và đảm bảo không ăn quá nhiều muối. Nó có thể dẫn đến các vấn đề như giữ nước cùng với huyết áp cao.</p>\n"
                 )
             )
             listTipsHypo.add(
                 Info(
-                    "4. Wear compression stockings",
-                    "<p><br />People with orthostatic hypotension usually have blood pools in the legs. Compression stockings work by applying slight pressure to your legs to lead blood flow to your heart, which indicates the thigh-high or waist-high version will be effective.</p>\n" +
+                    "4. Mang vớ nén",
+                    "<p><br />Những người bị hạ huyết áp thế đứng thường có tụ máu ở chân. Tất nén hoạt động bằng cách tạo áp lực nhẹ lên chân để dẫn máu về tim, điều này cho thấy phiên bản cao đến đùi hoặc cao đến eo sẽ có hiệu quả.</p>\n" +
                             "<p>&nbsp;</p>\n" +
-                            "<p>Please note that certain patients are not suitable to wear them. Thus, consulting your doctor is vital.</p>\n" +
+                            "<p>Xin lưu ý rằng một số bệnh nhân không phù hợp để đeo chúng. Vì vậy, việc tham khảo ý kiến bác sĩ là rất quan trọng.</p>\n" +
                             "<p>&nbsp;</p>\n" +
-                            "<p>Now you know what to do when you or someone else experiences hypotension. However, don't try to take yourself as an expert. Remember to always visit your doctor and never self-medicate.</p>\n"
+                            "<p>Bây giờ bạn đã biết phải làm gì khi bạn hoặc người khác bị hạ huyết áp. Tuy nhiên, đừng cố coi mình là chuyên gia. Hãy nhớ luôn đến gặp bác sĩ và không bao giờ tự dùng thuốc.</p>\n"
                 )
             )
         }

@@ -24,7 +24,7 @@ import org.apache.commons.math3.complex.Complex;
 import org.apache.commons.math3.complex.ComplexUtils;
 
 /**
- * User facing class which contains all the methods the user uses
+ * blood.pressure.fingerprint.scanner.bpmonitor.entities.model.User facing class which contains all the methods the user uses
  * to create Butterworth filters. This done in this way:
  * Butterworth butterworth = new Butterworth();
  * Then call one of the methods below to create

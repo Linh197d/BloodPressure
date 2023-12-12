@@ -51,7 +51,7 @@ class App : Application() {
 
         appContext = applicationContext
 
-         MMKV.initialize(this)
+        MMKV.initialize(this)
         kv = MMKV.defaultMMKV()
 
         mCurrentLocale = appContext.resources.configuration.locale
@@ -95,16 +95,16 @@ class App : Application() {
         }
     }
 }
-class ApplovinAppOpenManager(applicationContext: Context?) : LifecycleObserver
-{
+
+class ApplovinAppOpenManager(applicationContext: Context?) : LifecycleObserver {
     private lateinit var context: Context
     private var loadTime: Long = 0
 
-    init
-    {
+    init {
         ProcessLifecycleOwner.get().lifecycle.addObserver(this)
         context = applicationContext!!
     }
+
     private fun wasLoadTimeLessThanNHoursAgo(numHours: Long): Boolean {
         val dateDifference = Date().time - loadTime
         val numMilliSecondsPerHour: Long = 3600000
@@ -113,11 +113,9 @@ class ApplovinAppOpenManager(applicationContext: Context?) : LifecycleObserver
 
     private var currentActivity: Activity? = null
     private var disabledAppOpenList: List<Class<*>>? = null
-    @OnLifecycleEvent(Lifecycle.Event.ON_START)
-    fun onResume()
-    {
 
-        Log.e("appOpenAd", "onResume ")
+    @OnLifecycleEvent(Lifecycle.Event.ON_START)
+    fun onResume() {
 
         disabledAppOpenList = ArrayList<Class<*>>()
         (disabledAppOpenList as ArrayList<Class<*>>).add(SplashScreen::class.java)
@@ -125,15 +123,15 @@ class ApplovinAppOpenManager(applicationContext: Context?) : LifecycleObserver
 
         val am: ActivityManager =
             context.getSystemService(Context.ACTIVITY_SERVICE) as ActivityManager
-        val cn: ComponentName? = am.getRunningTasks(1).get(0).topActivity
+        val cn: ComponentName? = am.getRunningTasks(1)[0].topActivity
 
         for (activity in disabledAppOpenList as ArrayList<Class<*>>) {
-            Log.e("appOpenAd", "activity " + activity.name)
+//            Log.e("appOpenAd", "activity " + activity.name)
             if (cn != null) {
-                Log.e("appOpenAd", "currentActivity " + cn.className)
+//                Log.e("appOpenAd", "currentActivity " + cn.className)
 
                 if (activity.name == cn.className) {
-                    Log.e("appOpenAd", "onStart: activity is disabled")
+//                    Log.e("appOpenAd", "onStart: activity is disabled")
                     return
                 }
 
@@ -142,7 +140,6 @@ class ApplovinAppOpenManager(applicationContext: Context?) : LifecycleObserver
         }
 
     }
-
 
 
 }

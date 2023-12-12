@@ -81,11 +81,11 @@ class InfoAdapter(
                         }
 
                         override fun onError(e: Exception?) {
-                            Log.e("bac", "Translate Fail")
+                            Log.e("vinhm", "Translate Fail")
                         }
                     })
                     if (currentLanguage != null) {
-                        Log.d("bac", "$currentLanguage adapter")
+                        Log.d("vinhm", "$currentLanguage adapter")
                     }
                     translate.execute(
                         info.getTitle(),
@@ -133,7 +133,7 @@ class InfoAdapter(
                     }
 
                     override fun onError(e: Exception?) {
-                        Log.e("bac", "Translate Fail")
+                        Log.e("vinhm", "Translate Fail")
 //                        holder.loading.isGone = true
 //                        holder.loadingText.isGone = true
 //                        if (info.getTitle()==""){
