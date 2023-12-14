@@ -9,13 +9,17 @@ import androidx.navigation.findNavController
 import androidx.recyclerview.widget.RecyclerView
 import blood.pressure.fingerprint.scanner.bpmonitor.R
 import blood.pressure.fingerprint.scanner.bpmonitor.entities.model.Drink
+import blood.pressure.fingerprint.scanner.bpmonitor.interfaces.IAdapter
+import blood.pressure.fingerprint.scanner.bpmonitor.ui2.MainActivity
+import blood.pressure.fingerprint.scanner.bpmonitor.ui2.uiWater.home.HomeFragment
+import blood.pressure.fingerprint.scanner.bpmonitor.ui2.uiWater.home.IListenerDeleteDrink
 import com.google.android.material.dialog.MaterialAlertDialogBuilder
 import kotlinx.coroutines.CoroutineScope
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.launch
 
 class DrinksContainerAdapter(private val drinks: MutableList<Drink>) :
-    RecyclerView.Adapter<CustomViewHolder>() {
+    RecyclerView.Adapter<CustomViewHolder>(){
 
     // number of items
     override fun getItemCount(): Int {
@@ -31,7 +35,8 @@ class DrinksContainerAdapter(private val drinks: MutableList<Drink>) :
     override fun onBindViewHolder(holder: CustomViewHolder, position: Int) {
 
         when (holder) {
-            is CustomViewHolder -> { holder.bind(drinks[position]) }
+                    is CustomViewHolder -> { holder.bind(drinks[position])
+            }
         }
     }
 }
@@ -62,7 +67,7 @@ class CustomViewHolder(val view: View) : RecyclerView.ViewHolder(view) {
                     val dao = AppDatabase.getDatabase(view.context).dao()
                     CoroutineScope(Dispatchers.IO).launch {
                         Repository(dao).deleteSelectedDrinkData(drink)
-                        it.findNavController().navigate(R.id.action_navigation_home_self)
+//                        it.findNavController().navigate(R.id.action_navigation_home_self)
                     }
                 }.setNegativeButton(view.context.getString(R.string.drunk_list_action_dialog_no_button)) { dialogInterface, _ ->
                     dialogInterface.cancel()
