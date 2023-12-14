@@ -59,7 +59,7 @@ dependencies {
     implementation 'org.jbundle.util.osgi.wrapped:org.jbundle.util.osgi.wrapped.org.apache.http.client:4.1.2'
     //noinspection DuplicatePlatformClasses
 //    implementation 'commons-logging:commons-logging:1.2'
-    implementation 'androidx.core:core-ktx:1.9.0'
+    implementation 'androidx.core:core-ktx:1.1.0'
     implementation 'androidx.appcompat:appcompat:1.6.1'
     implementation 'com.google.android.material:material:1.6.1'
     implementation 'androidx.constraintlayout:constraintlayout:2.1.4'
@@ -112,9 +112,6 @@ dependencies {
     //scalable unit text size
     implementation 'com.intuit.ssp:ssp-android:1.0.6'
 
-    //scalable unit size
-    implementation 'com.intuit.sdp:sdp-android:1.0.6'
-
     implementation 'com.makeramen:roundedimageview:2.3.0'
     //crop image library
 
@@ -147,7 +144,6 @@ dependencies {
 
     // scalable size units
     implementation 'com.intuit.sdp:sdp-android:1.0.6'
-    implementation 'com.intuit.ssp:ssp-android:1.0.6'
 
     // timber
     implementation 'com.jakewharton.timber:timber:4.7.1'
@@ -156,6 +152,6 @@ dependencies {
     // Android rate this app library
 //    implementation 'io.github.kobakei:ratethisapp:1.2.0'
 //    implementation 'androidx.navigation:navigation-ui-ktx:2.1.0'
-    implementation 'androidx.navigation:navigation-ui:2.3.0'
+//    implementation 'androidx.navigation:navigation-ui:2.1.0'
 
 }

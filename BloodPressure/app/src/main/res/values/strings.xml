@@ -1,143 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources xmlns:tools="http://schemas.android.com/tools">
-    <string name="app_name">Blood Pressure</string>
-    <string name="settings">Settings</string>
-    <string name="info">Info</string>
-    <string name="type">Type</string>
-    <string name="got_it">Got it</string>
-    <string name="tracker">Tracker</string>
-    <string name="hypertension_types">Hypertension Types You Must Know</string>
-    <string name="break_blood">Break Blood Pressure MisBeliefs</string>
-    <string name="find_your">Find Your Blood Pressure Type</string>
-    <string name="learn_about">Learn About Blood Pressure</string>
-    <string name="know_bp_numbers"><![CDATA[Know BP Numbers & Normal Range]]></string>
-    <string name="notice_symptoms">Notice Symptoms of Hypertension</string>
-    <string name="know_problems">Know Problems Hypertension Brings</string>
-    <string name="understand_hypotension"><![CDATA[Understand Hypotension: Symptoms & Types]]></string>
-    <string name="first_line">First-line Drugs for Hypertension</string>
-    <string name="control_bp">Control BP With a Healthy Lifestyle</string>
-    <string name="lower_blood">Lower Blood Pressure by Exercises</string>
-    <string name="how_to_diagnose">How to Diagnose Hypotension</string>
-    <string name="first_line_drugs">First-line Drugs for Hypotension</string>
-    <string name="first_aid_tips">First Aid Tips for Hypertensive Crisis</string>
-    <string name="first_aid_tips_for_hypotensive">First Aid Tips for Hypotensive Crisis</string>
-    <string name="min">Min</string>
-    <string name="max">Max</string>
-    <string name="average">Average</string>
-    <string name="average_24h">Average 24h</string>
-    <string name="last">Last</string>
-    <string name="note">Note</string>
-    <string name="upper_tracker">TRACKER</string>
-    <string name="upper_info">INFO</string>
-    <string name="upper_settings">SETTINGS</string>
-    <string name="input_text_hint">Please enter something</string>
-    <string name="hypertensive">Hypertensive</string>
-    <string name="hypertension_stage_1">Hypertension Stage 1</string>
-    <string name="hypertension_stage_2">Hypertension Stage 2</string>
-    <string name="hypotension">Hypotension</string>
-    <string name="normal">Normal</string>
-    <string name="elevated">Elevated</string>
-    <string name="note_dialog_title">BP Notes</string>
-    <string name="delete_waring_title">Are you sure want to delete?</string>
-    <string name="translating">Translating…</string>
-    <string name="translate">Translate</string>
-    <string name="original_text">Show original</string>
-    <string name="save">Save</string>
-    <string name="cancel">Cancel</string>
-    <string name="after_meal">After Meal</string>
-    <string name="after_medical">After Medical</string>
-    <string name="after_walking">After Walking</string>
-    <string name="before_meal">Before Meal</string>
-    <string name="sitting">Sitting</string>
-    <string name="lying">Lying</string>
-    <string name="period">Period</string>
-    <string name="left">Left</string>
-    <string name="right">Right</string>
-    <string name="add">Add</string>
-    <string name="add_icon">+Add</string>
-    <string name="add_new">Add new</string>
-    <string name="edit">Edit</string>
-    <string name="delete">Delete</string>
-    <string name="new_record">New Record</string>
-    <string name="last_sync">Last Sync</string>
-    <string name="sign_out">Sign Out</string>
-    <string name="sync_success">Sync Success!</string>
-    <string name="loading">Loading…</string>
-    <string name="sync_fail">Sync Fail!</string>
-    <string name="measure_fail">Measure Fail!</string>
-    <string name="confirm_sign_out">Are you sure you want to sign out?</string>
-    <string name="backup_restore"><![CDATA[Backup & Restore]]></string>
-    <string name="sign_in_recommend">Sign in and synchronize your data</string>
-    <string name="language">Language Options</string>
-    <string name="export_file">Export as file</string>
-    <string name="more">More</string>
-    <string name="rate_us">Rate us</string>
-    <string name="share_with_friend">Share with friends</string>
-    <string name="feedback">Feedback</string>
-    <string name="feedback_hint">Feedback or suggestion</string>
-    <string name="share_export_title">Share export file with</string>
-    <string name="send">Send</string>
-    <string name="privacy_policy">Privacy Policy</string>
-    <string name="not_sync">Not sync</string>
-    <string name="info_and_know"><![CDATA[Info & Knowledge]]></string>
-    <string name="systolic">Systolic</string>
-    <string name="diastolic">Diastolic</string>
-    <string name="pulse">Pulse</string>
-    <string name="date_time"><![CDATA[Date & Time]]></string>
-    <string name="drag_note">Long press and drag to recorder</string>
-    <string name="retry">Retry</string>
-    <string name="choose">Choose your language</string>
-    <string name="next">Next</string>
-    <string name="bmi_calculator">BMI Calculator</string>
-    <string name="gender">Gender</string>
-    <string name="weight">Weight</string>
-    <string name="height">Height</string>
-    <string name="male">Male</string>
-    <string name="female">Female</string>
-    <string name="unknown">Other</string>
-    <string name="your_health">Your health</string>
-    <string name="under_weight">You are Under Weight</string>
-    <string name="health">You are Healthy</string>
-    <string name="over_weight">You are Overweight</string>
-    <string name="obesity">You are Suffering from Obesity</string>
-    <string name="normal_bmi_weight_range_for_the_height_18_5_24_9">Normal BMI weight range for the height: 18.5 – 24.9</string>
-
-    <string name="save_confirm">Do you want to save this record?</string>
-    <string name="saved">Saved record</string>
-    <string name="slow">Slow</string>
-    <string name="age">Age</string>
-    <string name="measure">Measure</string>
-    <string name="measuring">Measuring…</string>
-    <string name="measure_instruction">Press your finger on the camera and breath evenly</string>
-    <string name="start">Start</string>
-    <string name="how_to_measure">How to measure</string>
-    <string name="heart_rate_zone">Heart Rate Zone</string>
-    <string name="your_result">Your Result</string>
-    <string name="healthy">Healthy</string>
-    <string name="maximum">Maximum</string>
-    <string name="danger">Danger</string>
-    <string name="result">Result</string>
-    <string name="normal_heart_rate">A normal resting heart rate, or a heart rate when a person is inactive, can range from 60 to 100 BPM</string>
-    <string name="tips">Tips</string>
-    <string name="tip_1">– Lightly place your index finger on the rear camera.</string>
-    <string name="tip_2">– Make sure the camera is fully covered.</string>
-    <string name="tip_3">– Measure in a shaded environment.</string>
-    <string name="tip_4">– Don\'t move your finger until the measurement is complete.</string>
-    <string name="tip_5">– Finally place your finger then press start.</string>
-
-    <string name="January">Jan. </string>
-    <string name="February">Feb.</string>
-    <string name="March">Mar.</string>
-    <string name="April">Apr.</string>
-    <string name="May">May</string>
-    <string name="June">Jun.</string>
-    <string name="July">Jul.</string>
-    <string name="August">Aug.</string>
-    <string name="September">Sep.</string>
-    <string name="October">Oct.</string>
-    <string name="November">Nov.</string>
-    <string name="December">Dec.</string>
-
     <string-array name="default_array" translatable="false">
         <item name="1">1</item>
         <item name="2">2</item>
@@ -341,99 +203,236 @@
         <item name="200">200</item>
     </string-array>
 
-    <string name="empty_recommend">Add at least 1 record to unlock the stats</string>
-
-    <string name="info_title_1">What range can be determined as hypertension? If one of your readings reaches the standard for high blood pressure, but the other one does not, how to determine that? To define your blood pressure numbers, you can see blood pressure category below.</string>
-    <!--    <string name="hypotension_info">If your readings are less than 90/60 mmHg, you are probably hypotensive. You do not need any treatment as low blood pressure causes no harm and no symptoms usually. However, when your blood pressure often drops suddenly over 20 mmHg, falls suddenly due to some medications, or you feel dizzy, fainting, fatigue, etc.,you ought to seek treatment.</string>-->
+   <!--    <string name="hypotension_info">If your readings are less than 90/60 mmHg, you are probably hypotensive. You do not need any treatment as low blood pressure causes no harm and no symptoms usually. However, when your blood pressure often drops suddenly over 20 mmHg, falls suddenly due to some medications, or you feel dizzy, fainting, fatigue, etc.,you ought to seek treatment.</string>-->
     <!--    <string name="normal_info">If your readings are higher than 90/60 mmHg and less than 120/80 mmHg, your blood pressure is normal. You need to maintain or adopt a healthy lifestyle to prevent hypertension from developing.\n \nBesides, if you have any family members who have hypertension, it is recommended to be even more mindful of your lifestyle as your risk of developing hypertension can be high.</string>-->
     <!--    <string name="elevated_info">When your blood pressure is higher than the normal one but doesn\'t reach 130/80 mmHg, your BP is considered elevated. If your lifestyle and eating habits are not improved, you are very likely to develop high blood pressure.</string>-->
     <!--    <string name="hypertension_stage_1_info">Consistent systolic pressure readings between 130 to 139 mmHg or diastolic pressure readings between 80 to 89 mmHg means you are at hypertension stage 1.\n \nGenerally speaking, you only need to improve your lifestyle to control blood pressure. However, if you have a high risk of cardiovascular disease (heart disease, stroke, etc.), you need to start taking medicine accordingly.</string>-->
     <!--    <string name="hypertension_stage_2_info">Hypertension stage 2 is when you have consistent systolic pressure readings between 140 to 180 mmHg or diastolic pressure readings between 90 to 120 mmHg.\n \nAt this stage, you should combine lifestyle changes and one or more medications. After the first month of treatment and lifestyle improvement, if your blood pressure is under control, you can go to the hospital for another measurement in 3 to 6 months. If the blood pressure is higher or does not change, you need to consult a doctor to change to other treatments.</string>-->
     <!--    <string name="hypertensive_info">If you are measuring your blood pressure at home and see your systolic reading over 180 mmHg or diastolic number above 120 mmHg, you need to calm down at first then wait a few minutes to retest it. If you are still in the range of the hypertension crisis, don\'t hesitate to call the emergency service or go to the hospital right now.</string>-->
     <!-- TODO: Remove or change this placeholder text -->
-    <string name="hello_blank_fragment" translatable="false">Hello blank fragment</string>
-    <string name="intros_hypotension" translatable="false"><![CDATA[SYS < 90 or DIA < 60]]></string>
-    <string name="intros_normal" translatable="false" tools:ignore="TypographyDashes">SYS 90-119 and DIA 60-79</string>
-    <string name="intros_elevated" translatable="false" tools:ignore="TypographyDashes">SYS 120-129 and DIA 60-79</string>
-    <string name="intros_hypertension_stage1" translatable="false" tools:ignore="TypographyDashes">SYS 130-139 or DIA 80-89</string>
-    <string name="intros_hypertension_stage2" translatable="false" tools:ignore="TypographyDashes">SYS 140-180 or DIA 90-120</string>
-    <string name="intros_hypertensive" translatable="false">SYS > 180 or DIA > 120</string>
-    <string name="note_hypotension" tools:ignore="TypographyEllipsis">Your blood pressure seems a bit low...If the situation continues, don\'t hesitate to consult your doctor.</string>
-    <string name="note_normal">Rest assured! Your blood pressure is in great condition, try to keep it!</string>
-    <string name="note_elevated">Your blood pressure is slightly above normal. We suggest you adopt a healthier lifestyle and measure your blood pressure regularly.</string>
-    <string name="note_hypertension_stage1">If you\'ve got 3 or more readings in this area, it\'s time to ask your doctor for prescriptions regarding lifestyle improvements.</string>
-    <string name="note_hypertension_stage2">If you\'ve got 3 or more readings in this area,take care of your body through medical treatment and lifestyle changes.</string>
-    <string name="note_hypertensive" tools:ignore="TypographyEllipsis">We\'re worried about you...Please call for emergency medical services immediately.</string>
-    <string name="input_warning_1">The diastolic number cannot be greater than the systolic number</string>
+    <string name="app_name">Đo Huyết Áp</string>
+    <string name="settings">Cài đặt</string>
+    <string name="info">Thông tin</string>
+    <string name="type">Mức độ</string>
+    <string name="got_it">Đã hiểu</string>
+    <string name="tracker">Theo dõi</string>
+    <string name="hypertension_types">Các mức độ huyết áp bạn phải biết</string>
+    <string name="break_blood">Phá vỡ các mô hình sai lệch về huyết áp</string>
+    <string name="find_your">Tìm hiểu mức độ huyết áp của bạn</string>
+    <string name="learn_about">Tìm hiểu thêm về huyết áp</string>
+    <string name="know_bp_numbers"><![CDATA[Hiểu biết về chỉ số huyết áp & Phạm vi an toàn]]></string>
+    <string name="notice_symptoms">Các triệu chứng của huyết áp cao</string>
+    <string name="know_problems">Tìm hiểu các vấn đề huyết áp cao gây ra</string>
+    <string name="understand_hypotension"><![CDATA[Huyết áp thấp: Triệu chứng & Các loại]]></string>
+    <string name="first_line">Thuốc đầu tay cho bệnh huyết áp cao</string>
+    <string name="control_bp">Kiểm soát huyết áp với lối sống lành mạnh</string>
+    <string name="lower_blood">Giảm huyết áp bằng các bài tập thể dục</string>
+    <string name="how_to_diagnose">Chuẩn đoán huyết áp thấp</string>
+    <string name="first_line_drugs">Thuốc đầu tay cho bệnh huyết áp thấp</string>
+    <string name="first_aid_tips">Mẹo sơ cứu khi gặp phải cơn tăng huyết áp</string>
+    <string name="first_aid_tips_for_hypotensive">Mẹo sơ cứu khi gặp phải cơn hạ huyết áp</string>
+    <string name="min">Thấp nhất</string>
+    <string name="max">Cao nhất</string>
+    <string name="average">Trung bình</string>
+    <string name="average_24h">Trung bình 24h</string>
+    <string name="last">Gần nhất</string>
+    <string name="note">Ghi chú</string>
+    <string name="upper_tracker">THEO DÕI</string>
+    <string name="upper_info">THÔNG TIN</string>
+    <string name="upper_settings">CÀI ĐẶT</string>
+    <string name="input_text_hint">Hãy nhập gì đó</string>
+    <string name="hypertensive">Huyết áp cao</string>
+    <string name="hypertension_stage_1">Huyết áp cao gđ.1</string>
+    <string name="hypertension_stage_2">Huyết áp cao gđ.2</string>
+    <string name="hypotension">Huyết áp thấp</string>
+    <string name="normal">Bình thường</string>
+    <string name="elevated">Khá cao</string>
+    <string name="note_dialog_title">Ghi chú BP</string>
+    <string name="delete_waring_title">Bạn có chắc muốn xóa mục này không?</string>
+    <string name="translating">Đang dịch…</string>
+    <string name="translate">Dịch văn bản</string>
+    <string name="original_text">Văn bản gốc</string>
+    <string name="save">Lưu</string>
+    <string name="cancel">Hủy</string>
+    <string name="after_meal">Sau ăn</string>
+    <string name="after_medical">Sau uống thuốc</string>
+    <string name="after_walking">Sau đi bộ</string>
+    <string name="before_meal">Trước khi ăn</string>
+    <string name="sitting">Ngồi</string>
+    <string name="lying">Nằm</string>
+    <string name="period">Tập thể thao</string>
+    <string name="left">Trái</string>
+    <string name="right">Phải</string>
+    <string name="add">Thêm</string>
+    <string name="add_icon">+ Thêm</string>
+    <string name="add_new">Thêm mới</string>
+    <string name="edit">Sửa</string>
+    <string name="delete">Xóa</string>
+    <string name="new_record">Bản ghi mới</string>
+    <string name="last_sync">Đồng bộ cuối</string>
+    <string name="sign_out">Đăng xuất</string>
+    <string name="sync_success">Đồng bộ thành công!</string>
+    <string name="loading">Đang tải…></string>
+    <string name="sync_fail">Đồng bộ thất bại!</string>
+    <string name="confirm_sign_out">Bạn có chắc muốn đăng xuất không?</string>
+    <string name="backup_restore"><![CDATA[Lưu trữ & Khôi phục]]></string>
+    <string name="sign_in_recommend">Đăng nhập và đồng bộ dữ liệu của bạn</string>
+    <string name="language">Cài đặt ngôn ngữ</string>
+    <string name="export_file">Xuất file</string>
+    <string name="more">Thêm</string>
+    <string name="rate_us">Đánh giá</string>
+    <string name="share_with_friend">Chia sẻ</string>
+    <string name="feedback">Phản hồi</string>
+    <string name="feedback_hint">Phản hồi và góp ý</string>
+    <string name="share_export_title">Chia sẻ với</string>
+    <string name="send">Gửi</string>
+    <string name="privacy_policy">Chính sách bảo mật</string>
+    <string name="not_sync">Chưa đồng bộ</string>
+    <string name="info_and_know"><![CDATA[Thông tin & Kiến thức]]></string>
+    <string name="systolic">Tâm thu</string>
+    <string name="diastolic">Tâm trương</string>
+    <string name="pulse">Nhịp tim</string>
+    <string name="date_time"><![CDATA[Ngày & Giờ]]></string>
+    <string name="drag_note">Giữ và kéo thả để thay đổi vị trí</string>
+    <string name="retry">Thử lại</string>
+    <string name="choose">Chọn ngôn ngữ</string>
+    <string name="next">Tiếp tục</string>
 
-    <string name="BANNER_ID" translatable="false"></string>
-    <string name="Native_ID" translatable="false">ca-app-pub-6294929445985959/3195165742</string>
-    <string name="App_open_ads" translatable="false">ca-app-pub-6294929445985959/7264122865</string>
-    <string name="App_open_ads_bid" translatable="false">ca-app-pub-6294929445985959/4171905721</string>
-    <string name="App_open_ads_bid_high" translatable="false">ca-app-pub-6294929445985959/9278192512</string>
-    <string name="interstitial_ad_unit_id" translatable="false">ca-app-pub-6294929445985959/8849517335</string>
-    <string name="facebook_app_id" translatable="false">1113044895992621</string>
-    <string name="ONESIGNAL_APP_ID" translatable="false">4a1c5dd1-847a-4bb6-9c4c-87772a7171e9</string>
-    <string name="applovin_int" translatable="false">6ac224936b5790aa</string>
-    <string name="applovin_ba" translatable="false">8196a0d9c17211c8</string>
-    <string name="applovin_native" translatable="false">b80a63a49feced18</string>
-    <string name="applovin_aoa" translatable="false">35542e7f38192ee7</string>
+    <string name="under_weight">Bạn bị thiếu cân</string>
+    <string name="health">Bạn đang khỏe mạnh</string>
+    <string name="over_weight">Bạn bị thừa cân</string>
+    <string name="obesity">Bạn đang bị béo phì</string>
+    <string name="your_health">Sức khỏe của bạn</string>
+    <string name="bmi_calculator">Chỉ số BMI</string>
+    <string name="gender">Giới tính</string>
+    <string name="weight">Cân nặng</string>
+    <string name="height">Chiều cao</string>
+    <string name="male">Nam</string>
+    <string name="female">Nữ</string>
+    <string name="unknown">Khác</string>
+    <string name="normal_bmi_weight_range_for_the_height_18_5_24_9">Phạm vi cân nặng BMI bình thường cho chiều cao: 18,5 – 24,9</string>
+
+    <string name="save_confirm">Bạn có muốn lưu kết quả đo không?</string>
+    <string name="saved">Đã lưu kết quả đo</string>
+    <string name="slow">Chậm</string>
+    <string name="age">Tuổi</string>
+    <string name="measure">Đo mạch</string>
+    <string name="measure_fail">Đo thất bại</string>
+    <string name="measuring">Đang đo</string>
+    <string name="measure_instruction">Đặt tay của bạn lên camera và giữ cho hơi thở đều</string>
+    <string name="start">Bắt đầu</string>
+    <string name="how_to_measure">Cách đo mạch hiệu quả</string>
+    <string name="heart_rate_zone">Các mức độ</string>
+    <string name="your_result">Kết quả đo</string>
+    <string name="healthy">Khỏe mạnh</string>
+    <string name="maximum">Nhanh</string>
+    <string name="danger">Nguy hiểm</string>
+    <string name="result">Kết quả</string>
+    <string name="normal_heart_rate">Nhịp tim khi nghỉ ngơi bình thường hoặc nhịp tim khi một người không hoạt động, có thể dao động từ 60 đến 100 BPM</string>
+    <string name="tips">Lời khuyên</string>
+    <string name="tip_1">– Đặt nhẹ ngón tay trỏ của bạn lên camera sau.</string>
+    <string name="tip_2">– Hãy chắc chắn rằng máy ảnh được bao phủ hoàn toàn.</string>
+    <string name="tip_3">– Đo trong môi trường có bóng râm.</string>
+    <string name="tip_4">– Đừng di chuyển ngón tay của bạn cho đến khi phép đo hoàn tất.</string>
+    <string name="tip_5">– Cuối cùng đặt ngón tay của bạn sau đó nhấn bắt đầu.</string>
+
+    <string name="January">T.01</string>
+    <string name="February">T.02</string>
+    <string name="March">T.03</string>
+    <string name="April">T.04</string>
+    <string name="May">T.05</string>
+    <string name="June">T.06</string>
+    <string name="July">T.07</string>
+    <string name="August">T.08</string>
+    <string name="September">T.09</string>
+    <string name="October">T.10</string>
+    <string name="November">T.11</string>
+    <string name="December">T.12</string>
+
+    <string name="empty_recommend">Tạo 1 bản ghi để dùng tính năng này</string>
+
+    <string name="info_title_1">What range can be determined as hypertension? If one of your readings reaches the standard for high blood pressure, but the other one does not, how to determine that? To define your blood pressure numbers, you can see blood pressure category below.</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="intros_hypotension"><![CDATA[Thu < 90 hoặc Trương < 60]]></string>
+    <string name="intros_normal" tools:ignore="TypographyDashes">Thu 90-119 và Trương 60-79</string>
+    <string name="intros_elevated" tools:ignore="TypographyDashes">Thu 120-129 và Trương 60-79</string>
+    <string name="intros_hypertension_stage1" tools:ignore="TypographyDashes">Thu 130-139 hoặc Trương 80-89</string>
+    <string name="intros_hypertension_stage2" tools:ignore="TypographyDashes">Thu 140-180 hoặc Trương 90-120</string>
+    <string name="intros_hypertensive">Thu > 180 và Trương > 120</string>
+    <string name="note_hypotension" tools:ignore="TypographyEllipsis">Huyết áp của bạn có vẻ hơi thấp… Nếu tình trạng này vẫn tiếp diễn, đừng ngần ngại hỏi ý kiến bác sĩ.</string>
+    <string name="note_normal">Hãy yên tâm! Huyết áp của bạn đang ở trong tình trạng tuyệt vời, hãy cố gắng duy trì nó!</string>
+    <string name="note_elevated">Huyết áp của bạn hơi cao hơn bình thường. Chúng tôi khuyên bạn nên áp dụng một lối sống lành mạnh hơn và đo huyết áp thường xuyên.</string>
+    <string name="note_hypertension_stage1">Nếu bạn đã có 3 lần đo ở mức này, đã đến lúc bạn nên hỏi bác sĩ về các đơn thuốc về cải thiện lối sống.</string>
+    <string name="note_hypertension_stage2">Nếu bạn có 3 lần đo ở mức này trở lên, hãy chăm sóc cơ thể bằng cách điều trị y tế và thay đổi lối sống.</string>
+    <string name="note_hypertensive" tools:ignore="TypographyEllipsis">Chúng tôi đang lo lắng cho bạn… Vui lòng gọi cho các dịch vụ y tế khẩn cấp ngay lập tức.</string>
+    <string name="input_warning_1">Chỉ số tâm trương không được lơn hơn chỉ số tâm thu</string>
 
     <string name="no_internet" translatable="false">No Internet Access</string>
     <string name="no_internet_comment" translatable="false">Please connect to the network for a better experience!</string>
     <string name="turn_on" translatable="false">Turn On</string>
-    <string name="title_home">Home</string>
-    <string name="title_setting">Settings</string>
-    <string name="title_notifications">Notifications</string>
-    <string name="info_text">Here is water amount you should drink, but feel free to change it</string>
+    <string name="title_home">Trang chủ</string>
+    <string name="title_setting">Cài đặt</string>
+    <string name="title_notifications">Thông báo</string>
+    <string name="info_text">Đây là lượng nước bạn nên uống mỗi ngày nhưng bạn có thể thay đổi nó</string>
     <string name="water_notification_channel_id">water_channel</string>
-    <string name="notification_title">Water Reminder</string>
-    <string name="water_notification_channel_name">Water</string>
-    <string name="select_your_drink">Select Your Drink</string>
-    <string name="water">Water</string>
-    <string name="coffee">Coffee</string>
-    <string name="tea">Tea</string>
-    <string name="juice">Juice</string>
-    <string name="soda">Soda</string>
-    <string name="beer">Beer</string>
-    <string name="wine">Wine</string>
-    <string name="milk">Milk</string>
-    <string name="yogurt">Yogurt</string>
-    <string name="milkshake">Milkshake</string>
-    <string name="energy">Energy</string>
-    <string name="lemonade">Lemonade</string>
-    <string name="drink">DRINK</string>
-    <string name="metric">Metric</string>
-    <string name="american">American</string>
-    <string name="drunk">Drunk</string>
-    <string name="target">Target</string>
-    <string name="allow_notifications">Allow notifications</string>
-    <string name="start_time">Start time</string>
-    <string name="finish_time">Finish time</string>
-    <string name="interval">Interval</string>
-    <string name="please_type_age">Please type your age</string>
-    <string name="please_type_weight">Please type your weight</string>
-    <string name="please_type_age_weigh">Please type your age/weight</string>
-    <string name="select_drink">Please select your drink</string>
-    <string name="notification_info">It is time to drink water</string>
-    <string name="drink_image_button_dialog_message">Delete the drink?</string>
-    <string name="drunk_list_action_dialog_yes_button">YES</string>
-    <string name="drunk_list_action_dialog_no_button">NO</string>
-    <string name="history">History</string>
-    <string name="title_history">History</string>
-    <string name="selected_month">Selected month</string>
-    <string name="january">January</string>
-    <string name="february">February</string>
-    <string name="march">March</string>
-    <string name="april">Tháng 4</string>
-    <string name="may">May</string>
-    <string name="june">June</string>
-    <string name="july">July</string>
-    <string name="august">August</string>
-    <string name="september">September</string>
-    <string name="october">October</string>
-    <string name="november">November</string>
-    <string name="december">December</string>
+    <string name="notification_title">Nhắc nhở uống nước</string>
+    <string name="water_notification_channel_name">Nước</string>
+    <string name="select_your_drink">Chọn đồ uống</string>
+    <string name="water">Nước</string>
+    <string name="coffee">Cà phê</string>
+    <string name="tea">Trà</string>
+    <string name="juice">Nước ép</string>
+    <string name="soda">Nước ngọt</string>
+    <string name="beer">Bia</string>
+    <string name="wine">Rượu</string>
+    <string name="milk">Sữa</string>
+    <string name="yogurt">Sữa chua</string>
+    <string name="milkshake">Sữa lắc</string>
+    <string name="energy">Nước tăng lực</string>
+    <string name="lemonade">Nước chanh</string>
+    <string name="drink">Uống</string>
+    <string name="drunk">Đã uống</string>
+    <string name="target">Mục tiêu</string>
+    <string name="allow_notifications">Cho phép thông báo</string>
+    <string name="start_time">Thời gian bắt đầu</string>
+    <string name="finish_time">Thời gian kết thúc</string>
+    <string name="interval">Khoảng thời gian</string>
+    <string name="please_type_age">Vui lòng nhập tuổi</string>
+    <string name="please_type_weight">Vui lòng nhập cân nặng</string>
+    <string name="please_type_age_weigh">Vui lòng nhập tuổi/cân nặng</string>
+    <string name="select_drink">Vui lòng chọn đồ uống</string>
+    <string name="notification_info">Đến giờ uống nước rồiii</string>
+    <string name="drink_image_button_dialog_message">Xoá đồ uống</string>
+    <string name="drunk_list_action_dialog_yes_button">Có</string>
+    <string name="drunk_list_action_dialog_no_button">Không</string>
+    <string name="history">Lịch sử</string>
+    <string name="title_history">Lịch sử</string>
+    <string name="selected_month">Chọn tháng</string>
+<!--    <string name="january">Tháng 1</string>-->
+<!--    <string name="february">Tháng 2</string>-->
+<!--    <string name="march">Tháng 3</string>-->
+<!--    <string name="april">Tháng 4</string>-->
+<!--    <string name="may">Tháng 5</string>-->
+<!--    <string name="june">Tháng 6</string>-->
+<!--    <string name="july">Tháng 7</string>-->
+<!--    <string name="august">Tháng 8</string>-->
+<!--    <string name="september">Tháng 9</string>-->
+<!--    <string name="october">Tháng 10</string>-->
+<!--    <string name="november">Tháng 11</string>-->
+<!--    <string name="december">Tháng 12</string> -->
+    <string name="january">january</string>
+    <string name="february">february</string>
+    <string name="march">march</string>
+    <string name="april">april</string>
+    <string name="may">may</string>
+    <string name="june">june</string>
+    <string name="july">july</string>
+    <string name="august">august</string>
+    <string name="september">september</string>
+    <string name="october">october</string>
+    <string name="november">november</string>
+    <string name="december">december</string>
 
     <string-array name="starting_hours_array">
         <item>07:00</item>
@@ -476,8 +475,8 @@
     </string-array>
 
     <string-array name="interval_array">
-        <item>1 hour</item>
-        <item>2 hours</item>
-        <item>3 hours</item>
+        <item>1 giờ</item>
+        <item>2 giờ</item>
+        <item>3 giờ</item>
     </string-array>
 </resources>

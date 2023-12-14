@@ -1,6 +1,6 @@
 package blood.pressure.fingerprint.scanner.bpmonitor.ui2.uiWater.notifications
 import blood.pressure.fingerprint.scanner.bpmonitor.util.utils.AlarmScheduler
-import AppDatabase
+import blood.pressure.fingerprint.scanner.bpmonitor.util.utils.AppDatabase
 import blood.pressure.fingerprint.scanner.bpmonitor.util.utils.Repository
 import android.app.Application
 import android.view.View
@@ -63,7 +63,6 @@ class NotificationsViewModel(private val app: Application) : AndroidViewModel(ap
                         Repository(dao).updateNotificationInfo(notification)
                     }
                 }
-
             }
 
             "finishing_time" -> {

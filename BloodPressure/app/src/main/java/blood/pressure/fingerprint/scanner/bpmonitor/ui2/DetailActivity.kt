@@ -3,6 +3,7 @@ package blood.pressure.fingerprint.scanner.bpmonitor.ui2
 import android.content.Intent
 import android.net.Uri
 import android.os.Bundle
+import android.util.Log
 import android.view.View
 import android.widget.Button
 import android.widget.ImageButton
@@ -12,7 +13,9 @@ import blood.pressure.fingerprint.scanner.bpmonitor.R
 import blood.pressure.fingerprint.scanner.bpmonitor.databinding.ActivityInfoDetailBinding
 import blood.pressure.fingerprint.scanner.bpmonitor.entities.MealResponse
 import blood.pressure.fingerprint.scanner.bpmonitor.interfaces.GetDataService
+import blood.pressure.fingerprint.scanner.bpmonitor.interfaces.LanguageCode
 import blood.pressure.fingerprint.scanner.bpmonitor.retofitclient.RetrofitClientInstance
+import blood.pressure.fingerprint.scanner.bpmonitor.util.TranslateAPI
 import com.bumptech.glide.Glide
 import com.makeramen.roundedimageview.RoundedImageView
 import retrofit2.Call
@@ -69,7 +72,7 @@ class DetailActivity : BaseActivity() {
             ) {
 
                 Glide.with(this@DetailActivity).load(response.body()!!.mealsEntity[0].strmealthumb).into(imgItem!!)
-
+//
                 tvCategory!!.text = response.body()!!.mealsEntity[0].strmeal
 
                 var ingredient = "${response.body()!!.mealsEntity[0].stringredient1}      ${response.body()!!.mealsEntity[0].strmeasure1}\n" +

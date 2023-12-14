@@ -1,5 +1,5 @@
 package blood.pressure.fingerprint.scanner.bpmonitor.ui2.uiWater.history
-import AppDatabase
+import blood.pressure.fingerprint.scanner.bpmonitor.util.utils.AppDatabase
 import blood.pressure.fingerprint.scanner.bpmonitor.util.utils.DatabaseHelper
 import blood.pressure.fingerprint.scanner.bpmonitor.util.utils.DrinksContainerAdapter
 import blood.pressure.fingerprint.scanner.bpmonitor.util.utils.Repository
@@ -17,6 +17,8 @@ import androidx.navigation.fragment.findNavController
 import androidx.recyclerview.widget.LinearLayoutManager
 import blood.pressure.fingerprint.scanner.bpmonitor.R
 import blood.pressure.fingerprint.scanner.bpmonitor.databinding.HistoryFragmentBinding
+import blood.pressure.fingerprint.scanner.bpmonitor.ui2.MainActivity
+import blood.pressure.fingerprint.scanner.bpmonitor.ui2.uiWater.home.HomeFragment
 import com.github.mikephil.charting.components.LimitLine
 import com.github.mikephil.charting.components.XAxis
 import com.github.mikephil.charting.formatter.ValueFormatter
@@ -60,7 +62,9 @@ class HistoryFragment : Fragment() {
         // kulanıcı henüz hiç içecek içmediyse snack bar göster ve içecek içtir
         val drinkList = db.readDrinkDataDetailsDaySum()
         if (drinkList.size == 0) {
-            this.findNavController().navigate(R.id.action_navigation_history_to_navigation_home)
+            (activity as MainActivity).loadFragment(HomeFragment())
+
+//            this.findNavController().navigate(R.id.action_navigation_history_to_navigation_home)
         } else {
             // spinner icindeki tarihleri hazirlayan fonksiyon
             monthDropdownMenu()

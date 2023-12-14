@@ -1,4 +1,4 @@
-
+package blood.pressure.fingerprint.scanner.bpmonitor.util.utils
 import android.content.Context
 import androidx.room.Database
 import androidx.room.Room
@@ -6,7 +6,6 @@ import androidx.room.RoomDatabase
 import blood.pressure.fingerprint.scanner.bpmonitor.entities.model.Drink
 import blood.pressure.fingerprint.scanner.bpmonitor.entities.model.Notification
 import blood.pressure.fingerprint.scanner.bpmonitor.entities.model.User
-import blood.pressure.fingerprint.scanner.bpmonitor.util.utils.Dao
 
 
 private const val DATABASE_NAME = "SQLITE_DATABASE.db"

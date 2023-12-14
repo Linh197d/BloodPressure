@@ -1,9 +1,5 @@
 package blood.pressure.fingerprint.scanner.bpmonitor.ui2.uiWater.home
-import AppDatabase
-import blood.pressure.fingerprint.scanner.bpmonitor.util.utils.Dao
-import blood.pressure.fingerprint.scanner.bpmonitor.util.utils.DatabaseHelper
-import blood.pressure.fingerprint.scanner.bpmonitor.util.utils.DrinksContainerAdapter
-import blood.pressure.fingerprint.scanner.bpmonitor.util.utils.Repository
+
 import android.annotation.SuppressLint
 import android.os.Bundle
 import android.view.LayoutInflater
@@ -13,12 +9,17 @@ import androidx.activity.OnBackPressedCallback
 import androidx.fragment.app.Fragment
 import androidx.fragment.app.viewModels
 import androidx.lifecycle.lifecycleScope
-import androidx.navigation.findNavController
-import androidx.navigation.fragment.findNavController
 import androidx.recyclerview.widget.LinearLayoutManager
-import blood.pressure.fingerprint.scanner.bpmonitor.R
 import blood.pressure.fingerprint.scanner.bpmonitor.databinding.FragmentHomeBinding
+import blood.pressure.fingerprint.scanner.bpmonitor.ui2.MainActivity
+import blood.pressure.fingerprint.scanner.bpmonitor.ui2.uiWater.dashboard.DashboardFragment
 import blood.pressure.fingerprint.scanner.bpmonitor.ui2.uiWater.dashboard.DashboardViewModel
+import blood.pressure.fingerprint.scanner.bpmonitor.ui2.uiWater.drinks.DrinksFragment
+import blood.pressure.fingerprint.scanner.bpmonitor.util.utils.AppDatabase
+import blood.pressure.fingerprint.scanner.bpmonitor.util.utils.Dao
+import blood.pressure.fingerprint.scanner.bpmonitor.util.utils.DatabaseHelper
+import blood.pressure.fingerprint.scanner.bpmonitor.util.utils.DrinksContainerAdapter
+import blood.pressure.fingerprint.scanner.bpmonitor.util.utils.Repository
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.launch
 import kotlinx.coroutines.withContext
@@ -26,11 +27,13 @@ import java.text.DecimalFormat
 import java.text.SimpleDateFormat
 import java.util.*
 
+
 class HomeFragment : Fragment() {
 
     private val dashboardViewModel: DashboardViewModel by viewModels()
     private var _binding: FragmentHomeBinding? = null
     private val binding get() = _binding!!
+
 
     private val db by lazy {
         DatabaseHelper(
@@ -79,11 +82,12 @@ class HomeFragment : Fragment() {
         _binding!!.drinksRecyclerView.isNestedScrollingEnabled = false
 
         _binding!!.drinkWaterButton.setOnClickListener {
-            it.findNavController().navigate(R.id.action_navigation_home_to_drinksFragment)
+            (activity as MainActivity).loadFragment(DrinksFragment())
+
+//            it.findNavController().navigate(R.id.action_navigation_home_to_drinksFragment)
         }
 
-        // This disables back button
-        requireActivity().onBackPressedDispatcher.addCallback(this,
+        requireActivity().onBackPressedDispatcher.addCallback(viewLifecycleOwner,
             object : OnBackPressedCallback(false) {
                 override fun handleOnBackPressed() {}
             })
@@ -91,7 +95,6 @@ class HomeFragment : Fragment() {
         val view = binding.root
         return view
     }
-
 
     override fun onDestroy() {
         super.onDestroy()
@@ -123,8 +126,6 @@ class HomeFragment : Fragment() {
         val sum = Repository(dao).readDrinkSumData()
 
         val date = SimpleDateFormat("yyyy-MM-dd").format(Calendar.getInstance().time).toString()
-
-        // eger gun bugunun gunu degilse 0 getiriyor
         val size = sum?.lastIndex
         return if (size == -1) {
             0
@@ -154,7 +155,8 @@ class HomeFragment : Fragment() {
 
             // if user opens the app for the first time direct it to settings fragment
             if (waterAmount == 0 || waterAmount == null) {
-                findNavController().navigate(R.id.action_navigation_home_to_navigation_setting)
+                (activity as MainActivity).loadFragment(DashboardFragment())
+//                findNavController().navigate(R.id.action_navigation_home_to_navigation_setting)
             }
         }
     }

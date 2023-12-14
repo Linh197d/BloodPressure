@@ -1,8 +1,6 @@
 package blood.pressure.fingerprint.scanner.bpmonitor.util.utils
-import AppDatabase
 import android.content.Context
 import android.view.LayoutInflater
-import android.view.TextureView
 import android.view.View
 import android.view.ViewGroup
 import android.widget.ImageView

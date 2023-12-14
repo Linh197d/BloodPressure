@@ -212,7 +212,7 @@
             android:layout_height="wrap_content"
             android:fontFamily="@font/gilroy_bold"
             android:paddingStart="@dimen/_10sdp"
-            android:text="Ingredients"
+            android:text="Nguyên liệu"
             android:textColor="@color/black"
             android:textSize="@dimen/_15ssp" />
 
@@ -247,7 +247,7 @@
             android:layout_height="wrap_content"
             android:fontFamily="@font/gilroy_bold"
             android:paddingStart="@dimen/_10sdp"
-            android:text="Instructions"
+            android:text="Hướng dẫn"
             android:textColor="@color/black"
             android:textSize="@dimen/_15ssp" />
 

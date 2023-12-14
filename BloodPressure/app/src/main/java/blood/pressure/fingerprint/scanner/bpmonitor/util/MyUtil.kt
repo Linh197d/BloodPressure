@@ -10,6 +10,7 @@ import android.graphics.drawable.Drawable
 import android.graphics.drawable.TransitionDrawable
 import android.net.ConnectivityManager
 import android.os.Build
+import android.util.Log
 import android.view.*
 import android.widget.LinearLayout
 import android.widget.ProgressBar
@@ -144,6 +145,32 @@ class MyUtil {
                 }
             }
             return false
+        }
+        fun translate(s:String):String{
+            var textSt:String = ""
+            val translate = TranslateAPI()
+                translate.setOnTranslationCompleteListener(object :
+                    TranslateAPI.OnTranslationCompleteListener {
+                    override fun onStartTranslation() {
+                        // here you can perform initial work before translated the text like displaying progress bar
+                    }
+
+                    override fun onCompleted(text: String?) {
+                        // "text" variable will give you the translated text
+                        textSt+=text
+                    }
+
+                    override fun onError(e: Exception?) {
+                        Log.e("vinhm", "Translate Fail")
+                    }
+                })
+            return textSt
+
+                translate.execute(
+                    s,
+                    LanguageCode.English,
+                    LanguageCode.Vietnamese
+                )
         }
     }
 }

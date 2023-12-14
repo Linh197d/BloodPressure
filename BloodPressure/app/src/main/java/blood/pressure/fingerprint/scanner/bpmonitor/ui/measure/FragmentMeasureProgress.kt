@@ -103,14 +103,13 @@ class FragmentMeasureProgress : Fragment() {
         return binding.root
     }
 
-    //Prevent the system from restarting your activity during certain configuration changes,
-    // but receive a callback when the configurations do change, so that you can manually update your activity as necessary.
-    //such as screen orientation, keyboard availability, and language
-
-    //Wakelock + Open device camera + set orientation to 90 degree
-    //store system time as a start time for the analyzing process
-    //your activity to start interacting with the user.
-    // This is a good place to begin animations, open exclusive-access devices (such as the camera)
+    // Ngăn hệ thống khởi động lại hoạt động của bạn trong những thay đổi cấu hình nhất định,
+    // nhưng nhận được lệnh gọi lại khi cấu hình thay đổi, để bạn có thể cập nhật hoạt động của mình theo cách thủ công nếu cần.
+    //chẳng hạn như hướng màn hình, tính khả dụng của bàn phím và ngôn ngữ
+    // Wakelock + Mở camera thiết bị + đặt hướng thành 90 độ
+    //lưu trữ thời gian hệ thống làm thời gian bắt đầu cho quá trình phân tích
+    // hoạt động của bạn để bắt đầu tương tác với người dùng.
+    // Đây là nơi tốt để bắt đầu hoạt ảnh, mở các thiết bị có quyền truy cập độc quyền (chẳng hạn như máy ảnh)
     @Suppress("DEPRECATION")
     override fun onResume() {
         super.onResume()
@@ -121,10 +120,10 @@ class FragmentMeasureProgress : Fragment() {
         st = System.currentTimeMillis()
     }
 
-    //call back the frames then release the camera + wakelock and Initialize the camera to null
-    //Called as part of the activity lifecycle when an activity is going into the background, but has not (yet) been killed. The counterpart to onResume().
-    //When activity B is launched in front of activity A,
-    // this callback will be invoked on A. B will not be created until A's onPause() returns, so be sure to not do anything lengthy here.
+    // gọi lại các khung sau đó nhả camera + Wakelock và Khởi tạo camera thành null
+    // Được gọi như một phần của vòng đời hoạt động khi một hoạt động chuyển sang chế độ nền nhưng chưa (chưa) bị hủy. Bản sao của onResume().
+    // Khi hoạt động B được khởi chạy trước hoạt động A,
+    // lệnh gọi lại này sẽ được gọi trên A. B sẽ không được tạo cho đến khi onPause() của A trả về, vì vậy hãy đảm bảo không làm gì dài dòng ở đây.
     @Suppress("DEPRECATION")
     override fun onPause() {
         super.onPause()
@@ -135,8 +134,8 @@ class FragmentMeasureProgress : Fragment() {
         camera = null
     }
 
-    //getting frames data from the camera and start the heartbeat process
-    @Suppress("DEPRECATION")
+    // lấy dữ liệu khung hình từ camera và bắt đầu quá trình đo nhịp tim
+     @Suppress("DEPRECATION")
     private val previewCallback =
         Camera.PreviewCallback { data, cam ->
             /**
@@ -147,14 +146,14 @@ class FragmentMeasureProgress : Fragment() {
             @Suppress("DEPRECATION") val size =
                 cam.parameters.previewSize ?: throw NullPointerException()
 
-            //Atomically sets the value to the given updated value if the current value == the expected value.
-            if (!processing.compareAndSet(
+// Đặt giá trị nguyên tử thành giá trị cập nhật đã cho nếu giá trị hiện tại == giá trị mong đợi.
+if (!processing.compareAndSet(
                     false,
                     true
                 )
             ) return@PreviewCallback
 
-            //put width + height of the camera inside the variables
+            //đặt chiều rộng + chiều cao của máy ảnh vào trong các biến
             val width = size.width
             val height = size.height
             val greenAvg: Double = ImageProcessing.decodeYUV420SPtoRedBlueGreenAvg(
@@ -162,19 +161,19 @@ class FragmentMeasureProgress : Fragment() {
                 height,
                 width,
                 3
-            ) //1 stands for red intensity, 2 for blue, 3 for green
+            ) //1 là cường độ màu đỏ, 2 là màu xanh lam, 3 là màu xanh lá cây
             val redAvg: Double = ImageProcessing.decodeYUV420SPtoRedBlueGreenAvg(
                 data.clone(),
                 height,
                 width,
                 1
-            ) //1 stands for red intensity, 2 for blue, 3 for green
+            ) //1 là cường độ màu đỏ, 2 là màu xanh lam, 3 là màu xanh lá cây
             greenAvgList.add(greenAvg)
             redAvgList.add(redAvg)
-            ++counter //counts number of frames in 30 seconds
+            ++counter //đếm số khung hình trong 30 giây
 
 
-            //To check if we got a good red intensity to process if not return to the condition and set it again until we get a good red intensity
+            //Để kiểm tra xem chúng ta có cường độ đỏ tốt để xử lý hay không nếu không quay trở lại điều kiện và đặt lại cho đến khi chúng ta có cường độ đỏ tốt
             if (redAvg < 200) {
                 st = System.currentTimeMillis()
                 inc = 0
@@ -187,7 +186,7 @@ class FragmentMeasureProgress : Fragment() {
             val endTime = System.currentTimeMillis()
             val totalTimeInSecs: Double =
                 (endTime - startTime) / 1000.0 //to convert time to seconds
-            if (totalTimeInSecs >= 20) { //when 30 seconds of measuring passes do the following " we chose 30 seconds to take half sample since 60 seconds is normally a full sample of the heart beat
+            if (totalTimeInSecs >= 20) { //khi đo 30 giây, hãy làm như sau " chúng tôi chọn 30 giây để lấy một nửa mẫu vì 60 giây thường là mẫu đầy đủ của nhịp tim
                 val green = greenAvgList.toTypedArray()
                 val red = redAvgList.toTypedArray()
                 samplingFreq = counter / totalTimeInSecs //calculating the sampling frequency
@@ -195,17 +194,17 @@ class FragmentMeasureProgress : Fragment() {
                     green,
                     counter,
                     samplingFreq
-                ) // send the green array and get its fft then return the amount of heart rate per second
+                ) // gửi mảng màu xanh lá cây và nhận fft của nó sau đó trả về lượng nhịp tim mỗi giây
                 val bpm = ceil(hRFreq * 60).toInt().toDouble()
                 val hR1Freq: Double = Fft.FFT(
                     red,
                     counter,
                     samplingFreq
-                ) // send the red array and get its fft then return the amount of heart rate per second
+                ) // gửi mảng màu đỏ và nhận fft của nó sau đó trả về lượng nhịp tim mỗi giây
                 val bpm1 = ceil(hR1Freq * 60).toInt().toDouble()
 
-                // The following code is to make sure that if the heart rate from red and green intensities are reasonable
-                // take the average between them, otherwise take the green or red if one of them is good
+                // Đoạn code sau nhằm đảm bảo rằng nếu nhịp tim từ cường độ đỏ và xanh là hợp lý
+                // lấy giá trị trung bình giữa chúng, nếu không thì lấy màu xanh hoặc đỏ nếu một trong số chúng tốt
                 if (bpm > 45 || bpm < 200) {
                     bufferAvgB = if (bpm1 > 45 || bpm1 < 200) {
                         (bpm + bpm1) / 2
@@ -215,8 +214,8 @@ class FragmentMeasureProgress : Fragment() {
                 } else if (bpm1 > 45 || bpm1 < 200) {
                     bufferAvgB = bpm1
                 }
-                if (bufferAvgB < 45 || bufferAvgB > 200) { //if the heart beat wasn't reasonable after all reset the progress bar and restart measuring
-                    st = System.currentTimeMillis()
+                if (bufferAvgB < 45 || bufferAvgB > 200) {
+            //nếu nhịp tim không hợp lý thì hãy đặt lại thanh tiến trình và bắt đầu lại quá trình đo                    st = System.currentTimeMillis()
                     inc = 0
                     progressP = inc
                     binding.progress.progress = progressP
@@ -239,12 +238,12 @@ class FragmentMeasureProgress : Fragment() {
                 val sv: Double = -6.6 + 0.25 * (et - 35) - 0.62 * beats + 40.4 * bsa - 0.51 * age
                 val pp: Double = sv / (0.013 * weight - 0.007 * age - 0.004 * beats + 1.307)
                 val mpp = q * rob
-
+                //sp là tâm thu, dp là tâm trương
                 sp = (mpp + 3 / 2 * pp).toInt()
                 dp = (mpp - pp / 3).toInt()
 
-                if (beats != 0 && sp != 0 && dp != 0) { //if beasts were reasonable stop the loop and send HR with the username to results activity and finish this activity
-                    parent.result = beats
+                if (beats != 0 && sp != 0 && dp != 0) {
+// nếu điều đó hợp lý, hãy dừng vòng lặp và gửi HR với tên người dùng để kết quả hoạt động và hoàn thành hoạt động này                    parent.result = beats
                     parent.sp = sp
                     parent.dp = dp
                     if (!isNext) {
@@ -255,7 +254,7 @@ class FragmentMeasureProgress : Fragment() {
 
             }
 
-            if (redAvg != 0.0) { //increment the progress bar
+            if (redAvg != 0.0) { //tăng thanh tiến trình
                 inc = ((System.currentTimeMillis() - st) / 10).toInt()
                 //progressP = inc++
                 progressP = inc
@@ -263,7 +262,7 @@ class FragmentMeasureProgress : Fragment() {
                 binding.progress.progress = progressP
             }
 
-            //keeps taking frames tell 30 seconds
+            //tiếp tục chụp khung hình trong 30 giây
             processing.set(false)
 
         }

@@ -1,5 +1,5 @@
 package blood.pressure.fingerprint.scanner.bpmonitor.ui2.uiWater.history
-import AppDatabase
+import blood.pressure.fingerprint.scanner.bpmonitor.util.utils.AppDatabase
 import blood.pressure.fingerprint.scanner.bpmonitor.util.utils.DatabaseHelper
 import blood.pressure.fingerprint.scanner.bpmonitor.util.utils.DrinksContainerGenerator
 import blood.pressure.fingerprint.scanner.bpmonitor.util.utils.Repository

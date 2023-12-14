@@ -67,14 +67,14 @@ class SplashScreen : LocaleAwareCompatActivity() {
 
     private fun loadAOA() {
 
-        Log.e("appOpenAd", "appOpenAd loadAOA")
-
-        Common.pushEventAnalytics("internet")
-        if (Common.isInternetConnected(this)) {
-            Common.pushEventAnalytics("internet_on")
-        } else {
-            Common.pushEventAnalytics("internet_off")
-        }
+//        Log.e("appOpenAd", "appOpenAd loadAOA")
+//
+//        Common.pushEventAnalytics("internet")
+//        if (Common.isInternetConnected(this)) {
+//            Common.pushEventAnalytics("internet_on")
+//        } else {
+//            Common.pushEventAnalytics("internet_off")
+//        }
 
     }
 
@@ -103,16 +103,16 @@ class SplashScreen : LocaleAwareCompatActivity() {
 
     }
 
-    private fun loadSplash() {
-
-        Common.pushEventAnalytics("internet")
-        if (Common.isInternetConnected(this)) {
-            Common.pushEventAnalytics("internet_on")
-        } else {
-            Common.pushEventAnalytics("internet_off")
-        }
-
-    }
+//    private fun loadSplash() {
+//
+//        Common.pushEventAnalytics("internet")
+//        if (Common.isInternetConnected(this)) {
+//            Common.pushEventAnalytics("internet_on")
+//        } else {
+//            Common.pushEventAnalytics("internet_off")
+//        }
+//
+//    }
 
     private fun insertNoteForFirstInstall() {
         Log.i("bac", "insert database")

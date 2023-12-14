@@ -1,5 +1,4 @@
 package blood.pressure.fingerprint.scanner.bpmonitor.util.utils
-import AppDatabase
 import android.content.BroadcastReceiver
 import android.content.Context
 import android.content.Intent

@@ -75,14 +75,14 @@ class DashboardViewModel(private val app: Application) : AndroidViewModel(app) {
     }
 
     // function to handle the metric selection
-    val metricHandler = RadioRealButtonGroup.OnClickedButtonListener { _, position ->
-        if (position == 0) _metric.value = "Metric" else _metric.value = "American"
-    }
+//    val metricHandler = RadioRealButtonGroup.OnClickedButtonListener { _, position ->
+//        if (position == 0) _metric.value = "Metric" else _metric.value = "American"
+//    }
 
     // function to handle the metric selection on create
-    fun metricHandlerOnCreate(pos: Int) {
-        if (pos == 0) _metric.value = "Metric" else _metric.value = "American"
-    }
+//    fun metricHandlerOnCreate(pos: Int) {
+//        if (pos == 0) _metric.value = "Metric" else _metric.value = "American"
+//    }
 
     // function to calculate to drink how much water to drink daily
     fun waterCalculate(): Float {

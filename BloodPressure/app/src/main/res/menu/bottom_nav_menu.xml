@@ -20,5 +20,9 @@
         android:id="@+id/navigation_setting"
         android:icon="@drawable/ic_settings_black_24dp"
         android:title="@string/title_setting" />
+    <item
+        android:id="@+id/navigation_food"
+        android:icon="@drawable/ic_settings_black_24dp"
+        android:title="Món ăn" />
 
 </menu>

@@ -7,7 +7,7 @@
 
     <fragment
         android:id="@+id/navigation_home"
-        android:name="com.afl.waterReminderDrinkAlarmMonitor.ui.home.HomeFragment"
+        android:name="blood.pressure.fingerprint.scanner.bpmonitor.ui2.uiWater.home.HomeFragment"
         android:label="@string/title_home"
         tools:layout="@layout/fragment_home">
         <action
@@ -23,19 +23,19 @@
 
     <fragment
         android:id="@+id/navigation_setting"
-        android:name="com.afl.waterReminderDrinkAlarmMonitor.ui.dashboard.DashboardFragment"
+        android:name="blood.pressure.fingerprint.scanner.bpmonitor.ui2.uiWater.dashboard.DashboardFragment"
         android:label="@string/title_setting"
         tools:layout="@layout/fragment_dashboard" />
 
     <fragment
         android:id="@+id/navigation_notifications"
-        android:name="com.afl.waterReminderDrinkAlarmMonitor.ui.notifications.NotificationsFragment"
+        android:name="blood.pressure.fingerprint.scanner.bpmonitor.ui2.uiWater.notifications.NotificationsFragment"
         android:label="@string/title_notifications"
         tools:layout="@layout/fragment_notifications" />
 
     <fragment
         android:id="@+id/drinksFragment"
-        android:name="com.afl.waterReminderDrinkAlarmMonitor.ui.drinks.DrinksFragment"
+        android:name="blood.pressure.fingerprint.scanner.bpmonitor.ui2.uiWater.drinks.DrinksFragment"
         android:label="drinks_fragment"
         tools:layout="@layout/drinks_fragment">
         <action
@@ -47,7 +47,7 @@
 
     <fragment
         android:id="@+id/navigation_history"
-        android:name="com.afl.waterReminderDrinkAlarmMonitor.ui.history.HistoryFragment"
+        android:name="blood.pressure.fingerprint.scanner.bpmonitor.ui2.uiWater.history.HistoryFragment"
         android:label="@string/title_history"
         tools:layout="@layout/history_fragment">
         <action

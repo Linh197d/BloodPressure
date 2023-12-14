@@ -1,5 +1,4 @@
 package blood.pressure.fingerprint.scanner.bpmonitor.ui2.uiWater.dashboard
-import AppDatabase
 import blood.pressure.fingerprint.scanner.bpmonitor.util.utils.DatabaseHelper
 import android.os.Bundle
 import android.view.LayoutInflater
@@ -11,6 +10,7 @@ import androidx.lifecycle.Observer
 import androidx.lifecycle.ViewModelProvider
 import blood.pressure.fingerprint.scanner.bpmonitor.R
 import blood.pressure.fingerprint.scanner.bpmonitor.databinding.FragmentDashboardBinding
+import blood.pressure.fingerprint.scanner.bpmonitor.util.utils.AppDatabase
 import blood.pressure.fingerprint.scanner.bpmonitor.util.utils.onChange
 import com.google.android.material.snackbar.Snackbar
 
@@ -69,7 +69,7 @@ class DashboardFragment : Fragment() {
 
         // Set Selected Change Listener for gender selector
         binding.genderRadio.setOnClickedButtonListener(dashboardViewModel.genderHandler)
-        binding.metricRadio.setOnClickedButtonListener(dashboardViewModel.metricHandler)
+//        binding.metricRadio.setOnClickedButtonListener(dashboardViewModel.metricHandler)
 
         // listener for seekbar
         binding.waterSeekBar.onProgressChangedListener = dashboardViewModel.seekbarHandler
@@ -149,14 +149,6 @@ class DashboardFragment : Fragment() {
         val user = db.readData()
 
         // TODO: 1/18/21 drink fragment bug sebebi bu olabilir
-        // set metric selector
-        if (user.metric == "Metric") {
-            binding.metricRadio.position = 0
-            dashboardViewModel.metricHandlerOnCreate(0)
-        } else {
-            binding.metricRadio.position = 1
-            dashboardViewModel.metricHandlerOnCreate(1)
-        }
 
         // set gender selector
         if (user.gender == "Male") {

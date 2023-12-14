@@ -11,7 +11,9 @@ import androidx.lifecycle.lifecycleScope
 import androidx.navigation.findNavController
 import blood.pressure.fingerprint.scanner.bpmonitor.R
 import blood.pressure.fingerprint.scanner.bpmonitor.databinding.DrinksFragmentBinding
+import blood.pressure.fingerprint.scanner.bpmonitor.ui2.MainActivity
 import blood.pressure.fingerprint.scanner.bpmonitor.ui2.uiWater.dashboard.DashboardViewModel
+import blood.pressure.fingerprint.scanner.bpmonitor.ui2.uiWater.home.HomeFragment
 import com.google.android.material.snackbar.Snackbar
 import kotlinx.coroutines.launch
 
@@ -54,7 +56,8 @@ class DrinksFragment : Fragment() {
             } else {
                 lifecycleScope.launch {
                     dashboardViewModel.drink()
-                    it.findNavController().navigate(R.id.action_drinksFragment_to_navigation_home)
+                    (activity as MainActivity).loadFragment(HomeFragment())
+//                    it.findNavController().navigate(R.id.action_drinksFragment_to_navigation_home)
                 }
             }
             drinkButtonCheckStatus = false

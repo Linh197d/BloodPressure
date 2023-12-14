@@ -96,17 +96,17 @@ class MainActivity : LocaleAwareCompatActivity() {
                     }
                     return@setOnNavigationItemSelectedListener true
                 }
-                R.id.menu_tracker -> {
+//                R.id.menu_tracker -> {
+//                    if (current != tracker) {
+//                        loadFragment(FragmentTracker())
+//                        current = tracker
+//                    }
+//                    return@setOnNavigationItemSelectedListener true
+//                }
+                else -> {
                     if (current != tracker) {
                         loadFragment(FragmentTracker())
                         current = tracker
-                    }
-                    return@setOnNavigationItemSelectedListener true
-                }
-                else -> {
-                    if (current != setting) {
-                        loadFragment(FragmentSettings())
-                        current = setting
                     }
                     return@setOnNavigationItemSelectedListener true
                 }
@@ -114,26 +114,6 @@ class MainActivity : LocaleAwareCompatActivity() {
         }
 
     }
-
-//    private fun initReview(activity: Activity?) {
-//
-//        val manager = ReviewManagerFactory.create(this)
-//        val request = manager.requestReviewFlow()
-//        request.addOnCompleteListener { task: Task<ReviewInfo?> ->
-//            if (task.isSuccessful) {
-//                Common.pushEventAnalytics("initReview")
-//                val reviewInfo = task.result as ReviewInfo
-//                val flow =
-//                    manager.launchReviewFlow(
-//                        this, reviewInfo
-//                    )
-//                flow.addOnCompleteListener {
-//
-//                }
-//            }
-//        }
-//
-//    }
 
     override fun onActivityResult(requestCode: Int, resultCode: Int, data: Intent?) {
         super.onActivityResult(requestCode, resultCode, data)
@@ -154,10 +134,10 @@ class MainActivity : LocaleAwareCompatActivity() {
         transaction.commit()
     }
 
-    override fun onBackPressed() {
-        startActivity(Intent(this, BeforeExitActivity::class.java))
-        super.onBackPressed()
-        //super.onBackPressed()
-        finish()
-    }
+//    override fun onBackPressed() {
+//        startActivity(Intent(this, BeforeExitActivity::class.java))
+//        super.onBackPressed()
+//        //super.onBackPressed()
+//        finish()
+//    }
 }

@@ -36,6 +36,8 @@ class FragmentMeasureResult : Fragment(), ITypeAdapter {
     private lateinit var binding: FragmentMeasureResultBinding
     private lateinit var parent: FragmentWatcherContainer
     private lateinit var date: String
+     var tamthu: Int = 0
+     var tamtruong: Int = 0
 
     private val viewModel: AddViewModel by viewModels {
         AddViewModelFactory(
@@ -58,17 +60,17 @@ class FragmentMeasureResult : Fragment(), ITypeAdapter {
             container,
             false
         )
-
+        parent = parentFragment as FragmentWatcherContainer
+        tamthu=parent.sp-5
+        tamtruong=parent.dp-7
         date = df.format(today)
         binding.datetime.text = date
-
-        parent = parentFragment as FragmentWatcherContainer
         binding.pulse.text = "${parent.result}"
-        binding.sys.text = "${parent.sp}"
-        binding.dia.text = "${parent.dp}"
-
-        Log.d("vinhm", "${parent.sp}/${parent.dp}")
-        checkIndexBlood(parent.sp-20, parent.dp-10)
+        binding.sys.text = "$tamthu"
+        binding.dia.text = "$tamtruong"
+        Log.d("vinhm", "${tamthu}/${tamtruong}")
+        //sp là tâm thu, dp là tâm trương
+        checkIndexBlood(tamthu, tamtruong)
 
         animationView()
 
@@ -76,7 +78,9 @@ class FragmentMeasureResult : Fragment(), ITypeAdapter {
             @Suppress("DEPRECATION")
             Handler().postDelayed({
                 parent.sp = 90
+                tamthu=90
                 parent.dp = 60
+                tamtruong=60
                 parent.result = 60
                 parent.level = Level.Normal
                 parent.replaceFragment(FragmentMeasureProgress())
@@ -363,8 +367,8 @@ class FragmentMeasureResult : Fragment(), ITypeAdapter {
 
     private fun addNewItem() {
         viewModel.addNewItem(
-            parent.sp,
-            parent.dp,
+           tamthu,
+            tamtruong,
             parent.result,
             parent.level,
             "",
