@@ -22,8 +22,7 @@ class InfoText {
             listKnow.add(
                 Info(
                     "",
-                    "What range can be determined as hypertension? If one of your readings reaches the standard for high blood pressure, but the other one does not, how to determine that? To define your blood pressure numbers, you can see blood pressure category below."
-                )
+                    "Phạm vi nào có thể được xác định là tăng huyết áp? Nếu một trong các chỉ số của bạn đạt tiêu chuẩn về huyết áp cao, còn chỉ số kia thì không, làm thế nào để xác định điều đó? Để xác định chỉ số huyết áp của mình, bạn có thể xem loại huyết áp bên dưới."                )
             )
             listKnow.add(Info("header", ""))
             listKnow.add(
@@ -158,14 +157,14 @@ class InfoText {
             )
             listType.add(
                 Info(
-                    "Primary Hypertension",
+                    "Tăng huyết áp nguyên phát",
                     "Bệnh tăng huyết áp phổ biến nhất là loại nguyên phát. Nó có nghĩa là huyết áp cao liên tục không liên quan đến tình trạng bệnh lý khác. Mặc dù đã có nhiều năm nghiên cứu về bệnh tăng huyết áp nhưng nguyên nhân cụ thể vẫn chưa được xác định. Chế độ ăn uống không lành mạnh, không hoạt động thể chất, tiêu thụ thuốc lá và rượu , thừa cân hoặc béo phì, v.v. có thể làm tăng huyết áp của bạn.${                        System.getProperty("line.separator")
                     } ${System.getProperty("line.separator")}Huyết áp của bệnh nhân sẽ tăng theo độ tuổi. Phương pháp chữa bệnh cho đến nay vẫn chưa được tìm ra. Vì vậy, hầu hết bệnh nhân cần dùng thuốc để kiểm soát huyết áp suốt đời."
                 )
             )
             listType.add(
                 Info(
-                    "Secondary Hypertension",
+                    "Tăng huyết áp thứ phát",
                     "Chỉ có khoảng 5 đến 10% bệnh nhân tăng huyết áp là loại thứ phát. Ngoài ra, người ta đã chứng minh rằng những người trẻ tuổi có nguy cơ mắc bệnh tăng huyết áp thứ phát.${                        System.getProperty(
                         "line.separator"
                     )

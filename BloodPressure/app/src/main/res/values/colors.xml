@@ -25,6 +25,7 @@
     <color name="colorPrimary">#2196F3</color>
     <color name="colorAccent">#03A9F4</color>
     <color name="yellow">#FF9A00</color>
+<!--    <color name="yellow">#1e40ca</color>-->
     <color name="brown">#433232</color>
     <color name="transparent">#00000000</color>
     <color name="pink">#F6DEDE</color>
@@ -40,6 +41,7 @@
     <color name="water_blue_50">#666bfe</color>
     <color name="water_blue_100">#1e40ca</color>
     <color name="water_blue_150">#001a98</color>
+
 
     <color name="reply_blue_50">#eef0f2</color>
     <color name="reply_blue_100">#d2dbe0</color>
