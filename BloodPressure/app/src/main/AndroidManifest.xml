@@ -4,28 +4,31 @@
 
     <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
     <uses-permission android:name="android.permission.INTERNET" />
-  <uses-permission android:name="android.permission.FOREGROUND_SERVICE" />
-    <uses-permission android:name="android.permission.ACCESS_NOTIFICATION_POLICY"/>
-    <uses-permission android:name="android.permission.INTERNET"/>
-    <uses-permission android:name="android.permission.SET_ALARM"/>
-    <uses-permission android:name="android.permission.READ_PHONE_STATE"/>
-    <uses-permission android:name="android.permission.WAKE_LOCK"/>
+    <uses-permission android:name="android.permission.FOREGROUND_SERVICE" />
+    <uses-permission android:name="android.permission.ACCESS_NOTIFICATION_POLICY" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.SET_ALARM" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
     <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+
     <uses-feature android:name="android.hardware.camera" />
     <uses-feature android:name="android.hardware.camera.flash" />
+
     <uses-permission android:name="android.permission.FLASHLIGHT" />
     <uses-permission android:name="android.permission.WAKE_LOCK" />
     <uses-permission android:name="android.permission.CAMERA" />
-    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
-    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+
     <application
         android:name="blood.pressure.fingerprint.scanner.bpmonitor.App"
         android:allowBackup="true"
         android:dataExtractionRules="@xml/data_extraction_rules"
         android:fullBackupContent="@xml/backup_rules"
         android:icon="@drawable/app_icon"
-        android:requestLegacyExternalStorage="true"
         android:label="@string/app_name"
+        android:requestLegacyExternalStorage="true"
         android:roundIcon="@drawable/app_icon"
         android:supportsRtl="true"
         android:theme="@style/Theme.BloodPressure"
@@ -82,8 +85,7 @@
             android:exported="false" />
         <activity
             android:name=".ui.SplashScreen"
-            android:exported="false">
-        </activity>
+            android:exported="false"></activity>
         <activity
             android:name=".StartActivity"
             android:exported="true">
@@ -93,18 +95,22 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".ui2.DetailActivity"
-            android:screenOrientation="locked"/>
+        <activity
+            android:name=".ui2.DetailActivity"
+            android:screenOrientation="locked" />
 
-        <activity android:name=".ui2.SplashActivity"
-            android:screenOrientation="locked"/>
+        <activity
+            android:name=".ui2.SplashActivity"
+            android:screenOrientation="locked" />
         <activity
             android:name=".ui2.MainActivity"
             android:exported="false" />
+
         <receiver android:name="blood.pressure.fingerprint.scanner.bpmonitor.util.utils.AlarmReceiver" />
 
         <!-- For listening to device reboot to reschedule alarms -->
-        <receiver android:name="blood.pressure.fingerprint.scanner.bpmonitor.util.utils.BootReceiver"
+        <receiver
+            android:name="blood.pressure.fingerprint.scanner.bpmonitor.util.utils.BootReceiver"
             android:exported="false">
             <intent-filter>
                 <action android:name="android.intent.action.BOOT_COMPLETED" />

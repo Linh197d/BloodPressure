@@ -149,6 +149,7 @@ class MyUtil {
         fun translate(s:String):String{
             var textSt:String = ""
             val translate = TranslateAPI()
+
                 translate.setOnTranslationCompleteListener(object :
                     TranslateAPI.OnTranslationCompleteListener {
                     override fun onStartTranslation() {
@@ -164,13 +165,14 @@ class MyUtil {
                         Log.e("vinhm", "Translate Fail")
                     }
                 })
+            translate.execute(
+                s,
+                LanguageCode.English,
+                LanguageCode.Vietnamese
+            )
             return textSt
 
-                translate.execute(
-                    s,
-                    LanguageCode.English,
-                    LanguageCode.Vietnamese
-                )
+
         }
     }
 }

@@ -30,9 +30,13 @@ class FoodFragment : Fragment() {
         fun newInstance() =
             FoodFragment()
     }
-    private val COUNTRIES = arrayOf(
-        "Beef", "Chicken", "Dessert", "Lamb", "Miscellaneous","Pasta","Pork","Seafood","Side","Starter"
-        ,"Vegan","Vegetarian","Breakfast","Foat"
+//    private val FOODS = arrayOf(
+//        "Beef", "Chicken", "Dessert", "Lamb", "Miscellaneous","Pasta","Pork","Seafood","Side","Starter"
+//        ,"Vegan","Vegetarian","Breakfast","Foat"
+//    )
+ private val FOODS = arrayOf(
+        "Thịt bò", "Thịt gà", "Món tráng miệng", "Cừu non", "Điều khoản khác","Mỳ ống","Thịt lợn","Hải sản","Bên","người mới bắt đầu"
+        ,"ăn chay","người ăn chay","bữa sáng","con dê"
     )
 
     private lateinit var foodViewModel: FoodViewModel
@@ -55,11 +59,28 @@ class FoodFragment : Fragment() {
         // search food
         val adapter: ArrayAdapter<String> = ArrayAdapter<String>(
             requireActivity(),
-            android.R.layout.simple_dropdown_item_1line, COUNTRIES
+            android.R.layout.simple_dropdown_item_1line, FOODS
         )
         binding.autoText.setAdapter(adapter)
         binding.search.setOnClickListener {
-            getMealDataFromDb(binding.autoText.text.toString())
+            val EnglishName :String = ""
+            when(binding.autoText.text.toString()){
+                "Thịt bò"-> getMealDataFromDb("Beef")
+                "Thịt gà"-> getMealDataFromDb("Chicken")
+                "Món tráng miệng"-> getMealDataFromDb("Dessert")
+                "Cừu non"-> getMealDataFromDb("Lamb")
+                "Điều khoản khác"-> getMealDataFromDb("Miscellaneous")
+                "Mỳ ống"-> getMealDataFromDb("Pasta")
+                "Thịt lợn"-> getMealDataFromDb("Pork")
+                "Hải sản"-> getMealDataFromDb("Seafood")
+                "Bên"-> getMealDataFromDb("Side")
+                "người mới bắt đầu"-> getMealDataFromDb("Beef")
+                "ăn chay"-> getMealDataFromDb("Vegan")
+                "người ăn chay"-> getMealDataFromDb("Vegetarian")
+                "bữa sáng"-> getMealDataFromDb("Breakfast")
+                "con dê"-> getMealDataFromDb("Foat")
+            }
+//            getMealDataFromDb(binding.autoText.text.toString())
         }
     }
 
@@ -103,7 +124,7 @@ class FoodFragment : Fragment() {
     }
 
     private fun getMealDataFromDb(categoryName:String){
-        binding.tvCategory.text = "$categoryName Category"
+        binding.tvCategory.text = "$categoryName "
         requireActivity().lifecycleScope.launch {
             this.let {
                 var cat = RecipeDatabase.getDatabase(requireActivity()).recipeDao().getSpecificMealList(categoryName)

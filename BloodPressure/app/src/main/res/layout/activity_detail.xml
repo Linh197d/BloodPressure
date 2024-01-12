@@ -6,6 +6,13 @@
     android:layout_height="match_parent"
     android:background="@color/white"
     tools:context=".ui2.DetailActivity">
+    <ProgressBar
+        android:id="@+id/progress_bar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:visibility="gone"
+        />
 
 
     <com.google.android.material.appbar.AppBarLayout
@@ -104,7 +111,7 @@
                 android:fontFamily="@font/gilroy_bold"
                 android:textAlignment="center"
                 android:padding="@dimen/_10sdp"
-                android:text="Category name"
+                android:text="Tên món ăn"
                 android:id="@+id/tvCategory"
                 android:textColor="@color/black"
                 android:textSize="@dimen/_15ssp" />
@@ -131,7 +138,7 @@
                         android:id="@+id/tvTime"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:text="30 min"
+                        android:text="30 phút"
                         android:textSize="@dimen/_10ssp"
                         android:textColor="@color/hintTextColor"
                         android:maxEms="10"
@@ -189,13 +196,12 @@
                         android:id="@+id/tvServing"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:text="3 persons"
+                        android:text="3 người"
                         android:textSize="@dimen/_10ssp"
                         android:textColor="@color/hintTextColor"
                         android:maxEms="10"
                         android:maxLines="2"
                         android:textStyle="bold"
-                        android:fontFamily="@font/gilroy_light"
                         android:paddingTop="@dimen/_10sdp"
                         android:paddingStart="@dimen/_5sdp"
                         android:paddingBottom="@dimen/_10sdp"/>
@@ -234,7 +240,7 @@
                     android:textSize="@dimen/_10ssp"
                     android:textColor="@color/hintTextColor"
                     android:textStyle="bold"
-                    android:fontFamily="@font/gilroy_light"
+                    android:text="Đang tải dữ liệu..."
                     android:paddingTop="@dimen/_10sdp"
                     android:paddingStart="@dimen/_5sdp"
                     android:paddingBottom="@dimen/_10sdp"/>
@@ -268,9 +274,9 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:textSize="@dimen/_10ssp"
+                    android:text="Đang tải dữ liệu..."
                     android:textColor="@color/hintTextColor"
                     android:textStyle="bold"
-                    android:fontFamily="@font/gilroy_light"
                     android:paddingTop="@dimen/_10sdp"
                     android:paddingStart="@dimen/_5sdp"
                     android:paddingBottom="@dimen/_10sdp"/>

@@ -35,7 +35,7 @@
             android:id="@+id/tv_dish_name"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Dish Name"
+            android:text="Tên món ăn"
             android:textSize="@dimen/_15ssp"
             android:textColor="@color/black"
             android:maxLines="2"

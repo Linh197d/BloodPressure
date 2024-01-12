@@ -133,7 +133,7 @@ class NotificationsFragment : Fragment() {
 
                     // interval time onCreate setting
                     val intervalTime =
-                        notificationInfo.interval.toString() + if (notificationInfo.interval == 1) " hour" else " hours"
+                        notificationInfo.interval.toString() + if (notificationInfo.interval == 1) " giờ" else " giờ"
                     binding.intervalSpinner.setSelection(intevalHourArray.getPosition(intervalTime))
 
                 }

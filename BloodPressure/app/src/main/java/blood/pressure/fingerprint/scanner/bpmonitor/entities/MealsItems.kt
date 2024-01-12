@@ -26,6 +26,6 @@ data class MealsItems(
     @ColumnInfo(name = "strmealthumb")
     @Expose
     @SerializedName("strMealThumb")
-    val strMealThumb: String
+    val strMealThumb: String?
 )
 

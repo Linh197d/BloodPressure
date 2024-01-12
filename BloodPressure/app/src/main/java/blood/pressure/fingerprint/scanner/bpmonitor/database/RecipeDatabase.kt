@@ -1,4 +1,5 @@
 package blood.pressure.fingerprint.scanner.bpmonitor.database
+
 import android.content.Context
 import androidx.room.Database
 import androidx.room.Room
@@ -14,22 +15,27 @@ import blood.pressure.fingerprint.scanner.bpmonitor.entities.converter.CategoryL
 import blood.pressure.fingerprint.scanner.bpmonitor.entities.converter.MealListConverter
 
 
-@Database(entities = [Recipes::class, CategoryItems::class, Category::class, Meal::class, MealsItems::class],version = 1,exportSchema = false)
+@Database(
+    entities = [Recipes::class, CategoryItems::class, Category::class, Meal::class, MealsItems::class],
+    version = 2,
+    exportSchema = false
+)
 @TypeConverters(CategoryListConverter::class, MealListConverter::class)
-abstract class RecipeDatabase: RoomDatabase() {
+abstract class RecipeDatabase : RoomDatabase() {
 
-    companion object{
+    companion object {
 
         var recipesDatabase: RecipeDatabase? = null
 
         @Synchronized
         fun getDatabase(context: Context): RecipeDatabase {
-            if (recipesDatabase == null){
+            if (recipesDatabase == null) {
                 recipesDatabase = Room.databaseBuilder(
-                        context,
-                        RecipeDatabase::class.java,
-                        "recipe.db"
-                ).build()
+                    context,
+                    RecipeDatabase::class.java,
+                    "recipe.db"
+                ).fallbackToDestructiveMigration()
+                    .build()
             }
             return recipesDatabase!!
         }

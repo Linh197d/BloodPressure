@@ -10,9 +10,12 @@ import androidx.recyclerview.widget.RecyclerView
 import blood.pressure.fingerprint.scanner.bpmonitor.R
 
 
-class WeightPickerAdapter(private val context: Context, private var dataList: List<String>, private val recyclerView: RecyclerView) :
+class WeightPickerAdapter(
+    private val context: Context,
+    private var dataList: List<String>,
+    private val recyclerView: RecyclerView
+) :
     RecyclerView.Adapter<WeightPickerAdapter.TextVH>() {
-
 
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): TextVH {
@@ -39,7 +42,7 @@ class WeightPickerAdapter(private val context: Context, private var dataList: Li
         notifyDataSetChanged()
     }
 
-     class TextVH(itemView: View) : RecyclerView.ViewHolder(itemView) {
+    class TextVH(itemView: View) : RecyclerView.ViewHolder(itemView) {
         var pickerTxt: TextView
 
         init {
